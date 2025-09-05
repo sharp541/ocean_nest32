@@ -38,6 +38,9 @@
             "pin": "GP0"
         }
     },
+    "dynamic_keymap": {
+        "layer_count": 2
+    },
     "layouts": {
         "LAYOUT": {
             "layout": [
