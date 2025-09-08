@@ -1,3 +1,4 @@
+// hardware configuration
 #define SERIAL_USART_TX_PIN GP1
 
 #define SPLIT_POINTING_ENABLE
@@ -7,6 +8,8 @@
 #define SPI_MOSI_PIN GP11
 #define SPI_MISO_PIN GP12
 #define PMW33XX_CS_PIN GP13
+
+// software configuration
 
 #define SPLIT_USB_TIMEOUT 7000
 #define SPLIT_USB_TIMEOUT_POLL 25
