@@ -22,6 +22,27 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,                XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,
                                 XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,                XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,
                                                         XXXXXXX,    XXXXXXX,                XXXXXXX,    XXXXXXX
+    ),
+
+    [_SYMBOL_LAYER] = LAYOUT(
+                    KC_PERC,    XXXXXXX,    XXXXXXX,    XXXXXXX,                                        XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,
+        XXXXXXX,    KC_AT  ,    KC_HASH,    KC_DLR ,    KC_AMPR,    KC_PIPE,                XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,
+                                XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,                XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,
+                                                        KC_LNG2,    KC_LNG1                 XXXXXXX,    XXXXXXX
+    ),
+
+    [_NUMPAD_LAYER] = LAYOUT(
+                    KC_6   ,    KC_7   ,    KC_8   ,    KC_9   ,                                        XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,
+        KC_0   ,    KC_1   ,    KC_2   ,    KC_3   ,    KC_4   ,    KC_5   ,                XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,
+                                XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,                XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,
+                                                        XXXXXXX,    XXXXXXX                 XXXXXXX,    XXXXXXX
+    ),
+
+    [_FUNCTION_LAYER] = LAYOUT(
+                    KC_F6  ,    KC_F7  ,    KC_F8  ,    KC_F9  ,                                        XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,
+        KC_F10 ,    KC_F1  ,    KC_F2  ,    KC_F3  ,    KC_F4  ,    KC_F5  ,                XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,
+                                XXXXXXX,    XXXXXXX,    KC_F12 ,    KC_F11 ,                XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,
+                                                        XXXXXXX,    XXXXXXX                 XXXXXXX,    XXXXXXX
     )
 };
 
