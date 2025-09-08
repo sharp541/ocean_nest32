@@ -53,3 +53,8 @@ dkms.conf
 
 # debug information files
 *.dwo
+
+# kicad
+fp-info-cache
+*.kicad_prl
+fabrication-toolkit-options.json
