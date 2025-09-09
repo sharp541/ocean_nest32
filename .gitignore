@@ -59,3 +59,9 @@ fp-info-cache
 *.kicad_prl
 fabrication-toolkit-options.json
 *-backups
+*.step
+*.stl
+*.dxf
+
+# freecad
+*.FCBak
