@@ -1,5 +1,7 @@
 #pragma once
 
+#include "quantum.h"
+
 enum combos {
     ENT_R_COMBO,
     ENT_L_COMBO,
@@ -20,7 +22,7 @@ enum combos {
     GUI_L_COMBO,
     CW_COMBO,
     DOT_R_COMBO,
-    COMMA_COMBO,
+    COMMA_COMBO
 };
 
 // enter
