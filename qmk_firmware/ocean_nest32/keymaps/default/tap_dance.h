@@ -23,7 +23,12 @@ typedef struct {
 enum {
     TD_A, TD_B, TD_C, TD_D, TD_E, TD_F, TD_G, TD_H, TD_I, TD_J,
     TD_K, TD_L, TD_M, TD_N, TD_O, TD_P, TD_Q, TD_R, TD_S, TD_T,
-    TD_U, TD_V, TD_W, TD_X, TD_Y, TD_Z
+    TD_U, TD_V, TD_W, TD_X, TD_Y, TD_Z,
+    TD_SL_B,
+    TD_PRN,
+    TD_BRC,
+    TD_BRCT,
+    TD_QT
 };
 
 td_state_t cur_dance(tap_dance_state_t *state);
