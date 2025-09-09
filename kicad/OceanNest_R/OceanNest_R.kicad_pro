@@ -466,7 +466,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "ErgoNest_R.kicad_pro",
+    "filename": "OceanNest_R.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -505,7 +505,7 @@
       "plot": "",
       "pos_files": "",
       "specctra_dsn": "ErgoNest_R.dsn",
-      "step": "",
+      "step": "OceanNest_R.step",
       "svg": "",
       "vrml": ""
     },

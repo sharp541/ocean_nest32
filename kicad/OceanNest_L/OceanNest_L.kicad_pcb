@@ -117,26 +117,27 @@
 	(net 37 "unconnected-(U1-Pad2)")
 	(net 38 "unconnected-(U1-Pad11)")
 	(net 39 "unconnected-(U1-3V3-Pad30)")
-	(footprint "kbd_Parts:Diode_SMD"
+	(footprint "isw-kbd:Diode_SMD"
 		(layer "F.Cu")
 		(uuid "023ce098-b8b3-4390-8d37-487b3d0d760e")
 		(at 142.158 78.08)
 		(descr "Resitance 3 pas")
 		(tags "R")
 		(property "Reference" "D8"
-			(at 0 1.4 0)
+			(at -3.157144 0 0)
+			(unlocked yes)
 			(layer "B.SilkS")
 			(uuid "2d403191-13e1-49cf-8179-419db2e86388")
 			(effects
 				(font
-					(size 0.8 0.8)
+					(size 1 1)
 					(thickness 0.125)
 				)
-				(justify mirror)
+				(justify left mirror)
 			)
 		)
 		(property "Value" "D"
-			(at -0.6 0 0)
+			(at 0 -0.313125 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "07ef0c3d-63c7-4b5d-95d7-ac31c74bcba3")
@@ -147,7 +148,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -159,7 +160,7 @@
 				)
 			)
 		)
-		(property "Description" "Diode"
+		(property "Description" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -201,27 +202,7 @@
 		(path "/f0be9ce3-47e2-4eeb-9d7f-8636de87776b")
 		(sheetname "/")
 		(sheetfile "ErgoNest_L.kicad_sch")
-		(attr smd)
-		(fp_line
-			(start -2.7 -0.75)
-			(end -2.7 0.75)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "B.SilkS")
-			(uuid "8e4ad78b-5133-4a19-a570-b3d0d39693c1")
-		)
-		(fp_line
-			(start -2.7 0.75)
-			(end 2.7 0.75)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "B.SilkS")
-			(uuid "7365b229-8de6-41c4-920f-cfb9be152130")
-		)
+		(attr through_hole)
 		(fp_line
 			(start -0.5 -0.5)
 			(end -0.5 0.5)
@@ -230,7 +211,7 @@
 				(type solid)
 			)
 			(layer "B.SilkS")
-			(uuid "8285f03d-b6d0-425a-9b5b-078c1002fdb5")
+			(uuid "9a646546-91bb-4e01-9289-922d69f47048")
 		)
 		(fp_line
 			(start -0.4 0)
@@ -240,7 +221,7 @@
 				(type solid)
 			)
 			(layer "B.SilkS")
-			(uuid "3a71bfc3-e2ac-4ccf-9d5b-1ebd10f397ab")
+			(uuid "2e428ff6-61d0-47e0-8092-3af640aa4886")
 		)
 		(fp_line
 			(start 0.5 -0.5)
@@ -250,7 +231,7 @@
 				(type solid)
 			)
 			(layer "B.SilkS")
-			(uuid "97d7b49a-2a9d-4f44-be79-e59dc214dbb8")
+			(uuid "7822e6d5-af0a-48d6-9392-1a36bfcc8d0c")
 		)
 		(fp_line
 			(start 0.5 0.5)
@@ -260,31 +241,77 @@
 				(type solid)
 			)
 			(layer "B.SilkS")
-			(uuid "9b826b81-f06d-435a-9895-ca3fd47acb16")
+			(uuid "cc060c70-8245-484c-95c8-cd3f6e26b52c")
+		)
+		(fp_poly
+			(pts
+				(xy -2.635868 0.80055) (xy -3.198439 0.80055) (xy -3.198439 -0.799699) (xy -2.635868 -0.799699)
+			)
+			(stroke
+				(width -0.000001)
+				(type solid)
+			)
+			(fill yes)
+			(layer "B.SilkS")
+			(uuid "fbee73d8-0b76-43f5-8761-a61a7ec5eb42")
+		)
+		(fp_poly
+			(pts
+				(xy 3.19853 0.800292) (xy -3.201338 0.800292) (xy -3.201338 0.651431) (xy -3.053026 0.651431) (xy 3.050219 0.651431)
+				(xy 3.050219 -0.649232) (xy -3.053026 -0.649232) (xy -3.053026 0.651431) (xy -3.201338 0.651431)
+				(xy -3.201338 -0.800709) (xy 3.19853 -0.800709)
+			)
+			(stroke
+				(width -0.000001)
+				(type solid)
+			)
+			(fill yes)
+			(layer "B.SilkS")
+			(uuid "ba4d5ea4-ecdd-4c8d-8fb1-545d361fc157")
 		)
 		(fp_line
-			(start 2.7 -0.75)
-			(end -2.7 -0.75)
+			(start -4.8 -1.15)
+			(end -4.8 1.15)
 			(stroke
 				(width 0.15)
 				(type solid)
 			)
-			(layer "B.SilkS")
-			(uuid "f9437641-ff87-4b95-9903-e98f0c622d03")
+			(layer "B.Fab")
+			(uuid "1fde0b8b-71b6-47fc-a4a6-7920467506be")
 		)
 		(fp_line
-			(start 2.7 0.75)
-			(end 2.7 -0.75)
+			(start 4.8 -1.15)
+			(end -4.8 -1.15)
 			(stroke
 				(width 0.15)
 				(type solid)
 			)
-			(layer "B.SilkS")
-			(uuid "2313f171-3482-4459-8483-219e8ed471be")
+			(layer "B.Fab")
+			(uuid "99457712-52b1-41b0-b2a4-98fe5ee84602")
+		)
+		(fp_line
+			(start 4.8 -1.15)
+			(end 4.8 1.15)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "da68c571-96e3-4a48-bae4-fe5e4a6449b1")
+		)
+		(fp_line
+			(start 4.8 1.15)
+			(end -4.8 1.15)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "5c0f9a1a-9e30-4f50-811d-9320e0b2854b")
 		)
 		(pad "1" smd rect
 			(at -1.775 0)
-			(size 1.3 0.95)
+			(size 1.4 0.94)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net 6 "row1")
 			(pinfunction "K")
@@ -293,7 +320,7 @@
 		)
 		(pad "2" smd rect
 			(at 1.775 0)
-			(size 1.3 0.95)
+			(size 1.4 0.94)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net 10 "Net-(D8-A)")
 			(pinfunction "A")
@@ -301,38 +328,39 @@
 			(uuid "e8726fff-cd8c-4aa3-a012-3027312d8f0f")
 		)
 		(embedded_fonts no)
-		(model "Diodes_SMD.3dshapes/SMB_Handsoldering.wrl"
+		(model "${KIGITHUB3D}/Diode_SMD.3dshapes/D_SOD-123.step"
 			(offset
 				(xyz 0 0 0)
 			)
 			(scale
-				(xyz 0.22 0.15 0.15)
+				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 180)
+				(xyz 0 0 0)
 			)
 		)
 	)
-	(footprint "kbd_Parts:Diode_SMD"
+	(footprint "isw-kbd:Diode_SMD"
 		(layer "F.Cu")
 		(uuid "039add76-6327-4f4b-8f49-187916f2b59f")
 		(at 158.158 66.08)
 		(descr "Resitance 3 pas")
 		(tags "R")
 		(property "Reference" "D4"
-			(at 0 1.4 0)
+			(at -3.157144 0 0)
+			(unlocked yes)
 			(layer "B.SilkS")
 			(uuid "9c04862b-1117-424a-a7db-7f3546e24bb4")
 			(effects
 				(font
-					(size 0.8 0.8)
+					(size 1 1)
 					(thickness 0.125)
 				)
-				(justify mirror)
+				(justify left mirror)
 			)
 		)
 		(property "Value" "D"
-			(at -0.6 0 0)
+			(at 0 -0.313125 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "1584fdba-50d6-425b-9588-6467d408b03a")
@@ -343,7 +371,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -355,7 +383,7 @@
 				)
 			)
 		)
-		(property "Description" "Diode"
+		(property "Description" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -397,27 +425,7 @@
 		(path "/3873567f-9a7d-45bb-9f1f-7d318cbcfa94")
 		(sheetname "/")
 		(sheetfile "ErgoNest_L.kicad_sch")
-		(attr smd)
-		(fp_line
-			(start -2.7 -0.75)
-			(end -2.7 0.75)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "B.SilkS")
-			(uuid "a7e959f0-ff0d-42a1-9a7d-ed14a022af73")
-		)
-		(fp_line
-			(start -2.7 0.75)
-			(end 2.7 0.75)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "B.SilkS")
-			(uuid "2d20d01a-c39e-4f73-a156-818faa17d576")
-		)
+		(attr through_hole)
 		(fp_line
 			(start -0.5 -0.5)
 			(end -0.5 0.5)
@@ -426,7 +434,7 @@
 				(type solid)
 			)
 			(layer "B.SilkS")
-			(uuid "49ee61ec-8a6c-4948-9f9f-e727ef38c2e9")
+			(uuid "8ab27629-6e8d-4786-a5a8-a3c189e70df6")
 		)
 		(fp_line
 			(start -0.4 0)
@@ -436,7 +444,7 @@
 				(type solid)
 			)
 			(layer "B.SilkS")
-			(uuid "539a5a61-d12f-4626-af35-068f3a56233f")
+			(uuid "0a153bc3-92f4-4c94-b56e-df725f8cad8c")
 		)
 		(fp_line
 			(start 0.5 -0.5)
@@ -446,7 +454,7 @@
 				(type solid)
 			)
 			(layer "B.SilkS")
-			(uuid "bc0f29eb-4ef0-4800-ae81-e173a41ae3a6")
+			(uuid "fa3f9874-950f-403e-a8bb-32ebaccb2409")
 		)
 		(fp_line
 			(start 0.5 0.5)
@@ -456,31 +464,77 @@
 				(type solid)
 			)
 			(layer "B.SilkS")
-			(uuid "a7078967-ff8a-437f-8790-f7912a8163b7")
+			(uuid "acdfdbe2-45f9-4c06-b837-122a981cb82f")
+		)
+		(fp_poly
+			(pts
+				(xy -2.635868 0.80055) (xy -3.198439 0.80055) (xy -3.198439 -0.799699) (xy -2.635868 -0.799699)
+			)
+			(stroke
+				(width -0.000001)
+				(type solid)
+			)
+			(fill yes)
+			(layer "B.SilkS")
+			(uuid "e6ffc631-dc14-4afc-b000-14ea5425c2be")
+		)
+		(fp_poly
+			(pts
+				(xy 3.19853 0.800292) (xy -3.201338 0.800292) (xy -3.201338 0.651431) (xy -3.053026 0.651431) (xy 3.050219 0.651431)
+				(xy 3.050219 -0.649232) (xy -3.053026 -0.649232) (xy -3.053026 0.651431) (xy -3.201338 0.651431)
+				(xy -3.201338 -0.800709) (xy 3.19853 -0.800709)
+			)
+			(stroke
+				(width -0.000001)
+				(type solid)
+			)
+			(fill yes)
+			(layer "B.SilkS")
+			(uuid "89e93384-b72e-405e-93a0-909a3eec1b16")
 		)
 		(fp_line
-			(start 2.7 -0.75)
-			(end -2.7 -0.75)
+			(start -4.8 -1.15)
+			(end -4.8 1.15)
 			(stroke
 				(width 0.15)
 				(type solid)
 			)
-			(layer "B.SilkS")
-			(uuid "74093e38-2105-4ecc-bff7-1eeca72795e8")
+			(layer "B.Fab")
+			(uuid "21e52567-176b-4937-8b9d-c4b3b6e3e891")
 		)
 		(fp_line
-			(start 2.7 0.75)
-			(end 2.7 -0.75)
+			(start 4.8 -1.15)
+			(end -4.8 -1.15)
 			(stroke
 				(width 0.15)
 				(type solid)
 			)
-			(layer "B.SilkS")
-			(uuid "91c43795-0eaa-4237-a9e9-e54f8232e993")
+			(layer "B.Fab")
+			(uuid "b17219df-8472-4793-9ffc-7371c8ef2d4c")
+		)
+		(fp_line
+			(start 4.8 -1.15)
+			(end 4.8 1.15)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "d7bbb54f-70c6-4be0-9c1a-c8a25c352b0f")
+		)
+		(fp_line
+			(start 4.8 1.15)
+			(end -4.8 1.15)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "40f023c5-5691-4711-a5c5-f3edd05822fd")
 		)
 		(pad "1" smd rect
 			(at -1.775 0)
-			(size 1.3 0.95)
+			(size 1.4 0.94)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net 1 "row0")
 			(pinfunction "K")
@@ -489,7 +543,7 @@
 		)
 		(pad "2" smd rect
 			(at 1.775 0)
-			(size 1.3 0.95)
+			(size 1.4 0.94)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net 5 "Net-(D4-A)")
 			(pinfunction "A")
@@ -497,15 +551,15 @@
 			(uuid "532e786c-2d7d-45fb-b499-cb118483320d")
 		)
 		(embedded_fonts no)
-		(model "Diodes_SMD.3dshapes/SMB_Handsoldering.wrl"
+		(model "${KIGITHUB3D}/Diode_SMD.3dshapes/D_SOD-123.step"
 			(offset
 				(xyz 0 0 0)
 			)
 			(scale
-				(xyz 0.22 0.15 0.15)
+				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 180)
+				(xyz 0 0 0)
 			)
 		)
 	)
@@ -2799,26 +2853,27 @@
 			)
 		)
 	)
-	(footprint "kbd_Parts:Diode_SMD"
+	(footprint "isw-kbd:Diode_SMD"
 		(layer "F.Cu")
 		(uuid "4e6dc7d6-4324-428f-8b21-98df09cd9c20")
 		(at 158.158 98.08)
 		(descr "Resitance 3 pas")
 		(tags "R")
 		(property "Reference" "D13"
-			(at 0 1.4 0)
+			(at -3.157144 0 0)
+			(unlocked yes)
 			(layer "B.SilkS")
 			(uuid "2792d20f-f507-4dce-8df1-a11b076a5040")
 			(effects
 				(font
-					(size 0.8 0.8)
+					(size 1 1)
 					(thickness 0.125)
 				)
-				(justify mirror)
+				(justify left mirror)
 			)
 		)
 		(property "Value" "D"
-			(at -0.6 0 0)
+			(at 0 -0.313125 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "0ae7e8e8-0744-47b1-ba0f-011fef40d4bf")
@@ -2829,7 +2884,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -2841,7 +2896,7 @@
 				)
 			)
 		)
-		(property "Description" "Diode"
+		(property "Description" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -2883,27 +2938,7 @@
 		(path "/70cbfed5-47de-439e-8866-d81c52e17168")
 		(sheetname "/")
 		(sheetfile "ErgoNest_L.kicad_sch")
-		(attr smd)
-		(fp_line
-			(start -2.7 -0.75)
-			(end -2.7 0.75)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "B.SilkS")
-			(uuid "51629d98-97ee-44e4-9a27-fb4821d09bd7")
-		)
-		(fp_line
-			(start -2.7 0.75)
-			(end 2.7 0.75)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "B.SilkS")
-			(uuid "a0ce5569-731f-457c-875d-3f15bdd36cce")
-		)
+		(attr through_hole)
 		(fp_line
 			(start -0.5 -0.5)
 			(end -0.5 0.5)
@@ -2912,7 +2947,7 @@
 				(type solid)
 			)
 			(layer "B.SilkS")
-			(uuid "807dfdf1-df73-4992-84b9-8edca20c98f5")
+			(uuid "f68d7d3a-a8f1-4a9c-8fc1-0626c39f0bb8")
 		)
 		(fp_line
 			(start -0.4 0)
@@ -2922,7 +2957,7 @@
 				(type solid)
 			)
 			(layer "B.SilkS")
-			(uuid "9a6c880c-c603-492b-9a10-aff69019d7c9")
+			(uuid "98e6ce8e-e442-4137-bc8b-a21475aee3d4")
 		)
 		(fp_line
 			(start 0.5 -0.5)
@@ -2932,7 +2967,7 @@
 				(type solid)
 			)
 			(layer "B.SilkS")
-			(uuid "f9ace036-5cbf-4155-884e-bf4c44033df4")
+			(uuid "c08606f2-8380-404d-b95a-d86137fcfb09")
 		)
 		(fp_line
 			(start 0.5 0.5)
@@ -2942,31 +2977,77 @@
 				(type solid)
 			)
 			(layer "B.SilkS")
-			(uuid "31963ade-05fb-4d55-803f-038ca4f5b6ba")
+			(uuid "89b81d03-38ff-426e-9d93-d03a4fae733b")
+		)
+		(fp_poly
+			(pts
+				(xy -2.635868 0.80055) (xy -3.198439 0.80055) (xy -3.198439 -0.799699) (xy -2.635868 -0.799699)
+			)
+			(stroke
+				(width -0.000001)
+				(type solid)
+			)
+			(fill yes)
+			(layer "B.SilkS")
+			(uuid "eb5b15e9-8360-4953-a41d-032c2230c904")
+		)
+		(fp_poly
+			(pts
+				(xy 3.19853 0.800292) (xy -3.201338 0.800292) (xy -3.201338 0.651431) (xy -3.053026 0.651431) (xy 3.050219 0.651431)
+				(xy 3.050219 -0.649232) (xy -3.053026 -0.649232) (xy -3.053026 0.651431) (xy -3.201338 0.651431)
+				(xy -3.201338 -0.800709) (xy 3.19853 -0.800709)
+			)
+			(stroke
+				(width -0.000001)
+				(type solid)
+			)
+			(fill yes)
+			(layer "B.SilkS")
+			(uuid "8183b522-10e3-43ee-a3ad-60341db685a7")
 		)
 		(fp_line
-			(start 2.7 -0.75)
-			(end -2.7 -0.75)
+			(start -4.8 -1.15)
+			(end -4.8 1.15)
 			(stroke
 				(width 0.15)
 				(type solid)
 			)
-			(layer "B.SilkS")
-			(uuid "d617a596-f45d-418b-90d1-0650da7d9dfa")
+			(layer "B.Fab")
+			(uuid "87d2f194-b194-430a-b0b1-0167620b18d8")
 		)
 		(fp_line
-			(start 2.7 0.75)
-			(end 2.7 -0.75)
+			(start 4.8 -1.15)
+			(end -4.8 -1.15)
 			(stroke
 				(width 0.15)
 				(type solid)
 			)
-			(layer "B.SilkS")
-			(uuid "e00cdba6-441e-4a99-b7b4-91fc5cd3051f")
+			(layer "B.Fab")
+			(uuid "b93baebc-f61c-4987-b669-900d096a7032")
+		)
+		(fp_line
+			(start 4.8 -1.15)
+			(end 4.8 1.15)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "39d8fe91-497b-4fc4-95c4-7ac30e94be94")
+		)
+		(fp_line
+			(start 4.8 1.15)
+			(end -4.8 1.15)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "7a23875f-6f6c-4603-93df-038de4e4d885")
 		)
 		(pad "1" smd rect
 			(at -1.775 0)
-			(size 1.3 0.95)
+			(size 1.4 0.94)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net 13 "row2")
 			(pinfunction "K")
@@ -2975,7 +3056,7 @@
 		)
 		(pad "2" smd rect
 			(at 1.775 0)
-			(size 1.3 0.95)
+			(size 1.4 0.94)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net 16 "Net-(D13-A)")
 			(pinfunction "A")
@@ -2983,38 +3064,39 @@
 			(uuid "d74f20eb-f9ca-439e-b14a-c565d3b0b4ce")
 		)
 		(embedded_fonts no)
-		(model "Diodes_SMD.3dshapes/SMB_Handsoldering.wrl"
+		(model "${KIGITHUB3D}/Diode_SMD.3dshapes/D_SOD-123.step"
 			(offset
 				(xyz 0 0 0)
 			)
 			(scale
-				(xyz 0.22 0.15 0.15)
+				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 180)
+				(xyz 0 0 0)
 			)
 		)
 	)
-	(footprint "kbd_Parts:Diode_SMD"
+	(footprint "isw-kbd:Diode_SMD"
 		(layer "F.Cu")
 		(uuid "552cdada-7447-4b15-9d3f-8de2ec9adf1a")
 		(at 110.158 66.08)
 		(descr "Resitance 3 pas")
 		(tags "R")
 		(property "Reference" "D1"
-			(at 0 1.4 0)
+			(at -3.157144 0 0)
+			(unlocked yes)
 			(layer "B.SilkS")
 			(uuid "5d9695c5-e052-44dc-a9f9-f87e1f5645d4")
 			(effects
 				(font
-					(size 0.8 0.8)
+					(size 1 1)
 					(thickness 0.125)
 				)
-				(justify mirror)
+				(justify left mirror)
 			)
 		)
 		(property "Value" "D"
-			(at -0.6 0 0)
+			(at 0 -0.313125 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "f8abc0c2-f44a-4783-b16f-c50bd5032a5f")
@@ -3025,7 +3107,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -3037,7 +3119,7 @@
 				)
 			)
 		)
-		(property "Description" "Diode"
+		(property "Description" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -3079,27 +3161,7 @@
 		(path "/5cee32b7-eaea-4396-a291-c0d8e8800d6a")
 		(sheetname "/")
 		(sheetfile "ErgoNest_L.kicad_sch")
-		(attr smd)
-		(fp_line
-			(start -2.7 -0.75)
-			(end -2.7 0.75)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "B.SilkS")
-			(uuid "4996d1f3-4178-4dbf-aaf8-67fca940b7fd")
-		)
-		(fp_line
-			(start -2.7 0.75)
-			(end 2.7 0.75)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "B.SilkS")
-			(uuid "6da74281-bedd-401c-8f7b-3e4f3d905a86")
-		)
+		(attr through_hole)
 		(fp_line
 			(start -0.5 -0.5)
 			(end -0.5 0.5)
@@ -3108,7 +3170,7 @@
 				(type solid)
 			)
 			(layer "B.SilkS")
-			(uuid "cfded2a8-ffbe-4f97-b9c1-6772c6a74df0")
+			(uuid "b6314ee9-a876-4cf3-be45-90b0426fe1e3")
 		)
 		(fp_line
 			(start -0.4 0)
@@ -3118,7 +3180,7 @@
 				(type solid)
 			)
 			(layer "B.SilkS")
-			(uuid "758cb471-4394-4365-9644-7debe7add22d")
+			(uuid "9c70ee83-c9de-482e-9137-c90e3ab01743")
 		)
 		(fp_line
 			(start 0.5 -0.5)
@@ -3128,7 +3190,7 @@
 				(type solid)
 			)
 			(layer "B.SilkS")
-			(uuid "28305c31-1629-4fa9-b86a-ba6de2835a00")
+			(uuid "6bdd88b8-851f-40ea-aba6-ceb332f5289a")
 		)
 		(fp_line
 			(start 0.5 0.5)
@@ -3138,31 +3200,77 @@
 				(type solid)
 			)
 			(layer "B.SilkS")
-			(uuid "9638d0c9-e340-419a-9257-865427128dab")
+			(uuid "cf330ee8-2b49-4bd4-9163-78c654e9abbe")
+		)
+		(fp_poly
+			(pts
+				(xy -2.635868 0.80055) (xy -3.198439 0.80055) (xy -3.198439 -0.799699) (xy -2.635868 -0.799699)
+			)
+			(stroke
+				(width -0.000001)
+				(type solid)
+			)
+			(fill yes)
+			(layer "B.SilkS")
+			(uuid "30baf41e-0cba-43d2-ba80-6814b9325bd4")
+		)
+		(fp_poly
+			(pts
+				(xy 3.19853 0.800292) (xy -3.201338 0.800292) (xy -3.201338 0.651431) (xy -3.053026 0.651431) (xy 3.050219 0.651431)
+				(xy 3.050219 -0.649232) (xy -3.053026 -0.649232) (xy -3.053026 0.651431) (xy -3.201338 0.651431)
+				(xy -3.201338 -0.800709) (xy 3.19853 -0.800709)
+			)
+			(stroke
+				(width -0.000001)
+				(type solid)
+			)
+			(fill yes)
+			(layer "B.SilkS")
+			(uuid "c404d6ea-4939-481a-b837-5a2553949107")
 		)
 		(fp_line
-			(start 2.7 -0.75)
-			(end -2.7 -0.75)
+			(start -4.8 -1.15)
+			(end -4.8 1.15)
 			(stroke
 				(width 0.15)
 				(type solid)
 			)
-			(layer "B.SilkS")
-			(uuid "bc670380-ab06-46f0-9828-647c3d8f913a")
+			(layer "B.Fab")
+			(uuid "9a7150ef-1d8c-4d75-ad49-a7572f1bdf1c")
 		)
 		(fp_line
-			(start 2.7 0.75)
-			(end 2.7 -0.75)
+			(start 4.8 -1.15)
+			(end -4.8 -1.15)
 			(stroke
 				(width 0.15)
 				(type solid)
 			)
-			(layer "B.SilkS")
-			(uuid "52ca6e7e-8526-4bfa-b636-10e644d592e5")
+			(layer "B.Fab")
+			(uuid "f4e753a7-2201-478a-9e71-5806b8533538")
+		)
+		(fp_line
+			(start 4.8 -1.15)
+			(end 4.8 1.15)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "137bf544-6158-4aaf-963c-624c7c3fde94")
+		)
+		(fp_line
+			(start 4.8 1.15)
+			(end -4.8 1.15)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "ce7833cf-646c-437c-95a2-7df59291daa0")
 		)
 		(pad "1" smd rect
 			(at -1.775 0)
-			(size 1.3 0.95)
+			(size 1.4 0.94)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net 1 "row0")
 			(pinfunction "K")
@@ -3171,7 +3279,7 @@
 		)
 		(pad "2" smd rect
 			(at 1.775 0)
-			(size 1.3 0.95)
+			(size 1.4 0.94)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net 2 "Net-(D1-A)")
 			(pinfunction "A")
@@ -3179,38 +3287,39 @@
 			(uuid "e2f95ce3-2b55-4a48-8e2c-6fbff5809040")
 		)
 		(embedded_fonts no)
-		(model "Diodes_SMD.3dshapes/SMB_Handsoldering.wrl"
+		(model "${KIGITHUB3D}/Diode_SMD.3dshapes/D_SOD-123.step"
 			(offset
 				(xyz 0 0 0)
 			)
 			(scale
-				(xyz 0.22 0.15 0.15)
+				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 180)
+				(xyz 0 0 0)
 			)
 		)
 	)
-	(footprint "kbd_Parts:Diode_SMD"
+	(footprint "isw-kbd:Diode_SMD"
 		(layer "F.Cu")
 		(uuid "580210e6-5e69-45ca-a3c1-0447f1640b2c")
 		(at 126.158 80.08)
 		(descr "Resitance 3 pas")
 		(tags "R")
 		(property "Reference" "D7"
-			(at 0 1.4 0)
+			(at -3.157144 0 0)
+			(unlocked yes)
 			(layer "B.SilkS")
 			(uuid "76582ae3-ce36-413a-bf89-a4b9fc786edc")
 			(effects
 				(font
-					(size 0.8 0.8)
+					(size 1 1)
 					(thickness 0.125)
 				)
-				(justify mirror)
+				(justify left mirror)
 			)
 		)
 		(property "Value" "D"
-			(at -0.6 0 0)
+			(at 0 -0.313125 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "6359dc8a-5bbd-4054-9665-7e8a8d853431")
@@ -3221,7 +3330,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -3233,7 +3342,7 @@
 				)
 			)
 		)
-		(property "Description" "Diode"
+		(property "Description" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -3275,27 +3384,7 @@
 		(path "/6a9ed3bd-fcea-4646-a154-c41239b2227e")
 		(sheetname "/")
 		(sheetfile "ErgoNest_L.kicad_sch")
-		(attr smd)
-		(fp_line
-			(start -2.7 -0.75)
-			(end -2.7 0.75)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "B.SilkS")
-			(uuid "74c1e410-97b0-49d5-81d8-b02a81c5fc53")
-		)
-		(fp_line
-			(start -2.7 0.75)
-			(end 2.7 0.75)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "B.SilkS")
-			(uuid "257ff8eb-2548-4e38-9392-4087434608cf")
-		)
+		(attr through_hole)
 		(fp_line
 			(start -0.5 -0.5)
 			(end -0.5 0.5)
@@ -3304,7 +3393,7 @@
 				(type solid)
 			)
 			(layer "B.SilkS")
-			(uuid "01f45d82-8da7-4ef8-973e-5789897a7a72")
+			(uuid "9169d35d-8d3e-47cf-8b97-89ce93b9ae47")
 		)
 		(fp_line
 			(start -0.4 0)
@@ -3314,7 +3403,7 @@
 				(type solid)
 			)
 			(layer "B.SilkS")
-			(uuid "90c420e4-8a6f-48f4-9292-f5920b197f69")
+			(uuid "85ceb2e7-40f0-43bb-a827-4513734b5928")
 		)
 		(fp_line
 			(start 0.5 -0.5)
@@ -3324,7 +3413,7 @@
 				(type solid)
 			)
 			(layer "B.SilkS")
-			(uuid "02f6a64c-d39c-4daa-a314-5af143d6e41a")
+			(uuid "511d99ca-9592-42c5-9dc1-8f347b7020f0")
 		)
 		(fp_line
 			(start 0.5 0.5)
@@ -3334,31 +3423,77 @@
 				(type solid)
 			)
 			(layer "B.SilkS")
-			(uuid "e1118b46-0602-49ee-a022-83e1799861d4")
+			(uuid "8322da24-e04a-425e-86f6-e95d42871e31")
+		)
+		(fp_poly
+			(pts
+				(xy -2.635868 0.80055) (xy -3.198439 0.80055) (xy -3.198439 -0.799699) (xy -2.635868 -0.799699)
+			)
+			(stroke
+				(width -0.000001)
+				(type solid)
+			)
+			(fill yes)
+			(layer "B.SilkS")
+			(uuid "b8e94da6-6d56-481e-9913-93f66868cd9b")
+		)
+		(fp_poly
+			(pts
+				(xy 3.19853 0.800292) (xy -3.201338 0.800292) (xy -3.201338 0.651431) (xy -3.053026 0.651431) (xy 3.050219 0.651431)
+				(xy 3.050219 -0.649232) (xy -3.053026 -0.649232) (xy -3.053026 0.651431) (xy -3.201338 0.651431)
+				(xy -3.201338 -0.800709) (xy 3.19853 -0.800709)
+			)
+			(stroke
+				(width -0.000001)
+				(type solid)
+			)
+			(fill yes)
+			(layer "B.SilkS")
+			(uuid "3de85f75-df9d-4923-82b3-c6af11cc658c")
 		)
 		(fp_line
-			(start 2.7 -0.75)
-			(end -2.7 -0.75)
+			(start -4.8 -1.15)
+			(end -4.8 1.15)
 			(stroke
 				(width 0.15)
 				(type solid)
 			)
-			(layer "B.SilkS")
-			(uuid "09ef7cfa-7068-44a9-83fa-436424ec9cc4")
+			(layer "B.Fab")
+			(uuid "2f2d7c3a-40db-431c-83b3-aaaf0f1f0886")
 		)
 		(fp_line
-			(start 2.7 0.75)
-			(end 2.7 -0.75)
+			(start 4.8 -1.15)
+			(end -4.8 -1.15)
 			(stroke
 				(width 0.15)
 				(type solid)
 			)
-			(layer "B.SilkS")
-			(uuid "7c75c404-4e34-4ea3-b112-3a6a08c6177b")
+			(layer "B.Fab")
+			(uuid "9f37c836-34b4-43cc-aa7d-58038bde98c1")
+		)
+		(fp_line
+			(start 4.8 -1.15)
+			(end 4.8 1.15)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "8899e192-dc58-4803-ae7c-8b318f2580bb")
+		)
+		(fp_line
+			(start 4.8 1.15)
+			(end -4.8 1.15)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "61e5c17d-a76a-4dbb-b232-39ab21335a22")
 		)
 		(pad "1" smd rect
 			(at -1.775 0)
-			(size 1.3 0.95)
+			(size 1.4 0.94)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net 6 "row1")
 			(pinfunction "K")
@@ -3367,7 +3502,7 @@
 		)
 		(pad "2" smd rect
 			(at 1.775 0)
-			(size 1.3 0.95)
+			(size 1.4 0.94)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net 9 "Net-(D7-A)")
 			(pinfunction "A")
@@ -3375,38 +3510,39 @@
 			(uuid "b96bc356-a87e-464e-b48d-bd550bab49fc")
 		)
 		(embedded_fonts no)
-		(model "Diodes_SMD.3dshapes/SMB_Handsoldering.wrl"
+		(model "${KIGITHUB3D}/Diode_SMD.3dshapes/D_SOD-123.step"
 			(offset
 				(xyz 0 0 0)
 			)
 			(scale
-				(xyz 0.22 0.15 0.15)
+				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 180)
+				(xyz 0 0 0)
 			)
 		)
 	)
-	(footprint "kbd_Parts:Diode_SMD"
+	(footprint "isw-kbd:Diode_SMD"
 		(layer "F.Cu")
 		(uuid "5904b9c6-52e1-44c3-9f14-4f7fe5fd0c8e")
 		(at 142.158 62.08)
 		(descr "Resitance 3 pas")
 		(tags "R")
 		(property "Reference" "D3"
-			(at 0 1.4 0)
+			(at -3.157144 0 0)
+			(unlocked yes)
 			(layer "B.SilkS")
 			(uuid "98ce9ac5-46d2-40f6-b7b3-05c4ac4ad547")
 			(effects
 				(font
-					(size 0.8 0.8)
+					(size 1 1)
 					(thickness 0.125)
 				)
-				(justify mirror)
+				(justify left mirror)
 			)
 		)
 		(property "Value" "D"
-			(at -0.6 0 0)
+			(at 0 -0.313125 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "625a6418-61b3-4bd7-8e1e-a534c202ff78")
@@ -3417,7 +3553,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -3429,7 +3565,7 @@
 				)
 			)
 		)
-		(property "Description" "Diode"
+		(property "Description" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -3471,27 +3607,7 @@
 		(path "/5ae1ca3d-a5fe-472f-bc30-0790bd700323")
 		(sheetname "/")
 		(sheetfile "ErgoNest_L.kicad_sch")
-		(attr smd)
-		(fp_line
-			(start -2.7 -0.75)
-			(end -2.7 0.75)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "B.SilkS")
-			(uuid "4638aba4-d550-495e-92e3-28de262612ec")
-		)
-		(fp_line
-			(start -2.7 0.75)
-			(end 2.7 0.75)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "B.SilkS")
-			(uuid "d6f85ceb-4fc5-4130-83f8-e91992a475bb")
-		)
+		(attr through_hole)
 		(fp_line
 			(start -0.5 -0.5)
 			(end -0.5 0.5)
@@ -3500,7 +3616,7 @@
 				(type solid)
 			)
 			(layer "B.SilkS")
-			(uuid "76183175-e0ae-44e0-8671-beb4e5628a9a")
+			(uuid "7043c9fb-b98b-42cc-b4e2-e6db0a1aaa77")
 		)
 		(fp_line
 			(start -0.4 0)
@@ -3510,7 +3626,7 @@
 				(type solid)
 			)
 			(layer "B.SilkS")
-			(uuid "e0ef3e4e-d0f8-4e4d-9d7c-540f0fe4f9bc")
+			(uuid "252be698-216c-4d68-a6b2-f38b711d46f5")
 		)
 		(fp_line
 			(start 0.5 -0.5)
@@ -3520,7 +3636,7 @@
 				(type solid)
 			)
 			(layer "B.SilkS")
-			(uuid "ffec638d-e921-4d71-9fe7-1c516e9234f1")
+			(uuid "11720992-4dbe-413e-9863-e19f7f7d898f")
 		)
 		(fp_line
 			(start 0.5 0.5)
@@ -3530,31 +3646,77 @@
 				(type solid)
 			)
 			(layer "B.SilkS")
-			(uuid "9ed1b6f3-c929-4cf2-9eda-baedf0ad8a9b")
+			(uuid "d6faacb0-31e5-484e-9c45-2d63ea88bac4")
+		)
+		(fp_poly
+			(pts
+				(xy -2.635868 0.80055) (xy -3.198439 0.80055) (xy -3.198439 -0.799699) (xy -2.635868 -0.799699)
+			)
+			(stroke
+				(width -0.000001)
+				(type solid)
+			)
+			(fill yes)
+			(layer "B.SilkS")
+			(uuid "f12b3195-71a9-47e9-b97b-8b383cf09ab6")
+		)
+		(fp_poly
+			(pts
+				(xy 3.19853 0.800292) (xy -3.201338 0.800292) (xy -3.201338 0.651431) (xy -3.053026 0.651431) (xy 3.050219 0.651431)
+				(xy 3.050219 -0.649232) (xy -3.053026 -0.649232) (xy -3.053026 0.651431) (xy -3.201338 0.651431)
+				(xy -3.201338 -0.800709) (xy 3.19853 -0.800709)
+			)
+			(stroke
+				(width -0.000001)
+				(type solid)
+			)
+			(fill yes)
+			(layer "B.SilkS")
+			(uuid "6b9d69f9-eeac-45e8-8b76-bbe6d3344d0a")
 		)
 		(fp_line
-			(start 2.7 -0.75)
-			(end -2.7 -0.75)
+			(start -4.8 -1.15)
+			(end -4.8 1.15)
 			(stroke
 				(width 0.15)
 				(type solid)
 			)
-			(layer "B.SilkS")
-			(uuid "8483f35b-ed18-44d9-befa-cf1b07ea037c")
+			(layer "B.Fab")
+			(uuid "eac75215-9fd2-4208-afa9-3a8f10d9feb4")
 		)
 		(fp_line
-			(start 2.7 0.75)
-			(end 2.7 -0.75)
+			(start 4.8 -1.15)
+			(end -4.8 -1.15)
 			(stroke
 				(width 0.15)
 				(type solid)
 			)
-			(layer "B.SilkS")
-			(uuid "e0e60f0c-d900-4c37-a8fa-53ff21735bd0")
+			(layer "B.Fab")
+			(uuid "9b21806f-e5de-4e5e-9b25-bb98207c1b70")
+		)
+		(fp_line
+			(start 4.8 -1.15)
+			(end 4.8 1.15)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "538cf282-a36e-4339-b454-7facffb79be7")
+		)
+		(fp_line
+			(start 4.8 1.15)
+			(end -4.8 1.15)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "95122184-b1ef-4543-8cd4-4bf561a3c341")
 		)
 		(pad "1" smd rect
 			(at -1.775 0)
-			(size 1.3 0.95)
+			(size 1.4 0.94)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net 1 "row0")
 			(pinfunction "K")
@@ -3563,7 +3725,7 @@
 		)
 		(pad "2" smd rect
 			(at 1.775 0)
-			(size 1.3 0.95)
+			(size 1.4 0.94)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net 4 "Net-(D3-A)")
 			(pinfunction "A")
@@ -3571,15 +3733,15 @@
 			(uuid "38987c5b-769e-4f31-86cc-37ed52545c54")
 		)
 		(embedded_fonts no)
-		(model "Diodes_SMD.3dshapes/SMB_Handsoldering.wrl"
+		(model "${KIGITHUB3D}/Diode_SMD.3dshapes/D_SOD-123.step"
 			(offset
 				(xyz 0 0 0)
 			)
 			(scale
-				(xyz 0.22 0.15 0.15)
+				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 180)
+				(xyz 0 0 0)
 			)
 		)
 	)
@@ -7954,26 +8116,27 @@
 			)
 		)
 	)
-	(footprint "kbd_Parts:Diode_SMD"
+	(footprint "isw-kbd:Diode_SMD"
 		(layer "F.Cu")
 		(uuid "728d5ab5-f1bb-4712-ac71-13e7bffb08b9")
 		(at 174.158 86.08)
 		(descr "Resitance 3 pas")
 		(tags "R")
 		(property "Reference" "D10"
-			(at 0 1.4 0)
+			(at -3.157144 0 0)
+			(unlocked yes)
 			(layer "B.SilkS")
 			(uuid "c2b383bd-bb21-45e2-97c4-b49fc6680f2b")
 			(effects
 				(font
-					(size 0.8 0.8)
+					(size 1 1)
 					(thickness 0.125)
 				)
-				(justify mirror)
+				(justify left mirror)
 			)
 		)
 		(property "Value" "D"
-			(at -0.6 0 0)
+			(at 0 -0.313125 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "6da67244-3c29-4b8b-9c50-446f21072c17")
@@ -7984,7 +8147,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -7996,7 +8159,7 @@
 				)
 			)
 		)
-		(property "Description" "Diode"
+		(property "Description" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -8038,27 +8201,7 @@
 		(path "/06af846e-357e-42dd-a23d-d4f8d60bcc8f")
 		(sheetname "/")
 		(sheetfile "ErgoNest_L.kicad_sch")
-		(attr smd)
-		(fp_line
-			(start -2.7 -0.75)
-			(end -2.7 0.75)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "B.SilkS")
-			(uuid "5c69d57b-e91b-4f6f-9b41-d85231d13cf7")
-		)
-		(fp_line
-			(start -2.7 0.75)
-			(end 2.7 0.75)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "B.SilkS")
-			(uuid "532df639-29a8-4fc3-bfca-eeb033646574")
-		)
+		(attr through_hole)
 		(fp_line
 			(start -0.5 -0.5)
 			(end -0.5 0.5)
@@ -8067,7 +8210,7 @@
 				(type solid)
 			)
 			(layer "B.SilkS")
-			(uuid "88fecb19-3d16-4d8e-84e8-c2607a7660fa")
+			(uuid "54562f0f-ea5a-4ebd-acad-4d1925d90318")
 		)
 		(fp_line
 			(start -0.4 0)
@@ -8077,7 +8220,7 @@
 				(type solid)
 			)
 			(layer "B.SilkS")
-			(uuid "7db7e4dd-5584-4e13-804b-68f9e528a1a4")
+			(uuid "cdd9fe7b-f841-4027-94cf-1815d50826ec")
 		)
 		(fp_line
 			(start 0.5 -0.5)
@@ -8087,7 +8230,7 @@
 				(type solid)
 			)
 			(layer "B.SilkS")
-			(uuid "aa4f9394-1458-4e93-8305-b5ef4daa1cf8")
+			(uuid "79c71b46-8b2a-41e2-8075-1ae46ed5f044")
 		)
 		(fp_line
 			(start 0.5 0.5)
@@ -8097,31 +8240,77 @@
 				(type solid)
 			)
 			(layer "B.SilkS")
-			(uuid "76be7e76-6266-4939-8aad-6edff195b930")
+			(uuid "f562f69e-feca-46fb-bc12-b313dd256ce1")
+		)
+		(fp_poly
+			(pts
+				(xy -2.635868 0.80055) (xy -3.198439 0.80055) (xy -3.198439 -0.799699) (xy -2.635868 -0.799699)
+			)
+			(stroke
+				(width -0.000001)
+				(type solid)
+			)
+			(fill yes)
+			(layer "B.SilkS")
+			(uuid "aac91e4b-5c3e-40ad-b580-529a9a6372e7")
+		)
+		(fp_poly
+			(pts
+				(xy 3.19853 0.800292) (xy -3.201338 0.800292) (xy -3.201338 0.651431) (xy -3.053026 0.651431) (xy 3.050219 0.651431)
+				(xy 3.050219 -0.649232) (xy -3.053026 -0.649232) (xy -3.053026 0.651431) (xy -3.201338 0.651431)
+				(xy -3.201338 -0.800709) (xy 3.19853 -0.800709)
+			)
+			(stroke
+				(width -0.000001)
+				(type solid)
+			)
+			(fill yes)
+			(layer "B.SilkS")
+			(uuid "2ac1defa-63c4-4b85-9a6e-6d48e5824130")
 		)
 		(fp_line
-			(start 2.7 -0.75)
-			(end -2.7 -0.75)
+			(start -4.8 -1.15)
+			(end -4.8 1.15)
 			(stroke
 				(width 0.15)
 				(type solid)
 			)
-			(layer "B.SilkS")
-			(uuid "f6d4c533-4896-4000-8372-2a4fae558679")
+			(layer "B.Fab")
+			(uuid "5637c2d6-0d9f-4a4d-b2ab-2a7a14bd67be")
 		)
 		(fp_line
-			(start 2.7 0.75)
-			(end 2.7 -0.75)
+			(start 4.8 -1.15)
+			(end -4.8 -1.15)
 			(stroke
 				(width 0.15)
 				(type solid)
 			)
-			(layer "B.SilkS")
-			(uuid "0a1d4458-37ea-4248-910e-4f9fc4c918f4")
+			(layer "B.Fab")
+			(uuid "6e626628-13ba-4297-ae65-5124eeae614d")
+		)
+		(fp_line
+			(start 4.8 -1.15)
+			(end 4.8 1.15)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "ddd88791-5510-46cd-ba9e-819e191c9a66")
+		)
+		(fp_line
+			(start 4.8 1.15)
+			(end -4.8 1.15)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "7bdf3f4d-bc32-4ca0-a949-5afa1a7058e2")
 		)
 		(pad "1" smd rect
 			(at -1.775 0)
-			(size 1.3 0.95)
+			(size 1.4 0.94)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net 6 "row1")
 			(pinfunction "K")
@@ -8130,7 +8319,7 @@
 		)
 		(pad "2" smd rect
 			(at 1.775 0)
-			(size 1.3 0.95)
+			(size 1.4 0.94)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net 12 "Net-(D10-A)")
 			(pinfunction "A")
@@ -8138,15 +8327,15 @@
 			(uuid "88e46626-8635-476e-a600-1484a4a4c614")
 		)
 		(embedded_fonts no)
-		(model "Diodes_SMD.3dshapes/SMB_Handsoldering.wrl"
+		(model "${KIGITHUB3D}/Diode_SMD.3dshapes/D_SOD-123.step"
 			(offset
 				(xyz 0 0 0)
 			)
 			(scale
-				(xyz 0.22 0.15 0.15)
+				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 180)
+				(xyz 0 0 0)
 			)
 		)
 	)
@@ -8700,26 +8889,27 @@
 			)
 		)
 	)
-	(footprint "kbd_Parts:Diode_SMD"
+	(footprint "isw-kbd:Diode_SMD"
 		(layer "F.Cu")
 		(uuid "8756236d-3b6f-4183-80d5-25e2ec329e1d")
 		(at 173.3628 125.1444 -15)
 		(descr "Resitance 3 pas")
 		(tags "R")
 		(property "Reference" "D16"
-			(at 0.000001 1.4 165)
+			(at -3.157144 0 345)
+			(unlocked yes)
 			(layer "B.SilkS")
 			(uuid "4193cfbb-9c4b-4cf2-bc3b-35eeb3de0d11")
 			(effects
 				(font
-					(size 0.8 0.8)
+					(size 1 1)
 					(thickness 0.125)
 				)
-				(justify mirror)
+				(justify left mirror)
 			)
 		)
 		(property "Value" "D"
-			(at -0.599999 0.000001 165)
+			(at 0 -0.313126 345)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "6d4e5806-8fd6-464e-b17d-10a025afcff7")
@@ -8730,8 +8920,8 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 0 0 165)
+		(property "Datasheet" ""
+			(at 0 0 345)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "47403458-0f0e-4a05-8f68-f6839062439e")
@@ -8742,8 +8932,8 @@
 				)
 			)
 		)
-		(property "Description" "Diode"
-			(at 0 0 165)
+		(property "Description" ""
+			(at 0 0 345)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "8a28b477-0428-4ee6-9635-b5979f3d1835")
@@ -8784,90 +8974,116 @@
 		(path "/cc286ce6-7500-4d72-bf61-99764b22ae70")
 		(sheetname "/")
 		(sheetfile "ErgoNest_L.kicad_sch")
-		(attr smd)
+		(attr through_hole)
 		(fp_line
-			(start -2.7 0.75)
-			(end 2.700001 0.750001)
+			(start -0.4 0)
+			(end 0.5 -0.5)
 			(stroke
 				(width 0.15)
 				(type solid)
 			)
 			(layer "B.SilkS")
-			(uuid "53fed39c-615b-4d32-86b9-f35d497b8abe")
+			(uuid "190b248d-6888-427a-b544-c2b2e3bd8d5e")
 		)
 		(fp_line
-			(start -2.700001 -0.750001)
-			(end -2.7 0.75)
+			(start -0.5 -0.5)
+			(end -0.5 0.5)
 			(stroke
 				(width 0.15)
 				(type solid)
 			)
 			(layer "B.SilkS")
-			(uuid "cc62e6f9-71af-4be6-8576-f6b122cab020")
+			(uuid "f6998998-9ca8-4d8e-bcf3-7b41dec68a31")
 		)
 		(fp_line
-			(start -0.4 0.000001)
-			(end 0.499998 -0.5)
+			(start 0.5 0.5)
+			(end -0.4 0)
 			(stroke
 				(width 0.15)
 				(type solid)
 			)
 			(layer "B.SilkS")
-			(uuid "a8e8763d-f668-4554-bdf0-ad8573c8a4ad")
+			(uuid "2ac0c409-15ac-46ec-871e-ea40596881df")
 		)
 		(fp_line
-			(start -0.5 -0.499998)
-			(end -0.499998 0.5)
+			(start 0.5 -0.5)
+			(end 0.5 0.5)
 			(stroke
 				(width 0.15)
 				(type solid)
 			)
 			(layer "B.SilkS")
-			(uuid "a90f9707-95e1-4d2d-ad27-e18dcaa6ebbf")
+			(uuid "c9612637-7939-40d5-a584-1fe374e34950")
+		)
+		(fp_poly
+			(pts
+				(xy -2.635868 0.80055) (xy -3.198439 0.80055) (xy -3.19844 -0.799699) (xy -2.635868 -0.799699)
+			)
+			(stroke
+				(width -0.000001)
+				(type solid)
+			)
+			(fill yes)
+			(layer "B.SilkS")
+			(uuid "6a166703-cc6c-4d7c-83b9-54b99a0ee58f")
+		)
+		(fp_poly
+			(pts
+				(xy 3.19853 0.800292) (xy -3.201338 0.800292) (xy -3.201338 0.651431) (xy -3.053026 0.651431) (xy 3.050219 0.651431)
+				(xy 3.050219 -0.649232) (xy -3.053026 -0.649232) (xy -3.053026 0.651431) (xy -3.201338 0.651431)
+				(xy -3.201338 -0.800709) (xy 3.19853 -0.800709)
+			)
+			(stroke
+				(width -0.000001)
+				(type solid)
+			)
+			(fill yes)
+			(layer "B.SilkS")
+			(uuid "8cee2c0e-1b1a-4098-91f7-d880216c336d")
 		)
 		(fp_line
-			(start 0.5 0.499998)
-			(end -0.4 0.000001)
+			(start -4.8 -1.15)
+			(end -4.8 1.15)
 			(stroke
 				(width 0.15)
 				(type solid)
 			)
-			(layer "B.SilkS")
-			(uuid "6afd171c-1210-469f-bcb9-60a8ee455b53")
+			(layer "B.Fab")
+			(uuid "e86c62cd-d70c-4983-9c9f-050db08e54b5")
 		)
 		(fp_line
-			(start 0.499998 -0.5)
-			(end 0.5 0.499998)
+			(start 4.8 1.15)
+			(end -4.8 1.15)
 			(stroke
 				(width 0.15)
 				(type solid)
 			)
-			(layer "B.SilkS")
-			(uuid "74ed1d81-b49d-4b57-9409-a574ae53558f")
+			(layer "B.Fab")
+			(uuid "6606276f-b0d9-4a64-b57b-0da12e626b45")
 		)
 		(fp_line
-			(start 2.700001 0.750001)
-			(end 2.7 -0.75)
+			(start 4.8 -1.15)
+			(end -4.8 -1.15)
 			(stroke
 				(width 0.15)
 				(type solid)
 			)
-			(layer "B.SilkS")
-			(uuid "689adb07-c64b-4ebb-8491-2bd2e78f1469")
+			(layer "B.Fab")
+			(uuid "4f2a91c8-0176-4b0b-83aa-e99da8536e27")
 		)
 		(fp_line
-			(start 2.7 -0.75)
-			(end -2.700001 -0.750001)
+			(start 4.8 -1.15)
+			(end 4.8 1.15)
 			(stroke
 				(width 0.15)
 				(type solid)
 			)
-			(layer "B.SilkS")
-			(uuid "62539cd7-6eba-4a3d-a216-e518fb9c8946")
+			(layer "B.Fab")
+			(uuid "a2d4b9a4-0f09-4b81-ad02-d99f86d8cb9e")
 		)
 		(pad "1" smd rect
-			(at -1.774998 -0.000002 345)
-			(size 1.3 0.95)
+			(at -1.775 0 345)
+			(size 1.4 0.94)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net 19 "row3")
 			(pinfunction "K")
@@ -8875,8 +9091,8 @@
 			(uuid "5c8f0070-7a37-4d24-948e-fc4afae614e1")
 		)
 		(pad "2" smd rect
-			(at 1.774998 0.000002 345)
-			(size 1.3 0.95)
+			(at 1.775 0 345)
+			(size 1.4 0.94)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net 20 "Net-(D16-A)")
 			(pinfunction "A")
@@ -8884,15 +9100,15 @@
 			(uuid "1f756ca8-5f63-4671-8c96-d19f57553e70")
 		)
 		(embedded_fonts no)
-		(model "Diodes_SMD.3dshapes/SMB_Handsoldering.wrl"
+		(model "${KIGITHUB3D}/Diode_SMD.3dshapes/D_SOD-123.step"
 			(offset
 				(xyz 0 0 0)
 			)
 			(scale
-				(xyz 0.22 0.15 0.15)
+				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 180)
+				(xyz 0 0 0)
 			)
 		)
 	)
@@ -10201,26 +10417,27 @@
 			)
 		)
 	)
-	(footprint "kbd_Parts:Diode_SMD"
+	(footprint "isw-kbd:Diode_SMD"
 		(layer "F.Cu")
 		(uuid "8c66b320-6013-46f5-a351-718207addba3")
 		(at 174.158 102.08)
 		(descr "Resitance 3 pas")
 		(tags "R")
 		(property "Reference" "D14"
-			(at 0 1.4 0)
+			(at -3.157144 0 0)
+			(unlocked yes)
 			(layer "B.SilkS")
 			(uuid "f6c60445-0934-4bb1-9ded-ce11b4d624fa")
 			(effects
 				(font
-					(size 0.8 0.8)
+					(size 1 1)
 					(thickness 0.125)
 				)
-				(justify mirror)
+				(justify left mirror)
 			)
 		)
 		(property "Value" "D"
-			(at -0.6 0 0)
+			(at 0 -0.313125 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "43e444c9-3581-4ff8-88bf-2807da96e31c")
@@ -10231,7 +10448,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -10243,7 +10460,7 @@
 				)
 			)
 		)
-		(property "Description" "Diode"
+		(property "Description" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -10285,27 +10502,7 @@
 		(path "/cf64fde9-170f-46e9-a8fa-2152a53a426e")
 		(sheetname "/")
 		(sheetfile "ErgoNest_L.kicad_sch")
-		(attr smd)
-		(fp_line
-			(start -2.7 -0.75)
-			(end -2.7 0.75)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "B.SilkS")
-			(uuid "fbbf2057-cf41-4d6c-b798-18cfae18332e")
-		)
-		(fp_line
-			(start -2.7 0.75)
-			(end 2.7 0.75)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "B.SilkS")
-			(uuid "5c8697e7-dc5a-49b5-8bbd-1bc5e45d3e2e")
-		)
+		(attr through_hole)
 		(fp_line
 			(start -0.5 -0.5)
 			(end -0.5 0.5)
@@ -10314,7 +10511,7 @@
 				(type solid)
 			)
 			(layer "B.SilkS")
-			(uuid "f081dc87-3de1-4cd2-bb0b-062bcff84db3")
+			(uuid "1c1b0867-31f4-4670-9cb1-461260898526")
 		)
 		(fp_line
 			(start -0.4 0)
@@ -10324,7 +10521,7 @@
 				(type solid)
 			)
 			(layer "B.SilkS")
-			(uuid "0dc5f3aa-f3be-4093-9990-5e73a2181624")
+			(uuid "c1ce6fdb-3047-4ddb-ad71-2312378aa350")
 		)
 		(fp_line
 			(start 0.5 -0.5)
@@ -10334,7 +10531,7 @@
 				(type solid)
 			)
 			(layer "B.SilkS")
-			(uuid "b149fe0a-05c9-4387-806f-9f74e358740d")
+			(uuid "eed5d2e8-0c0e-4b93-a53f-7d34862b49a8")
 		)
 		(fp_line
 			(start 0.5 0.5)
@@ -10344,31 +10541,77 @@
 				(type solid)
 			)
 			(layer "B.SilkS")
-			(uuid "c72a4391-ad00-4ca8-af88-85c22d848c75")
+			(uuid "c4e011a3-b0b7-4231-b8e1-b0a3e1c1f521")
+		)
+		(fp_poly
+			(pts
+				(xy -2.635868 0.80055) (xy -3.198439 0.80055) (xy -3.198439 -0.799699) (xy -2.635868 -0.799699)
+			)
+			(stroke
+				(width -0.000001)
+				(type solid)
+			)
+			(fill yes)
+			(layer "B.SilkS")
+			(uuid "b2bbfdf2-a019-4206-82ca-ca2ff4a2dd05")
+		)
+		(fp_poly
+			(pts
+				(xy 3.19853 0.800292) (xy -3.201338 0.800292) (xy -3.201338 0.651431) (xy -3.053026 0.651431) (xy 3.050219 0.651431)
+				(xy 3.050219 -0.649232) (xy -3.053026 -0.649232) (xy -3.053026 0.651431) (xy -3.201338 0.651431)
+				(xy -3.201338 -0.800709) (xy 3.19853 -0.800709)
+			)
+			(stroke
+				(width -0.000001)
+				(type solid)
+			)
+			(fill yes)
+			(layer "B.SilkS")
+			(uuid "8e3bb35f-563f-4ebd-9358-41a124d2d403")
 		)
 		(fp_line
-			(start 2.7 -0.75)
-			(end -2.7 -0.75)
+			(start -4.8 -1.15)
+			(end -4.8 1.15)
 			(stroke
 				(width 0.15)
 				(type solid)
 			)
-			(layer "B.SilkS")
-			(uuid "1d509e80-e6f3-421a-b939-4dfbfdc7d6da")
+			(layer "B.Fab")
+			(uuid "cb107cec-ba8c-4e7e-8f3b-066e954744c5")
 		)
 		(fp_line
-			(start 2.7 0.75)
-			(end 2.7 -0.75)
+			(start 4.8 -1.15)
+			(end -4.8 -1.15)
 			(stroke
 				(width 0.15)
 				(type solid)
 			)
-			(layer "B.SilkS")
-			(uuid "c17fbf41-7788-4c58-8b38-4f2d243a8151")
+			(layer "B.Fab")
+			(uuid "f1981a89-4117-4fa4-a308-251d272b6b9b")
+		)
+		(fp_line
+			(start 4.8 -1.15)
+			(end 4.8 1.15)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "5c1b6ff8-04ca-4e3e-ba11-7ffb7aaa7f99")
+		)
+		(fp_line
+			(start 4.8 1.15)
+			(end -4.8 1.15)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "84884777-ca57-4582-8695-f13e652256a7")
 		)
 		(pad "1" smd rect
 			(at -1.775 0)
-			(size 1.3 0.95)
+			(size 1.4 0.94)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net 13 "row2")
 			(pinfunction "K")
@@ -10377,7 +10620,7 @@
 		)
 		(pad "2" smd rect
 			(at 1.775 0)
-			(size 1.3 0.95)
+			(size 1.4 0.94)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net 17 "Net-(D14-A)")
 			(pinfunction "A")
@@ -10385,15 +10628,15 @@
 			(uuid "cc714988-cba8-4bb2-8b8d-e1f138ede1ac")
 		)
 		(embedded_fonts no)
-		(model "Diodes_SMD.3dshapes/SMB_Handsoldering.wrl"
+		(model "${KIGITHUB3D}/Diode_SMD.3dshapes/D_SOD-123.step"
 			(offset
 				(xyz 0 0 0)
 			)
 			(scale
-				(xyz 0.22 0.15 0.15)
+				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 180)
+				(xyz 0 0 0)
 			)
 		)
 	)
@@ -12137,26 +12380,27 @@
 			)
 		)
 	)
-	(footprint "kbd_Parts:Diode_SMD"
+	(footprint "isw-kbd:Diode_SMD"
 		(layer "F.Cu")
 		(uuid "bd13a56f-5687-4503-88af-44bf253405ee")
 		(at 158.158 82.08)
 		(descr "Resitance 3 pas")
 		(tags "R")
 		(property "Reference" "D9"
-			(at 0 1.4 0)
+			(at -3.157144 0 0)
+			(unlocked yes)
 			(layer "B.SilkS")
 			(uuid "0cd4acc4-c65d-4534-afac-974cc986ebc4")
 			(effects
 				(font
-					(size 0.8 0.8)
+					(size 1 1)
 					(thickness 0.125)
 				)
-				(justify mirror)
+				(justify left mirror)
 			)
 		)
 		(property "Value" "D"
-			(at -0.6 0 0)
+			(at 0 -0.313125 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "bccff4fe-f5dd-49d7-8502-40c74f51197b")
@@ -12167,7 +12411,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -12179,7 +12423,7 @@
 				)
 			)
 		)
-		(property "Description" "Diode"
+		(property "Description" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -12221,27 +12465,7 @@
 		(path "/e2e876c5-372e-4c20-b9d7-ea00ea22bcdb")
 		(sheetname "/")
 		(sheetfile "ErgoNest_L.kicad_sch")
-		(attr smd)
-		(fp_line
-			(start -2.7 -0.75)
-			(end -2.7 0.75)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "B.SilkS")
-			(uuid "f3f1185e-72e9-418b-bead-71cb7eea73ac")
-		)
-		(fp_line
-			(start -2.7 0.75)
-			(end 2.7 0.75)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "B.SilkS")
-			(uuid "828d8b99-d47d-4f7f-9ef7-69b451751d35")
-		)
+		(attr through_hole)
 		(fp_line
 			(start -0.5 -0.5)
 			(end -0.5 0.5)
@@ -12250,7 +12474,7 @@
 				(type solid)
 			)
 			(layer "B.SilkS")
-			(uuid "f8b29b2e-f9c0-4672-8867-4f5775960e64")
+			(uuid "fd5ef417-c8f5-4ff2-9aa1-5a905d652ac6")
 		)
 		(fp_line
 			(start -0.4 0)
@@ -12260,7 +12484,7 @@
 				(type solid)
 			)
 			(layer "B.SilkS")
-			(uuid "71ad5da3-30f9-4655-977e-e7043e896689")
+			(uuid "8e2e9810-5d0a-4a20-9020-de98c63d7cd1")
 		)
 		(fp_line
 			(start 0.5 -0.5)
@@ -12270,7 +12494,7 @@
 				(type solid)
 			)
 			(layer "B.SilkS")
-			(uuid "14c6b54d-9ec3-4b80-b414-daadd675ccbc")
+			(uuid "806a01b9-359f-43e5-9d7f-199d509bd53d")
 		)
 		(fp_line
 			(start 0.5 0.5)
@@ -12280,31 +12504,77 @@
 				(type solid)
 			)
 			(layer "B.SilkS")
-			(uuid "a1dced42-500f-4b6e-86bd-f4696ae4a5ee")
+			(uuid "5de44c4c-7ddb-48bc-a18d-0e7c88661896")
+		)
+		(fp_poly
+			(pts
+				(xy -2.635868 0.80055) (xy -3.198439 0.80055) (xy -3.198439 -0.799699) (xy -2.635868 -0.799699)
+			)
+			(stroke
+				(width -0.000001)
+				(type solid)
+			)
+			(fill yes)
+			(layer "B.SilkS")
+			(uuid "7f576f74-8299-4849-8d7f-a176b75ad15e")
+		)
+		(fp_poly
+			(pts
+				(xy 3.19853 0.800292) (xy -3.201338 0.800292) (xy -3.201338 0.651431) (xy -3.053026 0.651431) (xy 3.050219 0.651431)
+				(xy 3.050219 -0.649232) (xy -3.053026 -0.649232) (xy -3.053026 0.651431) (xy -3.201338 0.651431)
+				(xy -3.201338 -0.800709) (xy 3.19853 -0.800709)
+			)
+			(stroke
+				(width -0.000001)
+				(type solid)
+			)
+			(fill yes)
+			(layer "B.SilkS")
+			(uuid "7de1b75e-f349-4048-b2da-407d3b526b46")
 		)
 		(fp_line
-			(start 2.7 -0.75)
-			(end -2.7 -0.75)
+			(start -4.8 -1.15)
+			(end -4.8 1.15)
 			(stroke
 				(width 0.15)
 				(type solid)
 			)
-			(layer "B.SilkS")
-			(uuid "0d275ae4-af09-4fb1-8f72-6469ba5ab2f1")
+			(layer "B.Fab")
+			(uuid "b9d65d6c-2631-47bd-aeb5-0fda93576105")
 		)
 		(fp_line
-			(start 2.7 0.75)
-			(end 2.7 -0.75)
+			(start 4.8 -1.15)
+			(end -4.8 -1.15)
 			(stroke
 				(width 0.15)
 				(type solid)
 			)
-			(layer "B.SilkS")
-			(uuid "f6f007c7-22db-44b6-b9fa-c2bfc064404a")
+			(layer "B.Fab")
+			(uuid "004ee6a2-1136-4248-9b0f-39bf64925318")
+		)
+		(fp_line
+			(start 4.8 -1.15)
+			(end 4.8 1.15)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "deddedfd-2382-4bed-ad7e-2285cfcbb661")
+		)
+		(fp_line
+			(start 4.8 1.15)
+			(end -4.8 1.15)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "659f3381-0825-49bd-ae8f-afd215a1de04")
 		)
 		(pad "1" smd rect
 			(at -1.775 0)
-			(size 1.3 0.95)
+			(size 1.4 0.94)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net 6 "row1")
 			(pinfunction "K")
@@ -12313,7 +12583,7 @@
 		)
 		(pad "2" smd rect
 			(at 1.775 0)
-			(size 1.3 0.95)
+			(size 1.4 0.94)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net 11 "Net-(D9-A)")
 			(pinfunction "A")
@@ -12321,38 +12591,39 @@
 			(uuid "3b137448-660c-418e-a658-f12024ac9865")
 		)
 		(embedded_fonts no)
-		(model "Diodes_SMD.3dshapes/SMB_Handsoldering.wrl"
+		(model "${KIGITHUB3D}/Diode_SMD.3dshapes/D_SOD-123.step"
 			(offset
 				(xyz 0 0 0)
 			)
 			(scale
-				(xyz 0.22 0.15 0.15)
+				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 180)
+				(xyz 0 0 0)
 			)
 		)
 	)
-	(footprint "kbd_Parts:Diode_SMD"
+	(footprint "isw-kbd:Diode_SMD"
 		(layer "F.Cu")
 		(uuid "c3b72579-a2bb-4cb7-8b42-b95c9ff4e374")
 		(at 110.158 82.08)
 		(descr "Resitance 3 pas")
 		(tags "R")
 		(property "Reference" "D6"
-			(at 0 1.4 0)
+			(at -3.157144 0 0)
+			(unlocked yes)
 			(layer "B.SilkS")
 			(uuid "ee0c1522-2811-4169-afc1-b62bfa601c71")
 			(effects
 				(font
-					(size 0.8 0.8)
+					(size 1 1)
 					(thickness 0.125)
 				)
-				(justify mirror)
+				(justify left mirror)
 			)
 		)
 		(property "Value" "D"
-			(at -0.6 0 0)
+			(at 0 -0.313125 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "abf5c7d0-f61e-4d34-a2bf-bd466eb0b7e8")
@@ -12363,7 +12634,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -12375,7 +12646,7 @@
 				)
 			)
 		)
-		(property "Description" "Diode"
+		(property "Description" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -12417,27 +12688,7 @@
 		(path "/45b2bbae-721b-4a86-aaea-e6d1a1569c0e")
 		(sheetname "/")
 		(sheetfile "ErgoNest_L.kicad_sch")
-		(attr smd)
-		(fp_line
-			(start -2.7 -0.75)
-			(end -2.7 0.75)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "B.SilkS")
-			(uuid "93c70892-49f8-46ee-a703-c87a0a1070a7")
-		)
-		(fp_line
-			(start -2.7 0.75)
-			(end 2.7 0.75)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "B.SilkS")
-			(uuid "e9b678ef-91e0-4748-b520-cc99ee93a3e2")
-		)
+		(attr through_hole)
 		(fp_line
 			(start -0.5 -0.5)
 			(end -0.5 0.5)
@@ -12446,7 +12697,7 @@
 				(type solid)
 			)
 			(layer "B.SilkS")
-			(uuid "ab1ca1c9-6218-4fbb-816a-be786c4fafcb")
+			(uuid "e3bf364c-acbe-4ec3-8fef-707fe0430f63")
 		)
 		(fp_line
 			(start -0.4 0)
@@ -12456,7 +12707,7 @@
 				(type solid)
 			)
 			(layer "B.SilkS")
-			(uuid "c0775915-377f-4df3-9f44-f98aadde45bb")
+			(uuid "5c529b5f-24c1-4307-9dc9-4b955d9fb89f")
 		)
 		(fp_line
 			(start 0.5 -0.5)
@@ -12466,7 +12717,7 @@
 				(type solid)
 			)
 			(layer "B.SilkS")
-			(uuid "6227e34d-8190-4923-9791-1201d016cb2d")
+			(uuid "6b166e40-04bb-4f94-87ae-d6248d3fe36a")
 		)
 		(fp_line
 			(start 0.5 0.5)
@@ -12476,31 +12727,77 @@
 				(type solid)
 			)
 			(layer "B.SilkS")
-			(uuid "afae26b9-af46-4c72-9fcf-c8d54ad0d1da")
+			(uuid "8a00e090-93d3-468a-a420-1e49e69c3a40")
+		)
+		(fp_poly
+			(pts
+				(xy -2.635868 0.80055) (xy -3.198439 0.80055) (xy -3.198439 -0.799699) (xy -2.635868 -0.799699)
+			)
+			(stroke
+				(width -0.000001)
+				(type solid)
+			)
+			(fill yes)
+			(layer "B.SilkS")
+			(uuid "25503639-8216-4c3f-9fc8-931eaaddb15a")
+		)
+		(fp_poly
+			(pts
+				(xy 3.19853 0.800292) (xy -3.201338 0.800292) (xy -3.201338 0.651431) (xy -3.053026 0.651431) (xy 3.050219 0.651431)
+				(xy 3.050219 -0.649232) (xy -3.053026 -0.649232) (xy -3.053026 0.651431) (xy -3.201338 0.651431)
+				(xy -3.201338 -0.800709) (xy 3.19853 -0.800709)
+			)
+			(stroke
+				(width -0.000001)
+				(type solid)
+			)
+			(fill yes)
+			(layer "B.SilkS")
+			(uuid "ee3f5de6-4e51-4f15-8266-b682f8d8d95d")
 		)
 		(fp_line
-			(start 2.7 -0.75)
-			(end -2.7 -0.75)
+			(start -4.8 -1.15)
+			(end -4.8 1.15)
 			(stroke
 				(width 0.15)
 				(type solid)
 			)
-			(layer "B.SilkS")
-			(uuid "0ab2af06-165d-4a4b-96dd-9319a4463ffa")
+			(layer "B.Fab")
+			(uuid "09788f4d-55cd-40da-a8f9-1ae050407703")
 		)
 		(fp_line
-			(start 2.7 0.75)
-			(end 2.7 -0.75)
+			(start 4.8 -1.15)
+			(end -4.8 -1.15)
 			(stroke
 				(width 0.15)
 				(type solid)
 			)
-			(layer "B.SilkS")
-			(uuid "7aea385d-92eb-48c2-8e08-735e497440b2")
+			(layer "B.Fab")
+			(uuid "032bb487-d4ad-4e36-bac6-ef456df6c917")
+		)
+		(fp_line
+			(start 4.8 -1.15)
+			(end 4.8 1.15)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "41a90c5c-d59b-4729-87a6-772deb85f123")
+		)
+		(fp_line
+			(start 4.8 1.15)
+			(end -4.8 1.15)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "4064fd90-86f2-4816-a585-2f621a7f378b")
 		)
 		(pad "1" smd rect
 			(at -1.775 0)
-			(size 1.3 0.95)
+			(size 1.4 0.94)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net 6 "row1")
 			(pinfunction "K")
@@ -12509,7 +12806,7 @@
 		)
 		(pad "2" smd rect
 			(at 1.775 0)
-			(size 1.3 0.95)
+			(size 1.4 0.94)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net 8 "Net-(D6-A)")
 			(pinfunction "A")
@@ -12517,38 +12814,39 @@
 			(uuid "2f5748f2-c258-48e8-be93-135232104607")
 		)
 		(embedded_fonts no)
-		(model "Diodes_SMD.3dshapes/SMB_Handsoldering.wrl"
+		(model "${KIGITHUB3D}/Diode_SMD.3dshapes/D_SOD-123.step"
 			(offset
 				(xyz 0 0 0)
 			)
 			(scale
-				(xyz 0.22 0.15 0.15)
+				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 180)
+				(xyz 0 0 0)
 			)
 		)
 	)
-	(footprint "kbd_Parts:Diode_SMD"
+	(footprint "isw-kbd:Diode_SMD"
 		(layer "F.Cu")
 		(uuid "c51999ae-fc3f-4b7e-b6eb-ef18c23ce21b")
 		(at 157.3734 121.5906 -10)
 		(descr "Resitance 3 pas")
 		(tags "R")
 		(property "Reference" "D15"
-			(at 0 1.4 170)
+			(at -3.157144 0 350)
+			(unlocked yes)
 			(layer "B.SilkS")
 			(uuid "62a21e77-df27-4f21-b2d7-fb72fd9c99a4")
 			(effects
 				(font
-					(size 0.8 0.8)
+					(size 1 1)
 					(thickness 0.125)
 				)
-				(justify mirror)
+				(justify left mirror)
 			)
 		)
 		(property "Value" "D"
-			(at -0.6 -0.000001 170)
+			(at 0 -0.313125 350)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "362392cc-cd96-4156-8588-8438090f2e50")
@@ -12559,8 +12857,8 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 0 0 170)
+		(property "Datasheet" ""
+			(at 0 0 350)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "50bd4de8-661a-4afa-b999-e6284234ff60")
@@ -12571,8 +12869,8 @@
 				)
 			)
 		)
-		(property "Description" "Diode"
-			(at 0 0 170)
+		(property "Description" ""
+			(at 0 0 350)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "5b6d196a-12e8-4488-b974-070c95c0e711")
@@ -12613,90 +12911,116 @@
 		(path "/3975e950-10df-468c-96e1-03d2cc963cec")
 		(sheetname "/")
 		(sheetfile "ErgoNest_L.kicad_sch")
-		(attr smd)
+		(attr through_hole)
 		(fp_line
-			(start -2.699999 0.75)
-			(end 2.7 0.75)
+			(start -0.5 -0.5)
+			(end -0.5 0.5)
 			(stroke
 				(width 0.15)
 				(type solid)
 			)
 			(layer "B.SilkS")
-			(uuid "289ba5b6-0bec-4d5d-8535-c57ffefcd5fd")
-		)
-		(fp_line
-			(start -2.7 -0.75)
-			(end -2.699999 0.75)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "B.SilkS")
-			(uuid "4a38faa4-f5c4-4c96-adb0-56d681d2e480")
-		)
-		(fp_line
-			(start -0.500001 -0.5)
-			(end -0.5 0.500001)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "B.SilkS")
-			(uuid "9572acea-bc24-4b58-9046-92ba46903d13")
+			(uuid "1c7e3bdc-8d92-4c2a-9eab-47925725516f")
 		)
 		(fp_line
 			(start -0.4 0)
-			(end 0.5 -0.500001)
+			(end 0.5 -0.5)
 			(stroke
 				(width 0.15)
 				(type solid)
 			)
 			(layer "B.SilkS")
-			(uuid "e83f94b7-c12b-4b83-9d31-d053b37e9adc")
+			(uuid "37f89e98-82dd-410c-9832-e673a79af6ea")
 		)
 		(fp_line
-			(start 0.500001 0.5)
+			(start 0.5 0.5)
 			(end -0.4 0)
 			(stroke
 				(width 0.15)
 				(type solid)
 			)
 			(layer "B.SilkS")
-			(uuid "6c8f1275-25d7-480c-af6e-c0d971f4d392")
+			(uuid "980ca832-c7f4-47a3-aa72-05929e16a2bd")
 		)
 		(fp_line
-			(start 0.5 -0.500001)
-			(end 0.500001 0.5)
+			(start 0.5 -0.5)
+			(end 0.5 0.5)
 			(stroke
 				(width 0.15)
 				(type solid)
 			)
 			(layer "B.SilkS")
-			(uuid "57f8c711-9e02-4bc0-9288-63a0ee74af8d")
+			(uuid "adbb736a-788b-4de6-83cd-71e8d31f9bbc")
+		)
+		(fp_poly
+			(pts
+				(xy -2.635868 0.80055) (xy -3.198439 0.80055) (xy -3.198439 -0.799699) (xy -2.635868 -0.799699)
+			)
+			(stroke
+				(width -0.000001)
+				(type solid)
+			)
+			(fill yes)
+			(layer "B.SilkS")
+			(uuid "a5555dba-4e1b-4bfb-9e1f-04b058f7801d")
+		)
+		(fp_poly
+			(pts
+				(xy 3.19853 0.800292) (xy -3.201338 0.800292) (xy -3.201338 0.651431) (xy -3.053026 0.651431) (xy 3.050219 0.651431)
+				(xy 3.050219 -0.649232) (xy -3.053026 -0.649232) (xy -3.053026 0.651431) (xy -3.201338 0.651431)
+				(xy -3.201338 -0.800709) (xy 3.19853 -0.80071)
+			)
+			(stroke
+				(width -0.000001)
+				(type solid)
+			)
+			(fill yes)
+			(layer "B.SilkS")
+			(uuid "e45e2951-6567-4a38-a749-ea116e1292be")
 		)
 		(fp_line
-			(start 2.7 0.75)
-			(end 2.699999 -0.75)
+			(start -4.8 -1.15)
+			(end -4.8 1.15)
 			(stroke
 				(width 0.15)
 				(type solid)
 			)
-			(layer "B.SilkS")
-			(uuid "6c51ee16-00ff-46a3-8443-f56ae8a63c1f")
+			(layer "B.Fab")
+			(uuid "21c59467-c064-42e0-954d-bd35d5097128")
 		)
 		(fp_line
-			(start 2.699999 -0.75)
-			(end -2.7 -0.75)
+			(start 4.8 1.15)
+			(end -4.8 1.15)
 			(stroke
 				(width 0.15)
 				(type solid)
 			)
-			(layer "B.SilkS")
-			(uuid "fb1592c0-6592-436c-a2a9-41e1fea98e85")
+			(layer "B.Fab")
+			(uuid "a4590bf2-83ff-4410-8574-fb826fd130db")
+		)
+		(fp_line
+			(start 4.8 -1.15)
+			(end -4.8 -1.15)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "1bf29b28-7329-4366-92dc-c3f88f0c2d3e")
+		)
+		(fp_line
+			(start 4.8 -1.15)
+			(end 4.8 1.15)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "a414948e-a562-499d-a36f-d0ad9e22878e")
 		)
 		(pad "1" smd rect
-			(at -1.775 -0.000001 350)
-			(size 1.3 0.95)
+			(at -1.775 0 350)
+			(size 1.4 0.94)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net 19 "row3")
 			(pinfunction "K")
@@ -12704,8 +13028,8 @@
 			(uuid "20f891b9-4e49-45cc-8cd6-bd85df3777b9")
 		)
 		(pad "2" smd rect
-			(at 1.775 0.000001 350)
-			(size 1.3 0.95)
+			(at 1.775 0 350)
+			(size 1.4 0.94)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net 18 "Net-(D15-A)")
 			(pinfunction "A")
@@ -12713,38 +13037,39 @@
 			(uuid "040bfe82-f8ae-4156-b3e4-78e758c63742")
 		)
 		(embedded_fonts no)
-		(model "Diodes_SMD.3dshapes/SMB_Handsoldering.wrl"
+		(model "${KIGITHUB3D}/Diode_SMD.3dshapes/D_SOD-123.step"
 			(offset
 				(xyz 0 0 0)
 			)
 			(scale
-				(xyz 0.22 0.15 0.15)
+				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 180)
+				(xyz 0 0 0)
 			)
 		)
 	)
-	(footprint "kbd_Parts:Diode_SMD"
+	(footprint "isw-kbd:Diode_SMD"
 		(layer "F.Cu")
 		(uuid "cc8d4d1a-0bac-4813-bfdd-df8db895102e")
 		(at 126.158 64.08)
 		(descr "Resitance 3 pas")
 		(tags "R")
 		(property "Reference" "D2"
-			(at 0 1.4 0)
+			(at -3.157144 0 0)
+			(unlocked yes)
 			(layer "B.SilkS")
 			(uuid "171a0331-793a-4a95-aa7d-50434389f3a0")
 			(effects
 				(font
-					(size 0.8 0.8)
+					(size 1 1)
 					(thickness 0.125)
 				)
-				(justify mirror)
+				(justify left mirror)
 			)
 		)
 		(property "Value" "D"
-			(at -0.6 0 0)
+			(at 0 -0.313125 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "5bd83db7-0756-45bb-8544-11fc6b4abef9")
@@ -12755,7 +13080,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -12767,7 +13092,7 @@
 				)
 			)
 		)
-		(property "Description" "Diode"
+		(property "Description" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -12809,27 +13134,7 @@
 		(path "/deac968f-c526-4af5-b878-d82f13cba45d")
 		(sheetname "/")
 		(sheetfile "ErgoNest_L.kicad_sch")
-		(attr smd)
-		(fp_line
-			(start -2.7 -0.75)
-			(end -2.7 0.75)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "B.SilkS")
-			(uuid "a28dfe4b-17bb-4eb2-b219-7d09c5e35dd9")
-		)
-		(fp_line
-			(start -2.7 0.75)
-			(end 2.7 0.75)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "B.SilkS")
-			(uuid "7597fefb-a689-4042-9f9b-f239d0106a46")
-		)
+		(attr through_hole)
 		(fp_line
 			(start -0.5 -0.5)
 			(end -0.5 0.5)
@@ -12838,7 +13143,7 @@
 				(type solid)
 			)
 			(layer "B.SilkS")
-			(uuid "92647a91-744e-428f-9b89-b4c9558df1c9")
+			(uuid "1241fc61-e55f-4f59-98d5-83f58d81cda3")
 		)
 		(fp_line
 			(start -0.4 0)
@@ -12848,7 +13153,7 @@
 				(type solid)
 			)
 			(layer "B.SilkS")
-			(uuid "92ba430e-0491-4603-bd07-68146f5648b5")
+			(uuid "7a447f67-a84b-4cd2-9bd0-39f12193991b")
 		)
 		(fp_line
 			(start 0.5 -0.5)
@@ -12858,7 +13163,7 @@
 				(type solid)
 			)
 			(layer "B.SilkS")
-			(uuid "0894647c-17d3-47ff-ae17-a0eb69158e88")
+			(uuid "5219aaff-42d5-4f43-a0b0-2465c8f51e5e")
 		)
 		(fp_line
 			(start 0.5 0.5)
@@ -12868,31 +13173,77 @@
 				(type solid)
 			)
 			(layer "B.SilkS")
-			(uuid "2fd7446e-9dca-49c6-93fd-25a4bd53b466")
+			(uuid "15127f84-5d20-4574-947f-dc155ec0af33")
+		)
+		(fp_poly
+			(pts
+				(xy -2.635868 0.80055) (xy -3.198439 0.80055) (xy -3.198439 -0.799699) (xy -2.635868 -0.799699)
+			)
+			(stroke
+				(width -0.000001)
+				(type solid)
+			)
+			(fill yes)
+			(layer "B.SilkS")
+			(uuid "41806845-4fd3-4c48-a10a-8a332deb3136")
+		)
+		(fp_poly
+			(pts
+				(xy 3.19853 0.800292) (xy -3.201338 0.800292) (xy -3.201338 0.651431) (xy -3.053026 0.651431) (xy 3.050219 0.651431)
+				(xy 3.050219 -0.649232) (xy -3.053026 -0.649232) (xy -3.053026 0.651431) (xy -3.201338 0.651431)
+				(xy -3.201338 -0.800709) (xy 3.19853 -0.800709)
+			)
+			(stroke
+				(width -0.000001)
+				(type solid)
+			)
+			(fill yes)
+			(layer "B.SilkS")
+			(uuid "c8137995-a9e6-4e78-a929-db6e32981a7c")
 		)
 		(fp_line
-			(start 2.7 -0.75)
-			(end -2.7 -0.75)
+			(start -4.8 -1.15)
+			(end -4.8 1.15)
 			(stroke
 				(width 0.15)
 				(type solid)
 			)
-			(layer "B.SilkS")
-			(uuid "e4f44b64-c070-4d7f-a0a6-0ac729ba7f98")
+			(layer "B.Fab")
+			(uuid "5d602ae6-eab3-455c-a9af-9938054e8baa")
 		)
 		(fp_line
-			(start 2.7 0.75)
-			(end 2.7 -0.75)
+			(start 4.8 -1.15)
+			(end -4.8 -1.15)
 			(stroke
 				(width 0.15)
 				(type solid)
 			)
-			(layer "B.SilkS")
-			(uuid "fb45ceac-cf1d-40f8-8f5d-0e4c860dd1a1")
+			(layer "B.Fab")
+			(uuid "6d17e143-fba4-4e8f-b550-d463b571513e")
+		)
+		(fp_line
+			(start 4.8 -1.15)
+			(end 4.8 1.15)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "9d5f014f-d6d9-42ae-8bd6-5991fd7e8075")
+		)
+		(fp_line
+			(start 4.8 1.15)
+			(end -4.8 1.15)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "d2b6bc83-1417-4fb2-9621-844331f5fce4")
 		)
 		(pad "1" smd rect
 			(at -1.775 0)
-			(size 1.3 0.95)
+			(size 1.4 0.94)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net 1 "row0")
 			(pinfunction "K")
@@ -12901,7 +13252,7 @@
 		)
 		(pad "2" smd rect
 			(at 1.775 0)
-			(size 1.3 0.95)
+			(size 1.4 0.94)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net 3 "Net-(D2-A)")
 			(pinfunction "A")
@@ -12909,38 +13260,39 @@
 			(uuid "1d04edfa-0d9a-4a15-afbc-03810445f4d5")
 		)
 		(embedded_fonts no)
-		(model "Diodes_SMD.3dshapes/SMB_Handsoldering.wrl"
+		(model "${KIGITHUB3D}/Diode_SMD.3dshapes/D_SOD-123.step"
 			(offset
 				(xyz 0 0 0)
 			)
 			(scale
-				(xyz 0.22 0.15 0.15)
+				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 180)
+				(xyz 0 0 0)
 			)
 		)
 	)
-	(footprint "kbd_Parts:Diode_SMD"
+	(footprint "isw-kbd:Diode_SMD"
 		(layer "F.Cu")
 		(uuid "dc36fb07-e884-4f81-a885-ad85ac38aea5")
 		(at 126.158 96.08)
 		(descr "Resitance 3 pas")
 		(tags "R")
 		(property "Reference" "D11"
-			(at 0 1.4 0)
+			(at -3.157144 0 0)
+			(unlocked yes)
 			(layer "B.SilkS")
 			(uuid "7840004b-6f0f-4f21-afcc-f13b03fa49c7")
 			(effects
 				(font
-					(size 0.8 0.8)
+					(size 1 1)
 					(thickness 0.125)
 				)
-				(justify mirror)
+				(justify left mirror)
 			)
 		)
 		(property "Value" "D"
-			(at -0.6 0 0)
+			(at 0 -0.313125 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "61cd565b-743f-4b3d-bf59-70748f794174")
@@ -12951,7 +13303,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -12963,7 +13315,7 @@
 				)
 			)
 		)
-		(property "Description" "Diode"
+		(property "Description" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -13005,27 +13357,7 @@
 		(path "/f5d84f26-f232-4bd8-874f-962e3a0879c6")
 		(sheetname "/")
 		(sheetfile "ErgoNest_L.kicad_sch")
-		(attr smd)
-		(fp_line
-			(start -2.7 -0.75)
-			(end -2.7 0.75)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "B.SilkS")
-			(uuid "1b641931-34d2-4a1b-a268-1e3bd2996b58")
-		)
-		(fp_line
-			(start -2.7 0.75)
-			(end 2.7 0.75)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "B.SilkS")
-			(uuid "f7494c76-b870-4fcb-bf29-23a45f8d48ee")
-		)
+		(attr through_hole)
 		(fp_line
 			(start -0.5 -0.5)
 			(end -0.5 0.5)
@@ -13034,7 +13366,7 @@
 				(type solid)
 			)
 			(layer "B.SilkS")
-			(uuid "9723ade8-afff-41c3-9a9d-d676b001afc6")
+			(uuid "9bb051cc-82e2-4662-9ec4-4da0303c214a")
 		)
 		(fp_line
 			(start -0.4 0)
@@ -13044,7 +13376,7 @@
 				(type solid)
 			)
 			(layer "B.SilkS")
-			(uuid "8d481e25-2b31-4b29-b026-f3561f3efe4c")
+			(uuid "32c337f1-750c-4f94-a196-91ff5e6eba75")
 		)
 		(fp_line
 			(start 0.5 -0.5)
@@ -13054,7 +13386,7 @@
 				(type solid)
 			)
 			(layer "B.SilkS")
-			(uuid "1de4f7ba-85b4-4d78-a0db-c1298090182e")
+			(uuid "0c4bfcc3-bd90-456b-a55e-c49792d78e6a")
 		)
 		(fp_line
 			(start 0.5 0.5)
@@ -13064,31 +13396,77 @@
 				(type solid)
 			)
 			(layer "B.SilkS")
-			(uuid "885023d4-0074-48f9-846b-7c41b1ac934e")
+			(uuid "8595eebc-eebf-4a20-adbf-8858ec67ed43")
+		)
+		(fp_poly
+			(pts
+				(xy -2.635868 0.80055) (xy -3.198439 0.80055) (xy -3.198439 -0.799699) (xy -2.635868 -0.799699)
+			)
+			(stroke
+				(width -0.000001)
+				(type solid)
+			)
+			(fill yes)
+			(layer "B.SilkS")
+			(uuid "80c88030-03db-4db7-aef1-b44cf0a005a1")
+		)
+		(fp_poly
+			(pts
+				(xy 3.19853 0.800292) (xy -3.201338 0.800292) (xy -3.201338 0.651431) (xy -3.053026 0.651431) (xy 3.050219 0.651431)
+				(xy 3.050219 -0.649232) (xy -3.053026 -0.649232) (xy -3.053026 0.651431) (xy -3.201338 0.651431)
+				(xy -3.201338 -0.800709) (xy 3.19853 -0.800709)
+			)
+			(stroke
+				(width -0.000001)
+				(type solid)
+			)
+			(fill yes)
+			(layer "B.SilkS")
+			(uuid "2d00942d-2341-4702-8b0a-3999a4571728")
 		)
 		(fp_line
-			(start 2.7 -0.75)
-			(end -2.7 -0.75)
+			(start -4.8 -1.15)
+			(end -4.8 1.15)
 			(stroke
 				(width 0.15)
 				(type solid)
 			)
-			(layer "B.SilkS")
-			(uuid "10fd2fe0-7c93-4c12-bc0e-8c46bdc86ad5")
+			(layer "B.Fab")
+			(uuid "ef6facd5-9c2b-4431-bce7-e39f371418af")
 		)
 		(fp_line
-			(start 2.7 0.75)
-			(end 2.7 -0.75)
+			(start 4.8 -1.15)
+			(end -4.8 -1.15)
 			(stroke
 				(width 0.15)
 				(type solid)
 			)
-			(layer "B.SilkS")
-			(uuid "662a8e2e-99d1-4fa1-a393-9195d0100970")
+			(layer "B.Fab")
+			(uuid "870f52b2-4c6e-4056-8de1-b977908e97a2")
+		)
+		(fp_line
+			(start 4.8 -1.15)
+			(end 4.8 1.15)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "56ebc27a-a75e-49fd-a25f-5ff74ae7555a")
+		)
+		(fp_line
+			(start 4.8 1.15)
+			(end -4.8 1.15)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "ba8b078e-e81c-4fc3-9eae-00f17261c99b")
 		)
 		(pad "1" smd rect
 			(at -1.775 0)
-			(size 1.3 0.95)
+			(size 1.4 0.94)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net 13 "row2")
 			(pinfunction "K")
@@ -13097,7 +13475,7 @@
 		)
 		(pad "2" smd rect
 			(at 1.775 0)
-			(size 1.3 0.95)
+			(size 1.4 0.94)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net 14 "Net-(D11-A)")
 			(pinfunction "A")
@@ -13105,15 +13483,15 @@
 			(uuid "c82331f6-fce3-4b48-a257-4cb744fa3543")
 		)
 		(embedded_fonts no)
-		(model "Diodes_SMD.3dshapes/SMB_Handsoldering.wrl"
+		(model "${KIGITHUB3D}/Diode_SMD.3dshapes/D_SOD-123.step"
 			(offset
 				(xyz 0 0 0)
 			)
 			(scale
-				(xyz 0.22 0.15 0.15)
+				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 180)
+				(xyz 0 0 0)
 			)
 		)
 	)
@@ -13987,26 +14365,27 @@
 			)
 		)
 	)
-	(footprint "kbd_Parts:Diode_SMD"
+	(footprint "isw-kbd:Diode_SMD"
 		(layer "F.Cu")
 		(uuid "f4596044-1756-4832-b10b-329603b8509f")
 		(at 142.158 94.08)
 		(descr "Resitance 3 pas")
 		(tags "R")
 		(property "Reference" "D12"
-			(at 0 1.4 0)
+			(at -3.157144 0 0)
+			(unlocked yes)
 			(layer "B.SilkS")
 			(uuid "bceb340d-a4e2-400b-9fa9-dc910a314e32")
 			(effects
 				(font
-					(size 0.8 0.8)
+					(size 1 1)
 					(thickness 0.125)
 				)
-				(justify mirror)
+				(justify left mirror)
 			)
 		)
 		(property "Value" "D"
-			(at -0.6 0 0)
+			(at 0 -0.313125 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "b20540e8-d643-4d82-83ee-e934959f48ae")
@@ -14017,7 +14396,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -14029,7 +14408,7 @@
 				)
 			)
 		)
-		(property "Description" "Diode"
+		(property "Description" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -14071,27 +14450,7 @@
 		(path "/9e90f636-588b-45fb-9d44-810e834ee1b7")
 		(sheetname "/")
 		(sheetfile "ErgoNest_L.kicad_sch")
-		(attr smd)
-		(fp_line
-			(start -2.7 -0.75)
-			(end -2.7 0.75)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "B.SilkS")
-			(uuid "55e91417-f117-40aa-b2a9-bb8c1e154139")
-		)
-		(fp_line
-			(start -2.7 0.75)
-			(end 2.7 0.75)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "B.SilkS")
-			(uuid "d6a0fd11-28c8-4407-b7f8-cebad3bfa12b")
-		)
+		(attr through_hole)
 		(fp_line
 			(start -0.5 -0.5)
 			(end -0.5 0.5)
@@ -14100,7 +14459,7 @@
 				(type solid)
 			)
 			(layer "B.SilkS")
-			(uuid "75c78d73-b062-4400-b32f-d2e62abe436c")
+			(uuid "3a318093-eec1-400c-b42a-8a00062875d5")
 		)
 		(fp_line
 			(start -0.4 0)
@@ -14110,7 +14469,7 @@
 				(type solid)
 			)
 			(layer "B.SilkS")
-			(uuid "d0398f12-8b0b-4708-be09-3a3a97b2b9d4")
+			(uuid "fa99a492-4957-4ef5-9b65-eea398ba3303")
 		)
 		(fp_line
 			(start 0.5 -0.5)
@@ -14120,7 +14479,7 @@
 				(type solid)
 			)
 			(layer "B.SilkS")
-			(uuid "b7c1c363-442e-42c9-a203-4f43679cf361")
+			(uuid "1ed6a8f7-77c4-4e0e-9865-73de5ba51efd")
 		)
 		(fp_line
 			(start 0.5 0.5)
@@ -14130,31 +14489,77 @@
 				(type solid)
 			)
 			(layer "B.SilkS")
-			(uuid "7d5118fd-c871-4e25-b1ea-bf62f545f3ec")
+			(uuid "a356d852-5854-431c-96d9-85ac1898b340")
+		)
+		(fp_poly
+			(pts
+				(xy -2.635868 0.80055) (xy -3.198439 0.80055) (xy -3.198439 -0.799699) (xy -2.635868 -0.799699)
+			)
+			(stroke
+				(width -0.000001)
+				(type solid)
+			)
+			(fill yes)
+			(layer "B.SilkS")
+			(uuid "d618dea8-a5e8-48a1-ac25-4b400fcefc35")
+		)
+		(fp_poly
+			(pts
+				(xy 3.19853 0.800292) (xy -3.201338 0.800292) (xy -3.201338 0.651431) (xy -3.053026 0.651431) (xy 3.050219 0.651431)
+				(xy 3.050219 -0.649232) (xy -3.053026 -0.649232) (xy -3.053026 0.651431) (xy -3.201338 0.651431)
+				(xy -3.201338 -0.800709) (xy 3.19853 -0.800709)
+			)
+			(stroke
+				(width -0.000001)
+				(type solid)
+			)
+			(fill yes)
+			(layer "B.SilkS")
+			(uuid "00e00d2c-ce70-4a2c-bdaf-b5e58c5af09c")
 		)
 		(fp_line
-			(start 2.7 -0.75)
-			(end -2.7 -0.75)
+			(start -4.8 -1.15)
+			(end -4.8 1.15)
 			(stroke
 				(width 0.15)
 				(type solid)
 			)
-			(layer "B.SilkS")
-			(uuid "bf5468be-4e54-4ab0-9c7a-f5001821600d")
+			(layer "B.Fab")
+			(uuid "add29ccc-d726-4f93-940c-9b6fc2d534a2")
 		)
 		(fp_line
-			(start 2.7 0.75)
-			(end 2.7 -0.75)
+			(start 4.8 -1.15)
+			(end -4.8 -1.15)
 			(stroke
 				(width 0.15)
 				(type solid)
 			)
-			(layer "B.SilkS")
-			(uuid "837b7d95-5958-4c8d-b46d-4ad1ec2f3493")
+			(layer "B.Fab")
+			(uuid "f8e5063a-3850-4799-ac1b-049816d8cd84")
+		)
+		(fp_line
+			(start 4.8 -1.15)
+			(end 4.8 1.15)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "4173fafa-ed99-41bf-b3c4-66fff418153f")
+		)
+		(fp_line
+			(start 4.8 1.15)
+			(end -4.8 1.15)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "3519cd2f-fe34-45c8-ac6a-189512da519d")
 		)
 		(pad "1" smd rect
 			(at -1.775 0)
-			(size 1.3 0.95)
+			(size 1.4 0.94)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net 13 "row2")
 			(pinfunction "K")
@@ -14163,7 +14568,7 @@
 		)
 		(pad "2" smd rect
 			(at 1.775 0)
-			(size 1.3 0.95)
+			(size 1.4 0.94)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net 15 "Net-(D12-A)")
 			(pinfunction "A")
@@ -14171,38 +14576,39 @@
 			(uuid "80bc1d33-f1b0-462b-8712-4cf3bdda9754")
 		)
 		(embedded_fonts no)
-		(model "Diodes_SMD.3dshapes/SMB_Handsoldering.wrl"
+		(model "${KIGITHUB3D}/Diode_SMD.3dshapes/D_SOD-123.step"
 			(offset
 				(xyz 0 0 0)
 			)
 			(scale
-				(xyz 0.22 0.15 0.15)
+				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 180)
+				(xyz 0 0 0)
 			)
 		)
 	)
-	(footprint "kbd_Parts:Diode_SMD"
+	(footprint "isw-kbd:Diode_SMD"
 		(layer "F.Cu")
 		(uuid "f70f9bb4-96da-46b1-b9f1-fcbc62a4bbc1")
 		(at 99.658 82.58)
 		(descr "Resitance 3 pas")
 		(tags "R")
 		(property "Reference" "D5"
-			(at 0 1.4 0)
+			(at -3.157144 0 0)
+			(unlocked yes)
 			(layer "B.SilkS")
 			(uuid "6eaa5bda-db11-46e9-a235-b42ea425246a")
 			(effects
 				(font
-					(size 0.8 0.8)
+					(size 1 1)
 					(thickness 0.125)
 				)
-				(justify mirror)
+				(justify left mirror)
 			)
 		)
 		(property "Value" "D"
-			(at -0.6 0 0)
+			(at 0 -0.313125 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "fe76f989-a452-41ab-a2f9-4ad02c58179c")
@@ -14213,7 +14619,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -14225,7 +14631,7 @@
 				)
 			)
 		)
-		(property "Description" "Diode"
+		(property "Description" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -14267,27 +14673,7 @@
 		(path "/ba611320-a262-4b76-aaae-dc50898f1779")
 		(sheetname "/")
 		(sheetfile "ErgoNest_L.kicad_sch")
-		(attr smd)
-		(fp_line
-			(start -2.7 -0.75)
-			(end -2.7 0.75)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "B.SilkS")
-			(uuid "d3012050-9d28-4b42-8889-abfc524177ce")
-		)
-		(fp_line
-			(start -2.7 0.75)
-			(end 2.7 0.75)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "B.SilkS")
-			(uuid "37d23c1a-c22c-4ef4-a90f-2f8e8571931d")
-		)
+		(attr through_hole)
 		(fp_line
 			(start -0.5 -0.5)
 			(end -0.5 0.5)
@@ -14296,7 +14682,7 @@
 				(type solid)
 			)
 			(layer "B.SilkS")
-			(uuid "858e081a-4271-4c3a-967f-a7e8a9c14744")
+			(uuid "fddb1717-43f4-48b7-8ebe-bfbb816e58e3")
 		)
 		(fp_line
 			(start -0.4 0)
@@ -14306,7 +14692,7 @@
 				(type solid)
 			)
 			(layer "B.SilkS")
-			(uuid "d7e154fc-e448-4a02-b5ac-533a2453e1ed")
+			(uuid "83a2faf3-a68f-47ea-b892-63d3b0e979cc")
 		)
 		(fp_line
 			(start 0.5 -0.5)
@@ -14316,7 +14702,7 @@
 				(type solid)
 			)
 			(layer "B.SilkS")
-			(uuid "37ef3549-1177-4690-9150-b97ab6ea2864")
+			(uuid "c0f09be6-c8eb-4248-9ea6-d8bce75d2ae5")
 		)
 		(fp_line
 			(start 0.5 0.5)
@@ -14326,31 +14712,77 @@
 				(type solid)
 			)
 			(layer "B.SilkS")
-			(uuid "2f262946-4c73-455f-bcfe-8e9a4f0194ed")
+			(uuid "865442a3-692a-4c88-9cfa-5d69cee6271d")
+		)
+		(fp_poly
+			(pts
+				(xy -2.635868 0.80055) (xy -3.198439 0.80055) (xy -3.198439 -0.799699) (xy -2.635868 -0.799699)
+			)
+			(stroke
+				(width -0.000001)
+				(type solid)
+			)
+			(fill yes)
+			(layer "B.SilkS")
+			(uuid "e78af52d-712f-4fcc-ab54-eb3994474fc4")
+		)
+		(fp_poly
+			(pts
+				(xy 3.19853 0.800292) (xy -3.201338 0.800292) (xy -3.201338 0.651431) (xy -3.053026 0.651431) (xy 3.050219 0.651431)
+				(xy 3.050219 -0.649232) (xy -3.053026 -0.649232) (xy -3.053026 0.651431) (xy -3.201338 0.651431)
+				(xy -3.201338 -0.800709) (xy 3.19853 -0.800709)
+			)
+			(stroke
+				(width -0.000001)
+				(type solid)
+			)
+			(fill yes)
+			(layer "B.SilkS")
+			(uuid "58a18aed-89f6-4cb7-a6a4-8b7e83eb15ba")
 		)
 		(fp_line
-			(start 2.7 -0.75)
-			(end -2.7 -0.75)
+			(start -4.8 -1.15)
+			(end -4.8 1.15)
 			(stroke
 				(width 0.15)
 				(type solid)
 			)
-			(layer "B.SilkS")
-			(uuid "069e80c7-b0dd-49fe-912c-ac8eee290c4c")
+			(layer "B.Fab")
+			(uuid "0fadbebf-63d7-421a-8c2f-696eb4beb0c1")
 		)
 		(fp_line
-			(start 2.7 0.75)
-			(end 2.7 -0.75)
+			(start 4.8 -1.15)
+			(end -4.8 -1.15)
 			(stroke
 				(width 0.15)
 				(type solid)
 			)
-			(layer "B.SilkS")
-			(uuid "f665a192-be62-43b2-bcc9-8dad6c703829")
+			(layer "B.Fab")
+			(uuid "435b2221-9bb5-41fe-8265-9547d5ae9984")
+		)
+		(fp_line
+			(start 4.8 -1.15)
+			(end 4.8 1.15)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "0162bc6e-1dd0-4c18-880f-987927bed2f8")
+		)
+		(fp_line
+			(start 4.8 1.15)
+			(end -4.8 1.15)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "c6ba13f6-1bc6-40f2-9b7f-2355b1614293")
 		)
 		(pad "1" smd rect
 			(at -1.775 0)
-			(size 1.3 0.95)
+			(size 1.4 0.94)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net 6 "row1")
 			(pinfunction "K")
@@ -14359,7 +14791,7 @@
 		)
 		(pad "2" smd rect
 			(at 1.775 0)
-			(size 1.3 0.95)
+			(size 1.4 0.94)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net 7 "Net-(D5-A)")
 			(pinfunction "A")
@@ -14367,15 +14799,15 @@
 			(uuid "e6066394-b49d-423b-97e5-ccefcce3b006")
 		)
 		(embedded_fonts no)
-		(model "Diodes_SMD.3dshapes/SMB_Handsoldering.wrl"
+		(model "${KIGITHUB3D}/Diode_SMD.3dshapes/D_SOD-123.step"
 			(offset
 				(xyz 0 0 0)
 			)
 			(scale
-				(xyz 0.22 0.15 0.15)
+				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 180)
+				(xyz 0 0 0)
 			)
 		)
 	)
@@ -14384,9 +14816,8 @@
 		(uuid "71444bb0-9ca5-41e6-9943-118c728d23df")
 		(at 178.10575 68 90)
 		(property "Reference" "J1"
-			(at -4.85 1.05 90)
+			(at -2.85 1.05 270)
 			(layer "B.Fab")
-			(hide yes)
 			(uuid "e30643ed-4c1e-464d-82c4-49cf28a8c651")
 			(effects
 				(font
@@ -14396,8 +14827,8 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "TRRS_MJ-4PP-9"
-			(at 0 -8 90)
+		(property "Value" "MJ-4PP-9_BL_kai"
+			(at 0 -8 270)
 			(layer "B.Fab")
 			(hide yes)
 			(uuid "b1cab3b9-accb-46fb-8d9b-f5853ca1a953")
@@ -14410,7 +14841,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 90)
+			(at 0 0 270)
 			(layer "B.Fab")
 			(hide yes)
 			(uuid "1eb9328c-092b-4ac7-b181-ee1702bb9eb6")
@@ -14423,7 +14854,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 0 0 90)
+			(at 0 0 270)
 			(layer "B.Fab")
 			(hide yes)
 			(uuid "09209e42-f137-4b5e-aac2-13ee9af28664")
@@ -14447,7 +14878,7 @@
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "72662032-9d31-4e98-94a7-92c439dd802f")
+			(uuid "5b4e0a6e-5732-4455-a1f0-e074e4ff34eb")
 		)
 		(fp_line
 			(start -3.01875 -5.8865)
@@ -14457,7 +14888,7 @@
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "0eb0d107-cbb8-4b1d-b87b-fae2ef867d70")
+			(uuid "e5338b08-785f-43e9-b3e3-6dc2a5163802")
 		)
 		(fp_line
 			(start 2.98125 6.1135)
@@ -14467,7 +14898,7 @@
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "f2fbe615-2cec-49ad-a7c0-c2aff9397cb9")
+			(uuid "ac732787-928d-4bef-9778-f82b7a8a9785")
 		)
 		(fp_line
 			(start -3.01875 6.1135)
@@ -14477,10 +14908,10 @@
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "49afed1a-e01a-4adb-91d6-69d08a242dea")
+			(uuid "3b494686-b606-40ab-9ed0-b7038e4fbc5a")
 		)
 		(fp_text user "TRRS"
-			(at 0.5 0.5 90)
+			(at 0.90575 -0.3 270)
 			(layer "F.SilkS")
 			(uuid "a3e605ac-11ee-44fd-9dfa-96ea2255d0c8")
 			(effects
@@ -14495,14 +14926,14 @@
 			(size 1.21 1.21)
 			(drill 1.2)
 			(layers "*.Cu" "*.Mask" "B.SilkS")
-			(uuid "d7985159-6d0c-4c03-87ae-4376739ab760")
+			(uuid "26ec81d7-ead3-4013-b219-84e79a35b964")
 		)
 		(pad "" np_thru_hole circle
 			(at 0 4.5 90)
 			(size 1.21 1.21)
 			(drill 1.2)
 			(layers "*.Cu" "*.Mask" "B.SilkS")
-			(uuid "c792cb55-877a-410d-8d0e-b9482ce6495e")
+			(uuid "52896ad4-f03e-40e6-ba38-118fba1a768f")
 		)
 		(pad "A" thru_hole oval
 			(at 2 -5.8 90)
