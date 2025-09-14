@@ -9,8 +9,8 @@ SPI_DRIVER_REQUIRED = yes
 
 # software configuration
 CAPS_WORD_ENABLE = yes
-TAP_DANCE_ENABLE = yes
+TAP_DANCE_ENABLE = no
 MOUSEKEY_ENABLE = yes
 COMBO_ENABLE = yes
 
-SRC += layer.c mouse_control.c tap_dance.c
+SRC += layer.c mouse_control.c

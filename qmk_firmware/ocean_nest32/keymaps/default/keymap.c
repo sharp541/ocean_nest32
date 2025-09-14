@@ -5,19 +5,19 @@
 
 #include "quantum.h"
 #include "layer.h"
-#include "tap_dance.h"
 #include "combo.h"
 
 #define LB_MO LT(_MOUSE_LAYER, MS_BTN2) // Hold for mouse layer, tap for right click
 #define SPC_FUN LT(_FUNCTION_LAYER, KC_SPC) // Hold for function layer, tap for space
 #define TAB_NUM LT(_NUMPAD_LAYER, KC_TAB) // Hold for numpad layer, tap for tab
+#define BSPC_SYM LT(_SYMBOL_LAYER, KC_BSPC) // Hold for symbol layer, tap for backspace
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_BASE_LAYER] = LAYOUT(
-                    TD(TD_H),   TD(TD_K),   TD(TD_R),   TD(TD_Z),                                       TD(TD_Q),   TD(TD_E),   TD(TD_P),   TD(TD_W),
-        TD(TD_B),   TD(TD_M),   TD(TD_S),   TD(TD_N),   TD(TD_T),   TD(TD_G),               TD(TD_C),   TD(TD_A),   TD(TD_O),   TD(TD_I),   TD(TD_U),   LB_MO,
-                                TD(TD_F),   TD(TD_L),   TD(TD_D),   TD(TD_J),               TD(TD_X),   TD(TD_Y),   TD(TD_V),   MS_BTN1 ,
-                                                        SPC_FUN ,   TAB_NUM ,               RCTL_T(KC_DEL),     KC_BSPC
+                    KC_H,   KC_K,   KC_R,   KC_Z,                                       KC_Q,   KC_E,   KC_P,   KC_W,
+        KC_B,   KC_M,   KC_S,   KC_N,   KC_T,   KC_G,               KC_C,   KC_A,   KC_O,   KC_I,   KC_U,   LB_MO,
+                                KC_F,   KC_L,   KC_D,   KC_J,               KC_X,   KC_Y,   KC_V,   MS_BTN1 ,
+                                                        SPC_FUN ,   TAB_NUM ,               RCTL_T(KC_DEL),     BSPC_SYM
     ),
 
     [_MOUSE_LAYER] = LAYOUT(
@@ -28,9 +28,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
 
     [_SYMBOL_LAYER] = LAYOUT(
-                    KC_CIRC,    KC_PERC,    KC_ASTR,    KC_PLUS,                                        TD(TD_BRC), TD(TD_QT),  KC_GRV ,    KC_TILD,
-        KC_EQL ,    KC_AT  ,    KC_HASH,    KC_DLR ,    KC_AMPR,    KC_PIPE,                KC_UNDS,    TD(TD_PRN), TD(TD_BRCT),KC_COLN,    KC_SCLN,    KC_MINUS,
-                                KC_LT  ,    KC_GT  ,    KC_EXLM,    KC_QUES,                TD(TD_SL_B),KC_DOT ,    KC_COMM ,   KC_QUOT,
+                    KC_CIRC,    KC_PERC,    KC_ASTR,    KC_PLUS,                                        KC_LBRC, KC_QUOT,  KC_GRV ,    KC_TILD,
+        KC_EQL ,    KC_AT  ,    KC_HASH,    KC_DLR ,    KC_AMPR,    KC_PIPE,                KC_UNDS,    KC_LPRN, KC_LCBR,KC_COLN,    KC_SCLN,    KC_MINUS,
+                                KC_LT  ,    KC_GT  ,    KC_EXLM,    KC_QUES,                KC_SLSH,KC_DOT ,    KC_COMM ,   KC_QUOT,
                                                         KC_LNG2,    KC_LNG1,                XXXXXXX,    XXXXXXX
     ),
 
@@ -49,39 +49,6 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     )
 };
 
-tap_dance_action_t tap_dance_actions[] = {
-    [TD_A] = ACTION_TAP_DANCE_DOUBLE(KC_A, LSFT(KC_A)),
-    [TD_B] = ACTION_TAP_DANCE_DOUBLE(KC_B, LSFT(KC_B)),
-    [TD_C] = ACTION_TAP_DANCE_DOUBLE(KC_C, LSFT(KC_C)),
-    [TD_D] = ACTION_TAP_DANCE_DOUBLE(KC_D, LSFT(KC_D)),
-    [TD_E] = ACTION_TAP_DANCE_DOUBLE(KC_E, LSFT(KC_E)),
-    [TD_F] = ACTION_TAP_DANCE_DOUBLE(KC_F, LSFT(KC_F)),
-    [TD_G] = ACTION_TAP_DANCE_DOUBLE(KC_G, LSFT(KC_G)),
-    [TD_H] = ACTION_TAP_DANCE_DOUBLE(KC_H, LSFT(KC_H)),
-    [TD_I] = ACTION_TAP_DANCE_DOUBLE(KC_I, LSFT(KC_I)),
-    [TD_J] = ACTION_TAP_DANCE_DOUBLE(KC_J, LSFT(KC_J)),
-    [TD_K] = ACTION_TAP_DANCE_DOUBLE(KC_K, LSFT(KC_K)),
-    [TD_L] = ACTION_TAP_DANCE_DOUBLE(KC_L, LSFT(KC_L)),
-    [TD_M] = ACTION_TAP_DANCE_DOUBLE(KC_M, LSFT(KC_M)),
-    [TD_N] = ACTION_TAP_DANCE_DOUBLE(KC_N, LSFT(KC_N)),
-    [TD_O] = ACTION_TAP_DANCE_DOUBLE(KC_O, LSFT(KC_O)),
-    [TD_P] = ACTION_TAP_DANCE_DOUBLE(KC_P, LSFT(KC_P)),
-    [TD_Q] = ACTION_TAP_DANCE_DOUBLE(KC_Q, LSFT(KC_Q)),
-    [TD_R] = ACTION_TAP_DANCE_DOUBLE(KC_R, LSFT(KC_R)),
-    [TD_S] = ACTION_TAP_DANCE_DOUBLE(KC_S, LSFT(KC_S)),
-    [TD_T] = ACTION_TAP_DANCE_DOUBLE(KC_T, LSFT(KC_T)),
-    [TD_U] = ACTION_TAP_DANCE_DOUBLE(KC_U, LSFT(KC_U)),
-    [TD_V] = ACTION_TAP_DANCE_DOUBLE(KC_V, LSFT(KC_V)),
-    [TD_W] = ACTION_TAP_DANCE_DOUBLE(KC_W, LSFT(KC_W)),
-    [TD_X] = ACTION_TAP_DANCE_DOUBLE(KC_X, LSFT(KC_X)),
-    [TD_Y] = ACTION_TAP_DANCE_DOUBLE(KC_Y, LSFT(KC_Y)),
-    [TD_Z] = ACTION_TAP_DANCE_DOUBLE(KC_Z, LSFT(KC_Z)),
-    [TD_SL_B] = ACTION_TAP_DANCE_DOUBLE(KC_SLSH, KC_BSLS),
-    [TD_PRN] = ACTION_TAP_DANCE_DOUBLE(KC_LPRN, KC_RPRN),
-    [TD_BRC] = ACTION_TAP_DANCE_DOUBLE(KC_LBRC, KC_RBRC),
-    [TD_BRCT] = ACTION_TAP_DANCE_DOUBLE(KC_LCBR, KC_RCBR),
-    [TD_QT] = ACTION_TAP_DANCE_DOUBLE(KC_QUOT, KC_DQT)
-};
 
 combo_t key_combos[] = {
     [ENT_R_COMBO] = COMBO(ent_r_combo, KC_ENT),
