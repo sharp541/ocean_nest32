@@ -12,5 +12,6 @@ CAPS_WORD_ENABLE = yes
 TAP_DANCE_ENABLE = no
 MOUSEKEY_ENABLE = yes
 COMBO_ENABLE = yes
+AUTO_SHIFT_ENABLE = yes
 
-SRC += layer.c mouse_control.c
+SRC += layer.c mouse_control.c process_record.c autoshift.c custom_key.c

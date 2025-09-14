@@ -51,7 +51,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 
 combo_t key_combos[] = {
-    [ENT_R_COMBO] = COMBO(ent_r_combo, KC_ENT),
+    [ENT_R_COMBO] = COMBO(ent_r_combo, SFT_T(KC_ENT)),
     [ENT_L_COMBO] = COMBO(ent_l_combo, SFT_T(KC_ENT)),
     [BSPC_R_COMBO] = COMBO(bspc_r_combo, C(KC_BSPC)),
     [BSPC_L_COMBO] = COMBO(bspc_l_combo, KC_BSPC),

@@ -2,8 +2,8 @@
 
 bool scrolling_mode = false;
 
-#define MOUSE_DIVISOR 2.0
-#define SCROLL_DIVISOR 10.0
+#define MOUSE_DIVISOR 4.0
+#define SCROLL_DIVISOR 12.0
 
 float mouse_accumulated_x = 0.0;
 float mouse_accumulated_y = 0.0;
