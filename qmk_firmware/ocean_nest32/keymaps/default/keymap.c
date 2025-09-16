@@ -14,30 +14,30 @@
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_BASE_LAYER] = LAYOUT(
-                    KC_H,   KC_K,   KC_R,   KC_Z,                                       KC_Q,   KC_E,   KC_P,   KC_W,
-        KC_B,   KC_M,   KC_S,   KC_N,   KC_T,   KC_G,               KC_C,   KC_A,   KC_O,   KC_I,   KC_U,   LB_MO,
-                                KC_F,   KC_L,   KC_D,   KC_J,               KC_X,   KC_Y,   KC_V,   MS_BTN1 ,
-                                                        SPC_FUN ,   TAB_NUM ,               RCTL_T(KC_DEL),     BSPC_SYM
+                    KC_H,       KC_K,       KC_R,       KC_Z,                                           KC_Q,       KC_E,       KC_P,       KC_W,
+        KC_B,       KC_M,       KC_S,       KC_N,       KC_T,       KC_G,                   KC_C,       KC_A,       KC_O,       KC_I,       KC_U,       LB_MO,
+                                KC_F,       KC_L,       KC_D,       KC_J,                   KC_X,       KC_Y,       KC_V,       MS_BTN1 ,
+                                                        SPC_FUN ,   TAB_NUM ,               BSPC_SYM,   RCTL_T(KC_DEL)
     ),
 
     [_MOUSE_LAYER] = LAYOUT(
                     XXXXXXX,    KC_FIND,    XXXXXXX,    XXXXXXX,                                        XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,
-        C(KC_SLSH), C(KC_A),    C(KC_S),    C(KC_Z),    C(KC_Y),    KC_WREF,                SGUI(KC_S), XXXXXXX,    XXXXXXX,    XXXXXXX,    C(KC_W),    XXXXXXX,
-                                C(KC_X) ,   C(KC_C),    C(KC_V),    KC_WSTP,                XXXXXXX,   RCS(KC_T),    C(KC_T),   KC_BTN3,
+        C(KC_SLSH), C(KC_A),    C(KC_S),    C(KC_Z),    C(KC_Y),    KC_WREF,                SGUI(KC_S), XXXXXXX,    RCS(KC_T),  C(KC_T),    C(KC_W),    XXXXXXX,
+                                C(KC_X) ,   C(KC_C),    C(KC_V),    KC_WSTP,                XXXXXXX,    C(KC_PGUP), C(KC_PGDN), KC_BTN3,
                                                         C(KC_LBRC), C(KC_RBRC),             KC_WFWD,    KC_WBAK
     ),
 
     [_SYMBOL_LAYER] = LAYOUT(
-                    KC_CIRC,    KC_PERC,    KC_ASTR,    KC_PLUS,                                        KC_LBRC, KC_QUOT,  KC_GRV ,    KC_TILD,
-        KC_EQL ,    KC_AT  ,    KC_HASH,    KC_DLR ,    KC_AMPR,    KC_PIPE,                KC_UNDS,    KC_LPRN, KC_LCBR,KC_COLN,    KC_SCLN,    KC_MINUS,
-                                KC_LT  ,    KC_GT  ,    KC_EXLM,    KC_QUES,                KC_SLSH,KC_DOT ,    KC_COMM ,   KC_QUOT,
+                    KC_CIRC,    KC_PERC,    KC_ASTR,    KC_PLUS,                                        CKC_BRC,    KC_DQT ,    KC_QUOT,    KC_GRV,
+        KC_EQL ,    KC_AT  ,    KC_HASH,    KC_DLR ,    KC_AMPR,    KC_PIPE,                KC_UNDS,    CKC_PRN,    CKC_BRCT,   KC_COLN,    KC_SCLN,    CKC_MNS,
+                                KC_LT  ,    KC_GT  ,    KC_EXLM,    KC_QUES,                CKC_SL ,    KC_DOT ,    KC_COMM ,   KC_TILD,
                                                         KC_LNG2,    KC_LNG1,                XXXXXXX,    XXXXXXX
     ),
 
     [_NUMPAD_LAYER] = LAYOUT(
                     KC_6   ,    KC_7   ,    KC_8   ,    KC_9   ,                                        XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,
         KC_0   ,    KC_1   ,    KC_2   ,    KC_3   ,    KC_4   ,    KC_5   ,                XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,
-                                XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,                XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,
+                                XXXXXXX,    KC_COLN,    KC_MINUS,   KC_DOT ,                XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,
                                                         XXXXXXX,    XXXXXXX,                XXXXXXX,    XXXXXXX
     ),
 
