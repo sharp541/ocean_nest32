@@ -9,7 +9,6 @@ SPI_DRIVER_REQUIRED = yes
 
 # software configuration
 CAPS_WORD_ENABLE = yes
-TAP_DANCE_ENABLE = no
 MOUSEKEY_ENABLE = yes
 COMBO_ENABLE = yes
 AUTO_SHIFT_ENABLE = yes
