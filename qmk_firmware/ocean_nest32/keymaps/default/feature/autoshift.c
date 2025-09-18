@@ -1,7 +1,7 @@
 #include "quantum.h"
 
 #include "custom_key.h"
-#include "process_record.h"
+#include "states.h"
 
 bool get_custom_auto_shifted_key(uint16_t keycode, keyrecord_t *record) {
     for (int i = 0; i < all_key_count; i++) {

@@ -1,6 +1,6 @@
 #include "quantum.h"
 
-#include "process_record.h"
+#include "states.h"
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     switch (keycode) {
