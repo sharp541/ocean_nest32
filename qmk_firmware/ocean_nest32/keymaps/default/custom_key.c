@@ -186,19 +186,19 @@ void greater_unregister(bool shifted) {
 }
 
 const int all_key_count = 11;
-const key_t **custom_keys = (const key_t *[]){
-    // &(key_t){.custom_keycode = CKC_EN, .register_key = lang_en_register, .unregister_key = lang_en_unregister},
-    // &(key_t){.custom_keycode = CKC_JA, .register_key = lang_ja_register, .unregister_key = lang_ja_unregister},
-    &(key_t){.custom_keycode = CKC_PRN, .register_key = paren_register, .unregister_key = paren_unregister},
-    &(key_t){.custom_keycode = CKC_BRC, .register_key = brace_register, .unregister_key = brace_unregister},
-    &(key_t){.custom_keycode = CKC_BRCT, .register_key = bracket_register, .unregister_key = bracket_unregister},
-    &(key_t){.custom_keycode = CKC_ABK, .register_key = chevron_register, .unregister_key = chevron_unregister},
-    &(key_t){.custom_keycode = CKC_SL, .register_key = slash_register, .unregister_key = slash_unregister},
-    &(key_t){.custom_keycode = CKC_MNS, .register_key = minus_register, .unregister_key = minus_unregister},
-    &(key_t){.custom_keycode = CKC_EXC, .register_key = exclamation_register, .unregister_key = exclamation_unregister},
-    &(key_t){.custom_keycode = CKC_PLS, .register_key = plus_register, .unregister_key = plus_unregister},
-    &(key_t){.custom_keycode = CKC_AST, .register_key = asterisk_register, .unregister_key = asterisk_unregister},
-    &(key_t){.custom_keycode = CKC_LES, .register_key = less_register, .unregister_key = less_unregister},
-    &(key_t){.custom_keycode = CKC_GRT, .register_key = greater_register, .unregister_key = greater_unregister},
+const custom_key_t **custom_keys = (const custom_key_t *[]){
+    // &(custom_key_t){.custom_keycode = CKC_EN, .register_key = lang_en_register, .unregister_key = lang_en_unregister},
+    // &(custom_key_t){.custom_keycode = CKC_JA, .register_key = lang_ja_register, .unregister_key = lang_ja_unregister},
+    &(custom_key_t){.custom_keycode = CKC_PRN, .register_key = paren_register, .unregister_key = paren_unregister},
+    &(custom_key_t){.custom_keycode = CKC_BRC, .register_key = brace_register, .unregister_key = brace_unregister},
+    &(custom_key_t){.custom_keycode = CKC_BRCT, .register_key = bracket_register, .unregister_key = bracket_unregister},
+    &(custom_key_t){.custom_keycode = CKC_ABK, .register_key = chevron_register, .unregister_key = chevron_unregister},
+    &(custom_key_t){.custom_keycode = CKC_SL, .register_key = slash_register, .unregister_key = slash_unregister},
+    &(custom_key_t){.custom_keycode = CKC_MNS, .register_key = minus_register, .unregister_key = minus_unregister},
+    &(custom_key_t){.custom_keycode = CKC_EXC, .register_key = exclamation_register, .unregister_key = exclamation_unregister},
+    &(custom_key_t){.custom_keycode = CKC_PLS, .register_key = plus_register, .unregister_key = plus_unregister},
+    &(custom_key_t){.custom_keycode = CKC_AST, .register_key = asterisk_register, .unregister_key = asterisk_unregister},
+    &(custom_key_t){.custom_keycode = CKC_LES, .register_key = less_register, .unregister_key = less_unregister},
+    &(custom_key_t){.custom_keycode = CKC_GRT, .register_key = greater_register, .unregister_key = greater_unregister},
     NULL
 };

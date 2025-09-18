@@ -21,7 +21,7 @@ typedef struct {
 
     void (* register_key)(bool shifted);
     void (* unregister_key)(bool shifted);
-} key_t;
+} custom_key_t;
 
 extern const int all_key_count;
-extern const key_t **custom_keys;
+extern const custom_key_t **custom_keys;
