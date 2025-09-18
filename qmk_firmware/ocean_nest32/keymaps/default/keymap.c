@@ -4,9 +4,9 @@
 #include QMK_KEYBOARD_H
 
 #include "quantum.h"
-#include "layer.h"
-#include "combo.h"
-#include "custom_key.h"
+#include "feature/layer.h"
+#include "feature/combo.h"
+#include "feature/custom_key.h"
 
 #define LB_MO LT(_MOUSE_LAYER, MS_BTN2) // Hold for mouse layer, tap for right click
 #define SPC_FUN LT(_FUNCTION_LAYER, KC_SPC) // Hold for function layer, tap for space

@@ -13,4 +13,4 @@ MOUSEKEY_ENABLE = yes
 COMBO_ENABLE = yes
 AUTO_SHIFT_ENABLE = yes
 
-SRC += layer.c mouse_control.c process_record.c autoshift.c custom_key.c
+SRC += feature/layer.c feature/mouse_control.c feature/process_record.c feature/autoshift.c feature/custom_key.c

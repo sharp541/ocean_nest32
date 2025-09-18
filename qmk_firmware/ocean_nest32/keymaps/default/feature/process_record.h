@@ -2,4 +2,4 @@
 
 #include "quantum.h"
 
-static bool lang_en_state;
+static bool lang_en_state = true;
