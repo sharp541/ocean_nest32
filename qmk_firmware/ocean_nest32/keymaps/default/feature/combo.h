@@ -56,7 +56,7 @@ const uint16_t PROGMEM home_r_combo[] = {KC_P, KC_W, COMBO_END};
 const uint16_t PROGMEM end_r_combo[] = {KC_P, KC_W, KC_O, COMBO_END};
 
 // esc
-const uint16_t PROGMEM esc_r_combo[] = {KC_I, KC_U, COMBO_END};
+const uint16_t PROGMEM esc_r_combo[] = {KC_C, KC_Q, COMBO_END};
 
 // alt
 const uint16_t PROGMEM alt_l_combo[] = {KC_G, KC_L, COMBO_END};
