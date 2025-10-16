@@ -22,9 +22,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
 
     [_MOUSE_LAYER] = LAYOUT(
-                    XXXXXXX,    KC_FIND,    XXXXXXX,    XXXXXXX,                                        XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,
-        C(KC_SLSH), C(KC_A),    C(KC_S),    C(KC_Z),    C(KC_Y),    KC_WREF,                SGUI(KC_S), C(KC_PGUP), C(KC_PGDN), XXXXXXX ,   XXXXXXX  ,    KC_BTN3,
-                                C(KC_X) ,   C(KC_C),    C(KC_V),    KC_WSTP,                RCS(KC_T),  C(KC_T),    C(KC_W),    XXXXXXX,
+                    _______,    KC_FIND,    _______,    _______,                                        _______,    _______,    _______,    _______,
+        C(KC_SLSH), C(KC_A),    C(KC_S),    C(KC_Z),    C(KC_Y),    KC_WREF,                SGUI(KC_S), C(KC_PGUP), C(KC_PGDN), _______ ,   _______  ,    KC_BTN3,
+                                C(KC_X) ,   C(KC_C),    C(KC_V),    KC_WSTP,                RCS(KC_T),  C(KC_T),    C(KC_W),    _______,
                                                         C(KC_LBRC), C(KC_RBRC),             KC_WFWD,    KC_WBAK
     ),
 
@@ -32,21 +32,21 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                     KC_CIRC,    KC_PERC,    KC_ASTR,    KC_PLUS,                                        CKC_BRC,    KC_DQT ,    KC_QUOT,    KC_GRV,
         KC_EQL ,    KC_AT  ,    KC_HASH,    KC_DLR ,    KC_AMPR,    KC_PIPE,                KC_UNDS,    CKC_PRN,    CKC_BRCT,   KC_COLN,    KC_SCLN,    CKC_MNS,
                                 KC_LT  ,    KC_GT  ,    KC_EXLM,    KC_QUES,                CKC_SL ,    KC_DOT ,    KC_COMM ,   KC_TILD,
-                                                        KC_LNG2,    KC_LNG1,                XXXXXXX,    XXXXXXX
+                                                        KC_LNG2,    KC_LNG1,                _______,    _______
     ),
 
     [_NUMPAD_LAYER] = LAYOUT(
-                    KC_6   ,    KC_7   ,    KC_8   ,    KC_9   ,                                        XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,
-        KC_0   ,    KC_1   ,    KC_2   ,    KC_3   ,    KC_4   ,    KC_5   ,                XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,
-                                XXXXXXX,    KC_COLN,    KC_MINUS,   KC_DOT ,                XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,
-                                                        XXXXXXX,    XXXXXXX,                XXXXXXX,    XXXXXXX
+                    KC_6   ,    KC_7   ,    KC_8   ,    KC_9   ,                                        _______,    _______,    _______,    _______,
+        KC_0   ,    KC_1   ,    KC_2   ,    KC_3   ,    KC_4   ,    KC_5   ,                _______,    _______,    _______,    _______,    _______,    _______,
+                                _______,    KC_COLN,    KC_MINUS,   KC_DOT ,                _______,    _______,    _______,    _______,
+                                                        _______,    _______,                _______,    _______
     ),
 
     [_FUNCTION_LAYER] = LAYOUT(
-                    KC_F6  ,    KC_F7  ,    KC_F8  ,    KC_F9  ,                                        QK_BOOT,    XXXXXXX,    XXXXXXX,    XXXXXXX,
-        KC_F10 ,    KC_F1  ,    KC_F2  ,    KC_F3  ,    KC_F4  ,    KC_F5  ,                XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,
-                                XXXXXXX,    XXXXXXX,    KC_F12 ,    KC_F11 ,                XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,
-                                                        XXXXXXX,    MS_BTN2,                XXXXXXX,    XXXXXXX
+                    KC_F6  ,    KC_F7  ,    KC_F8  ,    KC_F9  ,                                        QK_BOOT,    _______,    _______,    _______,
+        KC_F10 ,    KC_F1  ,    KC_F2  ,    KC_F3  ,    KC_F4  ,    KC_F5  ,                _______,    _______,    _______,    _______,    _______,    _______,
+                                _______,    _______,    KC_F12 ,    KC_F11 ,                _______,    _______,    _______,    _______,
+                                                        _______,    MS_BTN2,                _______,    _______
     )
 };
 
