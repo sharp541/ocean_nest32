@@ -51,67 +51,8 @@
           "min_clearance": 0.5
         }
       },
-      "diff_pair_dimensions": [
-        {
-          "gap": 0.0,
-          "via_gap": 0.0,
-          "width": 0.0
-        }
-      ],
-      "drc_exclusions": [
-        [
-          "silk_edge_clearance|107454250|61817500|9337d5ce-0f66-4d8a-b961-37fde0d016ff|40d0da46-b54e-45e7-945a-2733e66d595b",
-          ""
-        ],
-        [
-          "silk_edge_clearance|159950000|141110000|3cb7c940-02a9-424a-97e0-d20295bc5a7f|9bbd737b-809d-437b-be0d-d95c148c3e87",
-          ""
-        ],
-        [
-          "silk_edge_clearance|159950000|141120000|3cb7c940-02a9-424a-97e0-d20295bc5a7f|7a2d7681-c123-4fb0-8eca-846fc6b4bde1",
-          ""
-        ],
-        [
-          "silk_edge_clearance|160000000|123320000|3cb7c940-02a9-424a-97e0-d20295bc5a7f|469606cc-33a2-4e6a-bbe8-44ff70c961d5",
-          ""
-        ],
-        [
-          "silk_edge_clearance|160000000|123330000|3cb7c940-02a9-424a-97e0-d20295bc5a7f|2bf2ef0f-c22b-4cc1-aca9-865d5ad58697",
-          ""
-        ],
-        [
-          "silk_edge_clearance|160000000|141110000|3cb7c940-02a9-424a-97e0-d20295bc5a7f|f444b5de-9927-43d3-885e-098a3c451a0f",
-          ""
-        ],
-        [
-          "silk_edge_clearance|160000000|141120000|3cb7c940-02a9-424a-97e0-d20295bc5a7f|429b6f8b-8f82-4c3d-ab0a-26fd34b2ebbb",
-          ""
-        ],
-        [
-          "silk_edge_clearance|94050000|104700000|a4472be8-1764-4ada-88e3-071463836a56|cb1502f0-89a4-499c-8448-0bdb3a90f769",
-          ""
-        ],
-        [
-          "silk_edge_clearance|94050000|110500000|a4472be8-1764-4ada-88e3-071463836a56|6d7f06f6-4310-4018-8904-47893514b03c",
-          ""
-        ],
-        [
-          "silk_edge_clearance|94050000|110500000|a4472be8-1764-4ada-88e3-071463836a56|d29711bc-07ce-4f4d-b548-1d04ae848975",
-          ""
-        ],
-        [
-          "silk_edge_clearance|99458978|61817500|9337d5ce-0f66-4d8a-b961-37fde0d016ff|0b59a777-2736-43ea-89a5-0e22a2962ce9",
-          ""
-        ],
-        [
-          "silk_edge_clearance|99458978|61817501|9337d5ce-0f66-4d8a-b961-37fde0d016ff|5ec23e12-5b28-4a25-9039-33efd7544eb9",
-          ""
-        ],
-        [
-          "text_height|102400000|71800000|6ed9e80f-d452-44b4-a294-71eefcfcedf9|00000000-0000-0000-0000-000000000000",
-          ""
-        ]
-      ],
+      "diff_pair_dimensions": [],
+      "drc_exclusions": [],
       "meta": {
         "version": 2
       },
@@ -154,7 +95,7 @@
         "pth_inside_courtyard": "ignore",
         "shorting_items": "error",
         "silk_edge_clearance": "warning",
-        "silk_over_copper": "ignore",
+        "silk_over_copper": "warning",
         "silk_overlap": "warning",
         "skew_out_of_range": "error",
         "solder_mask_bridge": "error",
@@ -239,11 +180,7 @@
           "td_width_to_size_filter_ratio": 0.9
         }
       ],
-      "track_widths": [
-        0.0,
-        0.25,
-        0.5
-      ],
+      "track_widths": [],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
           "corner_radius_percentage": 80,
@@ -270,12 +207,7 @@
           "spacing": 0.6
         }
       },
-      "via_dimensions": [
-        {
-          "diameter": 0.0,
-          "drill": 0.0
-        }
-      ],
+      "via_dimensions": [],
       "zones_allow_external_fillets": false
     },
     "ipc2581": {
@@ -519,7 +451,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "OceanNest_R.kicad_pro",
+    "filename": "OceanNest_L.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -554,18 +486,18 @@
     "last_paths": {
       "gencad": "",
       "idf": "",
-      "netlist": "",
+      "netlist": "./",
       "plot": "",
       "pos_files": "",
-      "specctra_dsn": "ErgoNest_R.dsn",
-      "step": "OceanNest_R.step",
+      "specctra_dsn": "",
+      "step": "",
       "svg": "",
       "vrml": ""
     },
     "page_layout_descr_file": ""
   },
   "schematic": {
-    "annotate_start_num": 20,
+    "annotate_start_num": 0,
     "bom_export_filename": "${PROJECTNAME}.csv",
     "bom_fmt_presets": [],
     "bom_fmt_settings": {
@@ -775,7 +707,7 @@
   },
   "sheets": [
     [
-      "e2986c27-9cb7-47ba-9b56-70bbea74a24c",
+      "12bd0f12-2db2-4038-af71-4085986ec508",
       "Root"
     ]
   ],
