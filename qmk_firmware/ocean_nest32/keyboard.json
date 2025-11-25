@@ -38,6 +38,15 @@
             "pin": "GP0"
         }
     },
+    "encoder": {
+        "rotary": [
+            {
+                "pin_a": "GP4",
+                "pin_b": "GP3",
+                "resolution": 4
+            }
+        ]
+    },
     "dynamic_keymap": {
         "layer_count": 5
     },
