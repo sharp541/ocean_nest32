@@ -1,13 +1,13 @@
 // hardware configuration
-#define SERIAL_USART_TX_PIN GP1
+#define SERIAL_USART_TX_PIN GP7
 
 #define SPLIT_POINTING_ENABLE
 #define POINTING_DEVICE_RIGHT
-#define SPI_DRIVER SPID1
-#define SPI_SCK_PIN GP10
-#define SPI_MOSI_PIN GP11
-#define SPI_MISO_PIN GP12
-#define PMW33XX_CS_PIN GP13
+#define SPI_DRIVER SPID0
+#define SPI_SCK_PIN GP2
+#define SPI_MOSI_PIN GP3
+#define SPI_MISO_PIN GP4
+#define PMW33XX_CS_PIN GP1
 
 // trackball configuration
 
