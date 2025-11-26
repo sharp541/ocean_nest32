@@ -9,44 +9,52 @@
 #include "feature/custom_key.h"
 
 #define LB_MO LT(_MOUSE_LAYER, MS_BTN2) // Hold for mouse layer, tap for right click
-#define SPC_FUN LT(_FUNCTION_LAYER, KC_SPC) // Hold for function layer, tap for space
+#define SPC_A2 LT(_ALPHA2_LAYER, KC_SPC) // Hold for function layer, tap for space
 #define TAB_NUM LT(_NUMPAD_LAYER, KC_TAB) // Hold for numpad layer, tap for tab
-#define BSPC_SYM LT(_SYMBOL_LAYER, KC_BSPC) // Hold for symbol layer, tap for backspace
+#define BSP_SYM LT(_SYMBOL_LAYER, KC_BSPC) // Hold for symbol layer, tap for backspace
+#define DEL_FUN LT(_FUNCTION_LAYER, KC_DEL) // Hold for function layer, tap for delete
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
-    [_BASE_LAYER] = LAYOUT(
-        KC_H,       KC_K,       KC_R,       KC_Z,                                           KC_Q,       KC_E,       KC_P,       KC_W,
-        KC_M,       KC_S,       KC_N,       KC_T,       KC_G,                   KC_C,       KC_A,       KC_O,       KC_I,       KC_U,
-        KC_B,       KC_J,       KC_F,       KC_D,                                           KC_Y,       MS_BTN1,    LB_MO ,     KC_V,
-                                            SPC_FUN ,   TAB_NUM ,               BSPC_SYM,   RCTL_T(KC_DEL)
+    [_ALPHA1_LAYER] = LAYOUT(
+        KC_H,       KC_K,       KC_R,       KC_Z,                                                       KC_Q,       KC_E,       KC_P,       KC_W,
+        KC_M,       KC_S,       KC_N,       KC_T,       KC_G,                               KC_C,       KC_A,       KC_O,       KC_I,       KC_U,
+        KC_B,                               KC_D,                                                       KC_Y,       MS_BTN1,    LB_MO ,     KC_V,
+                                                        SPC_A2 ,    TAB_NUM ,   DEL_FUN,    BSP_SYM
+    ),
+
+    [_ALPHA2_LAYER] = LAYOUT(
+        _______,    _______,    _______,    _______,                                                    _______,    _______,    _______,    _______,
+        _______,    _______,    _______,    _______,    _______,                            KC_PIPE,    KC_GT,      KC_EXLM,    CKC_SL,     _______,
+        _______,                            _______,                                                    _______,    _______,    _______ ,   _______,
+                                                        _______,    _______ ,   _______,    _______
     ),
 
     [_MOUSE_LAYER] = LAYOUT(
-        XXXXXX,    KC_FIND,    XXXXXX,    XXXXXX,                                           XXXXXX,    XXXXXX,    XXXXXX,    XXXXXX,
-        C(KC_SLSH), C(KC_A),    C(KC_S),    C(KC_Z),    C(KC_Y),    KC_WREF,                SGUI(KC_S), C(KC_PGUP), C(KC_PGDN), XXXXXX ,   XXXXXX  ,
-                                C(KC_X) ,   C(KC_C),    C(KC_V),    KC_WSTP,                RCS(KC_T),  C(KC_T),    C(KC_W),   KC_BTN3,    XXXXXX,
-                                                        C(KC_LBRC), C(KC_RBRC),             KC_WFWD,    KC_WBAK
+        _______,    C(KC_S),    C(KC_Z),    C(KC_Y),                                                    _______,    _______,    _______,    _______,
+        C(KC_X),    C(KC_C),    C(KC_V),    _______,    C(KC_SLSH),                         C(KC_PGUP), C(KC_PGDN), KC_BTN3,    _______,    _______,
+        C(KC_A),                            SGUI(KC_S),                                                 C(KC_T),    C(KC_W),    _______,    RCS(KC_T),
+                                                        C(KC_LBRC), C(KC_RBRC), KC_WFWD,    KC_WBAK
     ),
 
     [_SYMBOL_LAYER] = LAYOUT(
-                    KC_CIRC,    KC_PERC,    KC_ASTR,    KC_PLUS,                                        CKC_BRC,    KC_DQT ,    KC_QUOT,    KC_GRV,
-        KC_EQL ,    KC_AT  ,    KC_HASH,    KC_DLR ,    KC_AMPR,    KC_PIPE,                KC_UNDS,    CKC_PRN,    CKC_BRCT,   KC_COLN,    KC_SCLN,    CKC_MNS,
-                                KC_LT  ,    KC_GT  ,    KC_EXLM,    KC_QUES,                CKC_SL ,    KC_DOT ,    KC_COMM ,   KC_TILD,
-                                                        KC_LNG2,    KC_LNG1,                XXXXXX,    XXXXXX
+        KC_CIRC,    KC_PERC,    KC_ASTR,    KC_PLUS,                                                    CKC_BRC,    KC_DQT ,    KC_QUOT,    KC_GRV,
+        KC_EQL,     KC_AT  ,    KC_HASH,    KC_DLR ,    KC_AMPR,                            KC_UNDS,    CKC_PRN,    CKC_BRCT,   KC_COLN,    KC_SCLN,
+        KC_LT,                              KC_QUES,                                                    KC_DOT ,    KC_COMM ,   KC_TILD,    CKC_MNS,
+                                                        KC_LNG2,    KC_LNG1,    _______,    _______
     ),
 
     [_NUMPAD_LAYER] = LAYOUT(
-                    KC_6   ,    KC_7   ,    KC_8   ,    KC_9   ,                                        XXXXXX,    XXXXXX,    XXXXXX,    XXXXXX,
-        KC_0   ,    KC_1   ,    KC_2   ,    KC_3   ,    KC_4   ,    KC_5   ,                XXXXXX,    XXXXXX,    XXXXXX,    XXXXXX,    XXXXXX,    XXXXXX,
-                                XXXXXX,    KC_COLN,    KC_MINUS,   KC_DOT ,                XXXXXX,    XXXXXX,    XXXXXX,    XXXXXX,
-                                                        XXXXXX,    XXXXXX,                XXXXXX,    XXXXXX
+        KC_6   ,    KC_7   ,    KC_8   ,    KC_9   ,                                                    _______,    _______,    _______,    _______,
+        KC_1   ,    KC_2   ,    KC_3   ,    KC_4   ,    KC_5   ,                            _______,    _______,    _______,    _______,    _______,
+        KC_0,                               KC_DOT ,                                                    _______,    _______,    _______,    _______,
+                                                        _______,    _______,    _______,    _______
     ),
 
     [_FUNCTION_LAYER] = LAYOUT(
-                    KC_F6  ,    KC_F7  ,    KC_F8  ,    KC_F9  ,                                        QK_BOOT,    XXXXXX,    XXXXXX,    XXXXXX,
-        KC_F10 ,    KC_F1  ,    KC_F2  ,    KC_F3  ,    KC_F4  ,    KC_F5  ,                XXXXXX,    XXXXXX,    XXXXXX,    XXXXXX,    XXXXXX,    XXXXXX,
-                                XXXXXX,    XXXXXX,    KC_F12 ,    KC_F11 ,                XXXXXX,    XXXXXX,    XXXXXX,    XXXXXX,
-                                                        XXXXXX,    MS_BTN2,                XXXXXX,    XXXXXX
+        KC_F6  ,    KC_F7  ,    KC_F8  ,    KC_F9  ,                                                    QK_BOOT,    _______,    _______,    _______,
+        KC_F1  ,    KC_F2  ,    KC_F3  ,    KC_F4  ,    KC_F5  ,                            _______,    _______,    _______,    _______,    _______,
+        KC_F10,                             KC_F11 ,                                                    _______,    _______,    _______,    _______,
+                                                        _______,    MS_BTN2,    _______,    _______
     )
 };
 
