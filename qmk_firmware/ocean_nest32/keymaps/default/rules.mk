@@ -1,6 +1,7 @@
 # hardware configuration
 SERIAL_DRIVER = vendor
 
+ENCODER_ENABLE = yes
 POINTING_DEVICE_ENABLE = yes
 POINTING_DEVICE_DRIVER = pmw3360
 
@@ -8,6 +9,7 @@ BOARD = GENERIC_RP_RP2040
 SPI_DRIVER_REQUIRED = yes
 
 # software configuration
+ENCODER_MAP_ENABLE = yes
 CAPS_WORD_ENABLE = yes
 MOUSEKEY_ENABLE = yes
 COMBO_ENABLE = yes

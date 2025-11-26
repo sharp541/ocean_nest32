@@ -24,8 +24,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
     [_ALPHA2_LAYER] = LAYOUT(
         _______,    _______,    _______,    _______,                                                    _______,    _______,    _______,    _______,
-        _______,    _______,    _______,    _______,    _______,                            KC_PIPE,    KC_GT,      KC_EXLM,    CKC_SL,     _______,
-        _______,                            _______,                                                    _______,    _______,    _______ ,   _______,
+        _______,    _______,    _______,    _______,    _______,                            _______,    KC_GT,      KC_EXLM,    CKC_SL,     KC_EQL,
+        _______,                            _______,                                                    _______,    KC_LT,      _______ ,   _______,
                                                         _______,    _______ ,   _______,    _______
     ),
 
@@ -38,8 +38,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
     [_SYMBOL_LAYER] = LAYOUT(
         KC_CIRC,    KC_PERC,    KC_ASTR,    KC_PLUS,                                                    CKC_BRC,    KC_DQT ,    KC_QUOT,    KC_GRV,
-        KC_EQL,     KC_AT  ,    KC_HASH,    KC_DLR ,    KC_AMPR,                            KC_UNDS,    CKC_PRN,    CKC_BRCT,   KC_COLN,    KC_SCLN,
-        KC_LT,                              KC_QUES,                                                    KC_DOT ,    KC_COMM ,   KC_TILD,    CKC_MNS,
+        KC_AT,      KC_HASH,    KC_DLR,     KC_AMPR ,   KC_PIPE,                            KC_UNDS,    CKC_PRN,    CKC_BRCT,   KC_COLN,    KC_SCLN,
+        KC_EXLM,                            KC_QUES,                                                    KC_DOT ,    KC_COMM ,   KC_TILD,    CKC_MNS,
                                                         KC_LNG2,    KC_LNG1,    _______,    _______
     ),
 
@@ -56,6 +56,15 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_F10,                             KC_F11 ,                                                    _______,    _______,    _______,    _______,
                                                         _______,    MS_BTN2,    _______,    _______
     )
+};
+
+const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][NUM_DIRECTIONS] = {
+    [_ALPHA1_LAYER] =   { ENCODER_CCW_CW(KC_RIGHT, KC_LEFT) },
+    [_ALPHA2_LAYER] =   { ENCODER_CCW_CW(KC_RIGHT, KC_LEFT) },
+    [_MOUSE_LAYER]  =   { ENCODER_CCW_CW(LALT(KC_TAB), LSA(KC_TAB)) },
+    [_SYMBOL_LAYER] =   { ENCODER_CCW_CW(KC_VOLD, KC_VOLU) },
+    [_NUMPAD_LAYER] =   { ENCODER_CCW_CW(KC_VOLD, KC_VOLU) },
+    [_FUNCTION_LAYER]=  { ENCODER_CCW_CW(MS_WHLR, MS_WHLL) },
 };
 
 
