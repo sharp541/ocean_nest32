@@ -20,6 +20,11 @@
 
 // software configuration
 
+#define BOOTMAGIC_ROW 2
+#define BOOTMAGIC_COLUMN 4
+#define BOOTMAGIC_ROW_RIGHT 6
+#define BOOTMAGIC_COLUMN_RIGHT 0
+
 #define TAPPING_TERM 150
 #define HOLD_ON_OTHER_KEY_PRESS
 
