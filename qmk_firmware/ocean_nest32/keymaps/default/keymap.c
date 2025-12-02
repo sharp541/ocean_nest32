@@ -16,16 +16,16 @@
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_ALPHA1_LAYER] = LAYOUT(
-        KC_H,       KC_K,       KC_R,       KC_Z,                                                       KC_Q,       KC_E,       KC_P,       KC_W,
+        KC_H,       KC_K,       KC_R,       KC_Z,                                                       KC_DOT,     KC_E,       KC_P,       KC_W,
         KC_M,       KC_S,       KC_N,       KC_T,       KC_G,                               KC_C,       KC_A,       KC_O,       KC_I,       KC_U,
         KC_B,                               KC_D,                                                       KC_Y,       MS_BTN1,    LB_MO ,     KC_V,
                                                         SPC_A2 ,    TAB_NUM ,   DEL_FUN,    BSP_SYM
     ),
 
     [_ALPHA2_LAYER] = LAYOUT(
-        _______,    _______,    _______,    _______,                                                    _______,    _______,    _______,    _______,
-        _______,    _______,    _______,    _______,    _______,                            _______,    KC_GT,      KC_EXLM,    CKC_SL,     KC_EQL,
-        _______,                            _______,                                                    _______,    KC_LT,      _______ ,   _______,
+        KC_Q,       _______,    _______,    _______,                                                    CKC_BRCT,   _______,    _______,   KC_TILD,
+        KC_X,       KC_J,       KC_F,       KC_L,       _______,                            _______,    CKC_PRN,    CKC_BRC,    _______,    _______,
+        _______,                            _______,                                                    KC_GT,      KC_LT,      _______ ,   _______,
                                                         _______,    _______ ,   _______,    _______
     ),
 
@@ -37,9 +37,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
 
     [_SYMBOL_LAYER] = LAYOUT(
-        KC_CIRC,    KC_PERC,    KC_ASTR,    KC_PLUS,                                                    CKC_BRC,    KC_DQT ,    KC_QUOT,    KC_GRV,
-        KC_AT,      KC_HASH,    KC_DLR,     KC_AMPR ,   KC_PIPE,                            KC_UNDS,    CKC_PRN,    CKC_BRCT,   KC_COLN,    KC_SCLN,
-        KC_EXLM,                            KC_QUES,                                                    KC_DOT ,    KC_COMM ,   KC_TILD,    CKC_MNS,
+        KC_CIRC,    KC_PERC,    KC_ASTR,    KC_PLUS,                                                    KC_COMM,    KC_DQT ,    KC_QUOT,    KC_GRV,
+        KC_AT,      KC_HASH,    KC_DLR,     KC_AMPR ,   KC_PIPE,                            KC_UNDS,    CKC_MNS,    KC_EQL,     KC_COLN,    KC_SCLN,
+        KC_EXLM,                            KC_QUES,                                                    CKC_SL ,    _______ ,   _______,    _______,
                                                         KC_LNG2,    KC_LNG1,    _______,    _______
     ),
 
