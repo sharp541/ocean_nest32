@@ -16,17 +16,17 @@
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_ALPHA1_LAYER] = LAYOUT(
-        KC_P,       KC_K,       KC_R,       KC_Z,                                                       KC_C,       KC_U,       KC_E,       _______,
+        KC_P,       KC_K,       KC_R,       KC_Z,                                                       KC_C,       KC_U,       KC_E,       KC_MINS,
         KC_M,       KC_S,       KC_N,       KC_T,       KC_G,                               KC_DOT,     KC_I,       KC_A,       KC_O,       KC_D,
         KC_H,                               KC_Y,                                                       KC_COMM,    MS_BTN1,    LB_MO ,     KC_W,
                                                         SPC_A2 ,    TAB_NUM ,   DEL_FUN,    BSP_SYM
     ),
 
     [_ALPHA2_LAYER] = LAYOUT(
-        _______,    KC_V,       _______,    _______,                                                    CKC_BRCT,   _______,    _______,    KC_TILD,
+        _______,    KC_V,       _______,    _______,                                                    CKC_BRCT,   KC_TILD,    _______,    _______,
         KC_X,       KC_B,       KC_L,       KC_F,       KC_Q,                               _______,    CKC_PRN,    CKC_BRC,    _______,    _______,
         _______,                            KC_J,                                                       KC_GT,      KC_LT,      _______ ,   _______,
-                                                        _______,    _______ ,   _______,    _______
+                                                        _______,    _______ ,   _______,    CW_TOGG
     ),
 
     [_MOUSE_LAYER] = LAYOUT(
@@ -37,8 +37,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
 
     [_SYMBOL_LAYER] = LAYOUT(
-        KC_CIRC,    KC_PERC,    KC_ASTR,    KC_PLUS,                                                    KC_COMM,    KC_DQT ,    KC_QUOT,    KC_GRV,
-        KC_AT,      KC_HASH,    KC_DLR,     KC_AMPR ,   KC_PIPE,                            KC_UNDS,    CKC_MNS,    KC_EQL,     KC_COLN,    KC_SCLN,
+        KC_CIRC,    KC_PERC,    KC_ASTR,    KC_PLUS,                                                    KC_DQT,     KC_QUOT,    KC_GRV,     _______,
+        KC_AT,      KC_HASH,    KC_DLR,     KC_AMPR ,   KC_PIPE,                            KC_UNDS,    KC_EQL,     _______,    KC_COLN,    KC_SCLN,
         KC_EXLM,                            KC_QUES,                                                    CKC_SL ,    _______ ,   _______,    _______,
                                                         KC_LNG2,    KC_LNG1,    _______,    _______
     ),
@@ -77,14 +77,9 @@ combo_t key_combos[] = {
     [UARR_L_COMBO] = COMBO(uarr_l_combo, KC_UP),
     [DARR_R_COMBO] = COMBO(darr_r_combo, KC_DOWN),
     [DARR_L_COMBO] = COMBO(darr_l_combo, KC_DOWN),
-    [RARR_R_COMBO] = COMBO(rarr_r_combo, KC_RIGHT),
-    [RARR_L_COMBO] = COMBO(rarr_l_combo, KC_RIGHT),
-    [LARR_R_COMBO] = COMBO(larr_r_combo, KC_LEFT),
-    [LARR_L_COMBO] = COMBO(larr_l_combo, KC_LEFT),
     [HOME_R_COMBO] = COMBO(home_r_combo, KC_HOME),
     [END_R_COMBO] = COMBO(end_r_combo, KC_END),
     [ESC_R_COMBO] = COMBO(esc_r_combo, KC_ESC),
     [ALT_L_COMBO] = COMBO(alt_l_combo, KC_LALT),
-    [GUI_L_COMBO] = COMBO(gui_l_combo, KC_LGUI),
-    [CW_COMBO] = COMBO(cw_combo, CW_TOGG),
+    [GUI_L_COMBO] = COMBO(gui_l_combo, KC_LGUI)
 };

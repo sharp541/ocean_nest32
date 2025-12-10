@@ -84,22 +84,6 @@ void slash_unregister(bool shifted) {
     }
 }
 
-void minus_register(bool shifted) {
-    if (shifted) {
-    register_code16(KC_TILD);
-    } else {
-    register_code16(KC_MINUS);
-    }
-}
-
-void minus_unregister(bool shifted) {
-    if (shifted) {
-        unregister_code16(KC_TILD);
-    } else {
-        unregister_code16(KC_MINUS);
-    }
-}
-
 void exclamation_register(bool shifted) {
     if (shifted) {
         tap_code16(KC_EXLM);
@@ -194,7 +178,6 @@ const custom_key_t **custom_keys = (const custom_key_t *[]){
     &(custom_key_t){.custom_keycode = CKC_BRCT, .register_key = bracket_register, .unregister_key = bracket_unregister},
     &(custom_key_t){.custom_keycode = CKC_ABK, .register_key = chevron_register, .unregister_key = chevron_unregister},
     &(custom_key_t){.custom_keycode = CKC_SL, .register_key = slash_register, .unregister_key = slash_unregister},
-    &(custom_key_t){.custom_keycode = CKC_MNS, .register_key = minus_register, .unregister_key = minus_unregister},
     &(custom_key_t){.custom_keycode = CKC_EXC, .register_key = exclamation_register, .unregister_key = exclamation_unregister},
     &(custom_key_t){.custom_keycode = CKC_PLS, .register_key = plus_register, .unregister_key = plus_unregister},
     &(custom_key_t){.custom_keycode = CKC_AST, .register_key = asterisk_register, .unregister_key = asterisk_unregister},
