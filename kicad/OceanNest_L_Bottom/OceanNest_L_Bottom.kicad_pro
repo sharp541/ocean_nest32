@@ -451,7 +451,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "OceanNest_L.kicad_pro",
+    "filename": "OceanNest_L_Bottom.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -490,7 +490,7 @@
       "plot": "",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "OceanNest_L_Bottom.stl",
       "svg": "",
       "vrml": ""
     },
