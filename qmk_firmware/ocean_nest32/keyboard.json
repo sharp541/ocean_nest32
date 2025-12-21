@@ -43,7 +43,7 @@
             {
                 "pin_a": "GP4",
                 "pin_b": "GP3",
-                "resolution": 4
+                "resolution": 1
             }
         ]
     },
