@@ -11,11 +11,13 @@ bool get_custom_auto_shifted_key(uint16_t keycode, keyrecord_t *record) {
             return true;
         }
     }
-    switch (keycode) {
-        case AUTO_SHIFT_ALPHA:
-            return lang_en_state;
-        default:
-            return false;
+    if (lang_en_state) {
+        switch (keycode) {
+            case AUTO_SHIFT_ALPHA:
+                return true;
+            default:
+                return false;
+        }
     }
     return false;
 }

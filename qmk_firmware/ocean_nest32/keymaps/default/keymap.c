@@ -25,7 +25,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_ALPHA2_LAYER] = LAYOUT(
         _______,    KC_V,       _______,    _______,                                                    CKC_BRCT,   KC_TILD,    _______,    _______,
         KC_X,       KC_B,       KC_L,       KC_F,       KC_Q,                               _______,    CKC_PRN,    CKC_BRC,    _______,    _______,
-        _______,                            KC_J,                                                       KC_GT,      KC_LT,      _______ ,   _______,
+        _______,                            KC_J,                                                       KC_LT,      KC_GT,      _______ ,   _______,
                                                         _______,    _______ ,   _______,    CW_TOGG
     ),
 
@@ -69,7 +69,7 @@ const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][NUM_DIRECTIONS] = {
 
 
 combo_t key_combos[] = {
-    [ENT_R_COMBO] = COMBO(ent_r_combo, SFT_T(KC_ENT)),
+    [ENT_R_COMBO] = COMBO(ent_r_combo, CTL_T(KC_ENT)),
     [ENT_L_COMBO] = COMBO(ent_l_combo, SFT_T(KC_ENT)),
     [BSPC_R_COMBO] = COMBO(bspc_r_combo, C(KC_BSPC)),
     [BSPC_L_COMBO] = COMBO(bspc_l_combo, KC_BSPC),
