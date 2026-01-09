@@ -18,7 +18,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_ALPHA1_LAYER] = LAYOUT(
         KC_P,       KC_K,       KC_R,       KC_Z,                                                       KC_C,       KC_U,       KC_E,       KC_MINS,
         KC_M,       KC_S,       KC_N,       KC_T,       KC_G,                               KC_DOT,     KC_I,       KC_A,       KC_O,       KC_D,
-        KC_H,                               KC_Y,                                                       KC_COMM,    MS_BTN1,    LB_MO ,     KC_W,
+        KC_H,                               KC_COMM,                                                    KC_Y,       MS_BTN1,    LB_MO ,     KC_W,
                                                         SPC_A2 ,    TAB_NUM ,   DEL_FUN,    BSP_SYM
     ),
 
@@ -26,7 +26,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         _______,    KC_V,       _______,    _______,                                                    CKC_BRCT,   KC_TILD,    _______,    _______,
         KC_X,       KC_B,       KC_L,       KC_F,       KC_Q,                               _______,    CKC_PRN,    CKC_BRC,    _______,    _______,
         _______,                            KC_J,                                                       KC_LT,      KC_GT,      _______ ,   _______,
-                                                        _______,    _______ ,   _______,    CW_TOGG
+                                                        _______,    MS_BTN2 ,   _______,    CW_TOGG
     ),
 
     [_MOUSE_LAYER] = LAYOUT(
@@ -54,14 +54,14 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_F6  ,    KC_F7  ,    KC_F8  ,    KC_F9  ,                                                    QK_BOOT,    _______,    _______,    _______,
         KC_F1  ,    KC_F2  ,    KC_F3  ,    KC_F4  ,    KC_F5  ,                            _______,    _______,    _______,    _______,    _______,
         KC_F10,                             KC_F11 ,                                                    _______,    _______,    _______,    _______,
-                                                        _______,    MS_BTN2,    _______,    _______
+                                                        _______,    _______,    _______,    _______
     )
 };
 
 const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][NUM_DIRECTIONS] = {
     [_ALPHA1_LAYER] =   { ENCODER_CCW_CW(KC_RIGHT, KC_LEFT) },
     [_ALPHA2_LAYER] =   { ENCODER_CCW_CW(KC_RIGHT, KC_LEFT) },
-    [_MOUSE_LAYER]  =   { ENCODER_CCW_CW(LALT(KC_TAB), LSA(KC_TAB)) },
+    [_MOUSE_LAYER]  =   { ENCODER_CCW_CW(MS_WHLR, MS_WHLL) },
     [_SYMBOL_LAYER] =   { ENCODER_CCW_CW(KC_VOLD, KC_VOLU) },
     [_NUMPAD_LAYER] =   { ENCODER_CCW_CW(KC_VOLD, KC_VOLU) },
     [_FUNCTION_LAYER]=  { ENCODER_CCW_CW(MS_WHLR, MS_WHLL) },
