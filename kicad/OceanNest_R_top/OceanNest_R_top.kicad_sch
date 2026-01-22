@@ -1857,12 +1857,6 @@
 		(uuid "042d8780-7b17-4c31-acea-6f8143364b2c")
 	)
 	(junction
-		(at 129.54 142.24)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "1efc801a-5ed9-4988-93ec-df223063d686")
-	)
-	(junction
 		(at 91.44 120.65)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2000,12 +1994,6 @@
 		(color 0 0 0 0)
 		(uuid "fa9b4c23-eeb3-456d-ab84-3369999dd2f9")
 	)
-	(junction
-		(at 120.65 149.86)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "fc166419-2a23-4aae-8533-e0a94c3eaafd")
-	)
 	(no_connect
 		(at 233.68 35.56)
 		(uuid "7e20cc3a-1067-4ce7-a222-8f88fcad82d0")
@@ -2106,7 +2094,7 @@
 	)
 	(wire
 		(pts
-			(xy 129.54 120.65) (xy 129.54 142.24)
+			(xy 129.54 120.65) (xy 129.54 165.1)
 		)
 		(stroke
 			(width 0)
@@ -2276,16 +2264,6 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 149.86) (xy 139.7 149.86)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5f92757a-0cf4-4ab5-9046-8d496a503243")
-	)
-	(wire
-		(pts
 			(xy 101.6 149.86) (xy 120.65 149.86)
 		)
 		(stroke
@@ -2363,16 +2341,6 @@
 			(type default)
 		)
 		(uuid "88f33890-f6b2-4268-9d6f-3794a744f318")
-	)
-	(wire
-		(pts
-			(xy 129.54 142.24) (xy 129.54 165.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8f4a8aad-e7db-41ef-9e3e-bddb2b280b65")
 	)
 	(wire
 		(pts
@@ -3034,7 +3002,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "00f7d363-7de8-4409-b070-69824b5fe75f")
-		(property "Reference" "#FLG021"
+		(property "Reference" "#FLG022"
 			(at 109.22 19.685 0)
 			(effects
 				(font
@@ -3084,183 +3052,7 @@
 		(instances
 			(project ""
 				(path "/e2986c27-9cb7-47ba-9b56-70bbea74a24c"
-					(reference "#FLG021")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 134.62 142.24 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0f0b7c3f-6682-42fc-aa72-abac4c9f6efe")
-		(property "Reference" "SW33"
-			(at 134.62 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_Push"
-			(at 134.62 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "takashicompany:CherryMX_Hotswap_16m"
-			(at 134.62 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 134.62 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 134.62 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Availability" ""
-			(at 134.62 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Check_prices" ""
-			(at 134.62 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description_1" ""
-			(at 134.62 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER" ""
-			(at 134.62 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 134.62 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MF" ""
-			(at 134.62 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MP" ""
-			(at 134.62 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PARTREV" ""
-			(at 134.62 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Package" ""
-			(at 134.62 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Price" ""
-			(at 134.62 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "STANDARD" ""
-			(at 134.62 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "SnapEDA_Link" ""
-			(at 134.62 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "cd825ee2-beff-4237-a187-d92c28a4b63f")
-		)
-		(pin "2"
-			(uuid "cdb2c1c3-4409-454e-a88b-e8e9e66dadf5")
-		)
-		(instances
-			(project ""
-				(path "/e2986c27-9cb7-47ba-9b56-70bbea74a24c"
-					(reference "SW33")
+					(reference "#FLG022")
 					(unit 1)
 				)
 			)
@@ -3472,7 +3264,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "16ecbaa9-812d-4216-9c7f-9bd778756da4")
-		(property "Reference" "#PWR026"
+		(property "Reference" "#PWR028"
 			(at 215.9 50.8 0)
 			(effects
 				(font
@@ -3522,7 +3314,7 @@
 		(instances
 			(project ""
 				(path "/e2986c27-9cb7-47ba-9b56-70bbea74a24c"
-					(reference "#PWR026")
+					(reference "#PWR028")
 					(unit 1)
 				)
 			)
@@ -3538,7 +3330,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "17a63f60-6e00-44a6-8cf3-2b66cc27a5b2")
-		(property "Reference" "#PWR025"
+		(property "Reference" "#PWR027"
 			(at 243.84 46.99 0)
 			(effects
 				(font
@@ -3588,7 +3380,7 @@
 		(instances
 			(project ""
 				(path "/e2986c27-9cb7-47ba-9b56-70bbea74a24c"
-					(reference "#PWR025")
+					(reference "#PWR027")
 					(unit 1)
 				)
 			)
@@ -3800,7 +3592,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1a31846d-4216-48ec-8c50-94c6cbf477d2")
-		(property "Reference" "#PWR023"
+		(property "Reference" "#PWR024"
 			(at 212.09 34.29 0)
 			(effects
 				(font
@@ -3850,7 +3642,7 @@
 		(instances
 			(project ""
 				(path "/e2986c27-9cb7-47ba-9b56-70bbea74a24c"
-					(reference "#PWR023")
+					(reference "#PWR024")
 					(unit 1)
 				)
 			)
@@ -3866,7 +3658,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1c9decda-0e43-4891-9f45-a99ac0f54fb3")
-		(property "Reference" "#PWR024"
+		(property "Reference" "#PWR025"
 			(at 243.84 35.56 0)
 			(effects
 				(font
@@ -3916,7 +3708,7 @@
 		(instances
 			(project ""
 				(path "/e2986c27-9cb7-47ba-9b56-70bbea74a24c"
-					(reference "#PWR024")
+					(reference "#PWR025")
 					(unit 1)
 				)
 			)
@@ -4128,7 +3920,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "26c58066-4bad-40c7-8f9e-4515d0bf5924")
-		(property "Reference" "D38"
+		(property "Reference" "D37"
 			(at 66.04 167.6399 90)
 			(effects
 				(font
@@ -4308,7 +4100,7 @@
 		(instances
 			(project "OceanNest_R"
 				(path "/e2986c27-9cb7-47ba-9b56-70bbea74a24c"
-					(reference "D38")
+					(reference "D37")
 					(unit 1)
 				)
 			)
@@ -4324,7 +4116,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "28e2e714-99e8-4c7b-96a5-19653bac935c")
-		(property "Reference" "U22"
+		(property "Reference" "U21"
 			(at 57.15 20.32 0)
 			(effects
 				(font
@@ -4520,7 +4312,7 @@
 		(instances
 			(project ""
 				(path "/e2986c27-9cb7-47ba-9b56-70bbea74a24c"
-					(reference "U22")
+					(reference "U21")
 					(unit 1)
 				)
 			)
@@ -4712,7 +4504,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2aac449c-8e46-438b-a847-fbe312b4266f")
-		(property "Reference" "#PWR029"
+		(property "Reference" "#PWR021"
 			(at 100.33 25.4 0)
 			(effects
 				(font
@@ -4762,7 +4554,7 @@
 		(instances
 			(project "OceanNest_R"
 				(path "/e2986c27-9cb7-47ba-9b56-70bbea74a24c"
-					(reference "#PWR029")
+					(reference "#PWR021")
 					(unit 1)
 				)
 			)
@@ -4778,7 +4570,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2dab76a0-9278-44e9-9f1d-76c68217c609")
-		(property "Reference" "#FLG022"
+		(property "Reference" "#FLG021"
 			(at 100.33 23.495 0)
 			(effects
 				(font
@@ -4828,7 +4620,7 @@
 		(instances
 			(project "OceanNest_R"
 				(path "/e2986c27-9cb7-47ba-9b56-70bbea74a24c"
-					(reference "#FLG022")
+					(reference "#FLG021")
 					(unit 1)
 				)
 			)
@@ -6347,7 +6139,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5803291f-7861-42f4-b690-5dad290684a3")
-		(property "Reference" "SW34"
+		(property "Reference" "SW33"
 			(at 58.42 157.48 0)
 			(effects
 				(font
@@ -6507,7 +6299,7 @@
 		(instances
 			(project ""
 				(path "/e2986c27-9cb7-47ba-9b56-70bbea74a24c"
-					(reference "SW34")
+					(reference "SW33")
 					(unit 1)
 				)
 			)
@@ -7253,7 +7045,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "816fab53-17b1-4f5d-a85c-06d897f1aac7")
-		(property "Reference" "SW35"
+		(property "Reference" "SW34"
 			(at 77.47 157.48 0)
 			(effects
 				(font
@@ -7413,7 +7205,7 @@
 		(instances
 			(project ""
 				(path "/e2986c27-9cb7-47ba-9b56-70bbea74a24c"
-					(reference "SW35")
+					(reference "SW34")
 					(unit 1)
 				)
 			)
@@ -7429,7 +7221,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "86ff38b1-aab6-45c5-b29d-e2c4266ac7a9")
-		(property "Reference" "D39"
+		(property "Reference" "D38"
 			(at 85.09 167.6399 90)
 			(effects
 				(font
@@ -7609,7 +7401,7 @@
 		(instances
 			(project "OceanNest_R"
 				(path "/e2986c27-9cb7-47ba-9b56-70bbea74a24c"
-					(reference "D39")
+					(reference "D38")
 					(unit 1)
 				)
 			)
@@ -7997,7 +7789,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "98df28ac-96dd-4c2a-825c-ac456550cb8c")
-		(property "Reference" "#PWR028"
+		(property "Reference" "#PWR026"
 			(at 85.09 40.64 0)
 			(effects
 				(font
@@ -8047,7 +7839,7 @@
 		(instances
 			(project ""
 				(path "/e2986c27-9cb7-47ba-9b56-70bbea74a24c"
-					(reference "#PWR028")
+					(reference "#PWR026")
 					(unit 1)
 				)
 			)
@@ -8611,7 +8403,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a8e48989-ca9b-4e19-adc1-78223c3ba8b3")
-		(property "Reference" "#PWR022"
+		(property "Reference" "#PWR023"
 			(at 78.74 26.67 0)
 			(effects
 				(font
@@ -8661,7 +8453,7 @@
 		(instances
 			(project ""
 				(path "/e2986c27-9cb7-47ba-9b56-70bbea74a24c"
-					(reference "#PWR022")
+					(reference "#PWR023")
 					(unit 1)
 				)
 			)
@@ -8873,7 +8665,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b93eb3e3-4f26-4eb3-a895-b50fe49f1ac0")
-		(property "Reference" "#PWR021"
+		(property "Reference" "#PWR022"
 			(at 109.22 27.94 0)
 			(effects
 				(font
@@ -8923,7 +8715,7 @@
 		(instances
 			(project ""
 				(path "/e2986c27-9cb7-47ba-9b56-70bbea74a24c"
-					(reference "#PWR021")
+					(reference "#PWR022")
 					(unit 1)
 				)
 			)
@@ -9311,7 +9103,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c70283ba-f0ad-426b-a612-37801ce9ae5f")
-		(property "Reference" "D40"
+		(property "Reference" "D39"
 			(at 142.24 167.6399 90)
 			(effects
 				(font
@@ -9491,7 +9283,7 @@
 		(instances
 			(project "OceanNest_R"
 				(path "/e2986c27-9cb7-47ba-9b56-70bbea74a24c"
-					(reference "D40")
+					(reference "D39")
 					(unit 1)
 				)
 			)
@@ -9688,202 +9480,6 @@
 			(project "OceanNest_R"
 				(path "/e2986c27-9cb7-47ba-9b56-70bbea74a24c"
 					(reference "D35")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:D")
-		(at 139.7 146.05 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d1342853-e613-4754-aef4-edf168f059d9")
-		(property "Reference" "D37"
-			(at 142.24 144.7799 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "D"
-			(at 142.24 147.3199 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "kbd_Parts:Diode_SMD"
-			(at 139.7 146.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 139.7 146.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Diode"
-			(at 139.7 146.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "D"
-			(at 139.7 146.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 139.7 146.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Availability" ""
-			(at 139.7 146.05 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Check_prices" ""
-			(at 139.7 146.05 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description_1" ""
-			(at 139.7 146.05 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER" ""
-			(at 139.7 146.05 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 139.7 146.05 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MF" ""
-			(at 139.7 146.05 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MP" ""
-			(at 139.7 146.05 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PARTREV" ""
-			(at 139.7 146.05 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Package" ""
-			(at 139.7 146.05 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Price" ""
-			(at 139.7 146.05 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "STANDARD" ""
-			(at 139.7 146.05 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "SnapEDA_Link" ""
-			(at 139.7 146.05 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "4daca04e-7509-4017-93d6-e559bc758f59")
-		)
-		(pin "1"
-			(uuid "358c46ce-3ab3-4bc3-802a-c48858c68e6a")
-		)
-		(instances
-			(project "OceanNest_R"
-				(path "/e2986c27-9cb7-47ba-9b56-70bbea74a24c"
-					(reference "D37")
 					(unit 1)
 				)
 			)
@@ -10447,7 +10043,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e7846f7f-c3c2-498d-a950-0bf721a37799")
-		(property "Reference" "#PWR027"
+		(property "Reference" "#PWR029"
 			(at 34.29 60.96 0)
 			(effects
 				(font
@@ -10497,7 +10093,7 @@
 		(instances
 			(project ""
 				(path "/e2986c27-9cb7-47ba-9b56-70bbea74a24c"
-					(reference "#PWR027")
+					(reference "#PWR029")
 					(unit 1)
 				)
 			)
