@@ -9,8 +9,7 @@
 #include "feature/custom_key.h"
 
 #define LB_MO LT(_MOUSE_LAYER, MS_BTN2) // Hold for mouse layer, tap for right click
-#define SPC_A2 LT(_ALPHA2_LAYER, KC_SPC) // Hold for function layer, tap for space
-#define TAB_NUM LT(_NUMPAD_LAYER, KC_TAB) // Hold for numpad layer, tap for tab
+#define SPC_NUM LT(_NUMPAD_LAYER, KC_SPC) // Hold for function layer, tap for space
 #define BSP_SYM LT(_SYMBOL_LAYER, KC_BSPC) // Hold for symbol layer, tap for backspace
 #define DEL_FUN LT(_FUNCTION_LAYER, KC_DEL) // Hold for function layer, tap for delete
 
@@ -19,14 +18,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_H,       KC_K,       KC_R,       KC_W,                                                       KC_F,       KC_E,       KC_M,       KC_D,
         KC_B,       KC_S,       KC_N,       KC_I,       KC_G,                               KC_Z,       KC_A,       KC_O,       KC_T,       KC_P,
                                             KC_Y,                                                       KC_U,       MS_BTN1,    LB_MO ,
-                                                        SPC_A2 ,    TAB_NUM ,   DEL_FUN,    BSP_SYM
-    ),
-
-    [_ALPHA2_LAYER] = LAYOUT(
-        _______,    KC_V,       KC_X,       _______,                                                    KC_LBRC,    KC_RBRC,    KC_LT,      KC_GT,
-        _______,    KC_J,       KC_L,       KC_C,       _______,                            _______,    KC_LPRN,    KC_RPRN,    KC_LCBR,    KC_RCBR,
-                                            KC_Q,                                                       _______,    _______,    _______ ,
-                                                        _______,    MS_BTN2 ,   KC_COMM,    KC_DOT
+                                                        SPC_NUM,  CTL_T(KC_TAB),DEL_FUN,    BSP_SYM
     ),
 
     [_MOUSE_LAYER] = LAYOUT(
@@ -37,9 +29,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
 
     [_SYMBOL_LAYER] = LAYOUT(
-        KC_CIRC,    KC_PERC,    KC_ASTR,    KC_PLUS,                                                    KC_DQT,     KC_QUOT,    KC_GRV,     KC_TILD,
-        KC_AT,      KC_HASH,    KC_DLR,     KC_AMPR ,   KC_PIPE,                            KC_UNDS,    KC_MINS,    KC_EQL,     KC_COLN,    KC_SCLN,
-                                            KC_QUES,                                                    KC_SLSH ,   KC_BSLS ,   KC_EXLM,
+        KC_CIRC,    KC_DLR,     KC_ASTR,    KC_PLUS,                                                    KC_DQT,     KC_QUOT,    KC_GRV,     KC_TILD,
+        KC_AT,      KC_HASH,    KC_PERC,    KC_AMPR ,   KC_PIPE,                            KC_UNDS,    KC_MINS,    KC_BSLS,    KC_COLN,    KC_SCLN,
+                                            KC_EQL,                                                     KC_SLSH ,   KC_QUES,    KC_EXLM,
                                                         KC_LNG2,    KC_LNG1,    _______,    _______
     ),
 
@@ -47,11 +39,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_5   ,    KC_6   ,    KC_7   ,    KC_8   ,                                                    _______,    _______,    _______,    _______,
         KC_0   ,    KC_1   ,    KC_2   ,    KC_3   ,    KC_4   ,                            _______,    _______,    _______,    _______,    _______,
                                             KC_9,                                                       _______,    _______,    _______,
-                                                        _______,    _______,    _______,    _______
+                                                        _______,    MS_BTN2,    _______,    _______
     ),
 
     [_FUNCTION_LAYER] = LAYOUT(
-        KC_F5  ,    KC_F6  ,    KC_F7  ,    KC_F8  ,                                                    QK_BOOT,    _______,    _______,    _______,
+        KC_F5  ,    KC_F6  ,    KC_F7  ,    KC_F8  ,                                                    _______,    _______,    _______,    _______,
         KC_F10 ,    KC_F1  ,    KC_F2  ,    KC_F3  ,    KC_F4  ,                            _______,    _______,    _______,    _______,    _______,
                                             KC_F9 ,                                                    _______,    _______,    _______,
                                                         _______,    _______,    _______,    _______
@@ -60,10 +52,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][NUM_DIRECTIONS] = {
     [_ALPHA1_LAYER] =   { ENCODER_CCW_CW(MS_WHLU, MS_WHLD) },
-    [_ALPHA2_LAYER] =   { ENCODER_CCW_CW(C(KC_PGUP), C(KC_PGDN)) },
     [_MOUSE_LAYER]  =   { ENCODER_CCW_CW(MS_WHLR, MS_WHLL) },
     [_SYMBOL_LAYER] =   { ENCODER_CCW_CW(KC_RIGHT, KC_LEFT) },
-    [_NUMPAD_LAYER] =   { ENCODER_CCW_CW(KC_VOLD, KC_VOLU) },
+    [_NUMPAD_LAYER] =   { ENCODER_CCW_CW(C(KC_PGUP), C(KC_PGDN)) },
     [_FUNCTION_LAYER]=  { ENCODER_CCW_CW(LSA(KC_TAB), A(KC_TAB)) }
 };
 
@@ -86,5 +77,21 @@ combo_t key_combos[] = {
     [ESC_R_COMBO] = COMBO(esc_r_combo, KC_ESC),
     [ALT_L_COMBO] = COMBO(alt_l_combo, KC_LALT),
     [GUI_L_COMBO] = COMBO(gui_l_combo, KC_LGUI),
-    [CW_TOGG_COMBO] = COMBO(cw_togg_combo, CW_TOGG)
+    [CW_TOGG_COMBO] = COMBO(cw_togg_combo, CW_TOGG),
+    [V_COMBO] = COMBO(v_combo, KC_V),
+    [J_COMBO] = COMBO(j_combo, KC_J),
+    [C_COMBO] = COMBO(c_combo, KC_C),
+    [L_COMBO] = COMBO(l_combo, KC_L),
+    [X_COMBO] = COMBO(x_combo, KC_X),
+    [Q_COMBO] = COMBO(q_combo, KC_Q),
+    [DOT_COMBO] = COMBO(dot_combo, KC_DOT),
+    [COMMA_COMBO] = COMBO(comma_combo, KC_COMM),
+    [LPRN_COMBO] = COMBO(lprn_combo, KC_LPRN),
+    [RPRN_COMBO] = COMBO(rprn_combo, KC_RPRN),
+    [LBRK_COMBO] = COMBO(lbrk_combo, KC_LBRC),
+    [RBRK_COMBO] = COMBO(rbrk_combo, KC_RBRC),
+    [LBRC_COMBO] = COMBO(lbrc_combo, KC_LCBR),
+    [RBRC_COMBO] = COMBO(rbrc_combo, KC_RCBR),
+    [LLT_COMBO] = COMBO(llt_combo, KC_LT),
+    [RGT_COMBO] = COMBO(rgt_combo, KC_GT)
 };
