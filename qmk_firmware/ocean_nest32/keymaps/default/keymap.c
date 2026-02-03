@@ -15,8 +15,8 @@
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_ALPHA1_LAYER] = LAYOUT(
-        KC_H,       KC_K,       KC_R,       KC_W,                                                       KC_F,       KC_E,       KC_M,       KC_D,
-        KC_B,       KC_S,       KC_N,       KC_I,       KC_G,                               KC_Z,       KC_A,       KC_O,       KC_T,       KC_U,
+        KC_H,       KC_K,       KC_R,       KC_W,                                                       KC_F,       KC_E,       KC_B,       KC_D,
+        KC_M,       KC_S,       KC_N,       KC_I,       KC_G,                               KC_Z,       KC_A,       KC_O,       KC_T,       KC_U,
                                             KC_Y,                                                       KC_P,       MS_BTN1,    LB_MO ,
                                                         SPC_NUM,  CTL_T(KC_TAB),DEL_FUN,    BSP_SYM
     ),
@@ -29,7 +29,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
 
     [_SYMBOL_LAYER] = LAYOUT(
-        KC_CIRC,    KC_DLR,     KC_ASTR,    KC_PLUS,                                                    KC_DQT,     KC_QUOT,    KC_GRV,     KC_TILD,
+        KC_CIRC,    KC_DLR,     KC_ASTR,    KC_PLUS,                                                    KC_QUOT,    KC_DQT,     KC_GRV,     KC_TILD,
         KC_AT,      KC_HASH,    KC_PERC,    KC_AMPR ,   KC_PIPE,                            KC_UNDS,    KC_MINS,    KC_BSLS,    KC_COLN,    KC_SCLN,
                                             KC_EQL,                                                     KC_SLSH ,   KC_QUES,    KC_EXLM,
                                                         KC_LNG2,    KC_LNG1,    _______,    _______
@@ -37,9 +37,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
     [_NUMPAD_LAYER] = LAYOUT(
         KC_5   ,    KC_6   ,    KC_7   ,    KC_8   ,                                                    _______,    _______,    _______,    _______,
-        KC_0   ,    KC_1   ,    KC_2   ,    KC_3   ,    KC_4   ,                            _______,    _______,    _______,    _______,    _______,
+        KC_0   ,    KC_1   ,    KC_2   ,    KC_3   ,    KC_4   ,                            _______,    KC_MINS,    _______,    KC_COLN,    _______,
                                             KC_9,                                                       _______,    _______,    _______,
-                                                        _______,    MS_BTN2,    _______,    _______
+                                                        _______,    MS_BTN2,    _______,    KC_DOT
     ),
 
     [_FUNCTION_LAYER] = LAYOUT(

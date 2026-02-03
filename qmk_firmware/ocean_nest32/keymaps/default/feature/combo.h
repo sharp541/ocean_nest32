@@ -48,15 +48,15 @@ const uint16_t PROGMEM bspc_r_combo[] = {KC_A, KC_T, KC_O, COMBO_END};
 const uint16_t PROGMEM bspc_l_combo[] = {KC_S, KC_N, KC_I, COMBO_END};
 
 // up arrow
-const uint16_t PROGMEM uarr_r_combo[] = {KC_E, KC_M, COMBO_END};
+const uint16_t PROGMEM uarr_r_combo[] = {KC_E, KC_B, COMBO_END};
 const uint16_t PROGMEM uarr_l_combo[] = {KC_K, KC_R, COMBO_END};
 
 // down arrow
-const uint16_t PROGMEM darr_r_combo[] = {KC_A, KC_E, KC_M, COMBO_END};
+const uint16_t PROGMEM darr_r_combo[] = {KC_A, KC_E, KC_B, COMBO_END};
 const uint16_t PROGMEM darr_l_combo[] = {KC_K, KC_R, KC_I, COMBO_END};
 
 // right arrow
-const uint16_t PROGMEM rarr_r_combo[] = {KC_A, KC_M, COMBO_END};
+const uint16_t PROGMEM rarr_r_combo[] = {KC_A, KC_B, COMBO_END};
 const uint16_t PROGMEM rarr_l_combo[] = {KC_R, KC_I, COMBO_END};
 
 // left arrow
@@ -64,10 +64,10 @@ const uint16_t PROGMEM larr_r_combo[] = {KC_A, KC_E, COMBO_END};
 const uint16_t PROGMEM larr_l_combo[] = {KC_K, KC_I, COMBO_END};
 
 // home
-const uint16_t PROGMEM home_r_combo[] = {KC_M, KC_D, COMBO_END};
+const uint16_t PROGMEM home_r_combo[] = {KC_B, KC_D, COMBO_END};
 
 // end
-const uint16_t PROGMEM end_r_combo[] = {KC_M, KC_D, KC_O, COMBO_END};
+const uint16_t PROGMEM end_r_combo[] = {KC_B, KC_D, KC_O, COMBO_END};
 
 // esc
 const uint16_t PROGMEM esc_r_combo[] = {KC_F, KC_Z, COMBO_END};
@@ -76,7 +76,7 @@ const uint16_t PROGMEM esc_r_combo[] = {KC_F, KC_Z, COMBO_END};
 const uint16_t PROGMEM alt_l_combo[] = {KC_W, KC_G, COMBO_END};
 
 // gui
-const uint16_t PROGMEM gui_l_combo[] = {KC_B, KC_S, COMBO_END};
+const uint16_t PROGMEM gui_l_combo[] = {KC_M, KC_S, COMBO_END};
 
 // caps word
 const uint16_t PROGMEM cw_togg_combo[] = {KC_I, KC_A, COMBO_END};
@@ -97,7 +97,7 @@ const uint16_t PROGMEM l_combo[] = {KC_R, KC_N, COMBO_END};
 const uint16_t PROGMEM x_combo[] = {KC_E, KC_O, COMBO_END};
 
 // Q
-const uint16_t PROGMEM q_combo[] = {KC_M, KC_T, COMBO_END};
+const uint16_t PROGMEM q_combo[] = {KC_B, KC_T, COMBO_END};
 
 // Dot
 const uint16_t PROGMEM dot_combo[] = {KC_A, KC_Z, COMBO_END};
