@@ -107,7 +107,7 @@ const uint16_t PROGMEM comma_combo[] = {KC_F, KC_A, COMBO_END};
 
 // parentheses
 const uint16_t PROGMEM lprn_combo[] = {KC_PLUS, KC_AMPR, COMBO_END};
-const uint16_t PROGMEM rprn_combo[] = {KC_DQT, KC_MINS, COMBO_END};
+const uint16_t PROGMEM rprn_combo[] = {KC_QUOT, KC_MINS, COMBO_END};
 
 // brackets
 const uint16_t PROGMEM lbrk_combo[] = {KC_AMPR, KC_PIPE, COMBO_END};
@@ -115,7 +115,7 @@ const uint16_t PROGMEM rbrk_combo[] = {KC_UNDS, KC_MINS, COMBO_END};
 
 // braces
 const uint16_t PROGMEM lbrc_combo[] = {KC_ASTR, KC_PERC, COMBO_END};
-const uint16_t PROGMEM rbrc_combo[] = {KC_QUOT, KC_BSLS, COMBO_END};
+const uint16_t PROGMEM rbrc_combo[] = {KC_DQT, KC_BSLS, COMBO_END};
 
 // angle brackets
 const uint16_t PROGMEM llt_combo[] = {KC_DLR, KC_HASH, COMBO_END};
