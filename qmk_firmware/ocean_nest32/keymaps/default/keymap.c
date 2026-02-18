@@ -15,9 +15,9 @@
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_ALPHA1_LAYER] = LAYOUT(
-        KC_P,       KC_S,       KC_I,       KC_Y,                                                       KC_COMM,    KC_E,       KC_A,       SFT_T(KC_DOT),
-        KC_D,       KC_K,       KC_C,       KC_T,       KC_G,                               KC_L,       KC_N,       KC_U,       KC_O,       KC_H,
-                                            KC_M,                                                       KC_R,       MS_BTN1,    LB_MO ,
+        KC_H,       KC_K,       KC_R,       KC_Z,                                                       KC_C,       KC_A,       KC_E,       KC_W,
+        KC_M,       KC_S,       KC_N,       KC_T,       KC_G,                               KC_DOT,     KC_I,       KC_O,       KC_Y,       KC_U,
+                                            KC_D,                                                       KC_P,       MS_BTN1,    LB_MO ,
                                                         SPC_NUM,  CTL_T(KC_TAB),DEL_FUN,    BSP_SYM
     ),
 
@@ -60,6 +60,7 @@ const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][NUM_DIRECTIONS] = {
 
 
 combo_t key_combos[] = {
+    [ENT_R_COMBO] = COMBO(ent_r_combo, SFT_T(KC_ENT)),
     [ENT_L_COMBO] = COMBO(ent_l_combo, CTL_T(KC_ENT)),
     [BSPC_R_COMBO] = COMBO(bspc_r_combo, C(KC_BSPC)),
     [BSPC_L_COMBO] = COMBO(bspc_l_combo, KC_BSPC),
@@ -80,11 +81,11 @@ combo_t key_combos[] = {
     [LEFT_1_COMBO] = COMBO(v_combo, KC_J),
     [LEFT_2_COMBO] = COMBO(left_2_combo, KC_V),
     [LEFT_3_COMBO] = COMBO(left_3_combo, KC_B),
-    [LEFT_4_COMBO] = COMBO(left_4_combo, KC_W),
-    [RIGHT_1_COMBO] = COMBO(right_1_combo, KC_Z),
-    [RIGHT_2_COMBO] = COMBO(right_2_combo, KC_Q),
+    [LEFT_4_COMBO] = COMBO(left_4_combo, KC_L),
+    [RIGHT_1_COMBO] = COMBO(right_1_combo, KC_F),
+    [RIGHT_2_COMBO] = COMBO(right_2_combo, KC_COMM),
     [RIGHT_3_COMBO] = COMBO(right_3_combo, KC_X),
-    [RIGHT_4_COMBO] = COMBO(right_4_combo, KC_F),
+    [RIGHT_4_COMBO] = COMBO(right_4_combo, KC_Q),
     [LPRN_COMBO] = COMBO(lprn_combo, KC_LPRN),
     [RPRN_COMBO] = COMBO(rprn_combo, KC_RPRN),
     [LBRK_COMBO] = COMBO(lbrk_combo, KC_LBRC),
