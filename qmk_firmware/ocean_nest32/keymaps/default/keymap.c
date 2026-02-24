@@ -15,9 +15,9 @@
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_ALPHA1_LAYER] = LAYOUT(
-        KC_H,       KC_K,       KC_R,       KC_Z,                                                       KC_C,       KC_A,       KC_E,       KC_W,
-        KC_M,       KC_S,       KC_N,       KC_T,       KC_G,                               KC_DOT,     KC_I,       KC_O,       KC_Y,       KC_U,
-                                            KC_D,                                                       KC_P,       MS_BTN1,    LB_MO ,
+        KC_H,       KC_K,       KC_R,       KC_Z,                                                       KC_COMM,    KC_O,       KC_Y,       KC_W,
+        KC_M,       KC_S,       KC_N,       KC_T,       KC_G,                               KC_P,       KC_A,       KC_E,       KC_I,       KC_U,
+                                            KC_D,                                                       KC_DOT,     MS_BTN1,    LB_MO ,
                                                         SPC_NUM,  CTL_T(KC_TAB),DEL_FUN,    BSP_SYM
     ),
 
@@ -55,22 +55,22 @@ const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][NUM_DIRECTIONS] = {
     [_MOUSE_LAYER]  =   { ENCODER_CCW_CW(MS_WHLR, MS_WHLL) },
     [_SYMBOL_LAYER] =   { ENCODER_CCW_CW(KC_RIGHT, KC_LEFT) },
     [_NUMPAD_LAYER] =   { ENCODER_CCW_CW(C(KC_PGUP), C(KC_PGDN)) },
-    [_FUNCTION_LAYER]=  { ENCODER_CCW_CW(LSA(KC_TAB), A(KC_TAB)) }
+    [_FUNCTION_LAYER]=  { ENCODER_CCW_CW(KC_UP, KC_DOWN) }
 };
 
 
 combo_t key_combos[] = {
-    [ENT_R_COMBO] = COMBO(ent_r_combo, SFT_T(KC_ENT)),
-    [ENT_L_COMBO] = COMBO(ent_l_combo, CTL_T(KC_ENT)),
-    [BSPC_R_COMBO] = COMBO(bspc_r_combo, C(KC_BSPC)),
+    [ENT_R_COMBO] = COMBO(ent_r_combo, CTL_T(KC_ENT)),
+    [ENT_L_COMBO] = COMBO(ent_l_combo, SFT_T(KC_ENT)),
+    // [BSPC_R_COMBO] = COMBO(bspc_r_combo, C(KC_BSPC)),
     [BSPC_L_COMBO] = COMBO(bspc_l_combo, KC_BSPC),
-    [UARR_R_COMBO] = COMBO(uarr_r_combo, KC_UP),
+    // [UARR_R_COMBO] = COMBO(uarr_r_combo, KC_UP),
     [UARR_L_COMBO] = COMBO(uarr_l_combo, KC_UP),
-    [DARR_R_COMBO] = COMBO(darr_r_combo, KC_DOWN),
+    // [DARR_R_COMBO] = COMBO(darr_r_combo, KC_DOWN),
     [DARR_L_COMBO] = COMBO(darr_l_combo, KC_DOWN),
-    [RARR_R_COMBO] = COMBO(rarr_r_combo, KC_RIGHT),
+    // [RARR_R_COMBO] = COMBO(rarr_r_combo, KC_RIGHT),
     [RARR_L_COMBO] = COMBO(rarr_l_combo, KC_RIGHT),
-    [LARR_R_COMBO] = COMBO(larr_r_combo, KC_LEFT),
+    // [LARR_R_COMBO] = COMBO(larr_r_combo, KC_LEFT),
     [LARR_L_COMBO] = COMBO(larr_l_combo, KC_LEFT),
     [HOME_R_COMBO] = COMBO(home_r_combo, KC_HOME),
     [END_R_COMBO] = COMBO(end_r_combo, KC_END),
@@ -79,11 +79,11 @@ combo_t key_combos[] = {
     [GUI_L_COMBO] = COMBO(gui_l_combo, KC_LGUI),
     [CW_TOGG_COMBO] = COMBO(cw_togg_combo, CW_TOGG),
     [LEFT_1_COMBO] = COMBO(v_combo, KC_J),
-    [LEFT_2_COMBO] = COMBO(left_2_combo, KC_V),
-    [LEFT_3_COMBO] = COMBO(left_3_combo, KC_B),
-    [LEFT_4_COMBO] = COMBO(left_4_combo, KC_L),
-    [RIGHT_1_COMBO] = COMBO(right_1_combo, KC_F),
-    [RIGHT_2_COMBO] = COMBO(right_2_combo, KC_COMM),
+    [LEFT_2_COMBO] = COMBO(left_2_combo, KC_B),
+    [LEFT_3_COMBO] = COMBO(left_3_combo, KC_F),
+    [LEFT_4_COMBO] = COMBO(left_4_combo, KC_V),
+    [RIGHT_1_COMBO] = COMBO(right_1_combo, KC_C),
+    [RIGHT_2_COMBO] = COMBO(right_2_combo, KC_L),
     [RIGHT_3_COMBO] = COMBO(right_3_combo, KC_X),
     [RIGHT_4_COMBO] = COMBO(right_4_combo, KC_Q),
     [LPRN_COMBO] = COMBO(lprn_combo, KC_LPRN),
