@@ -48,7 +48,7 @@ const uint16_t PROGMEM bspc_r_combo[] = {KC_I, KC_A, KC_E, COMBO_END};
 const uint16_t PROGMEM bspc_l_combo[] = {KC_S, KC_N, KC_T, COMBO_END};
 
 // up arrow
-const uint16_t PROGMEM uarr_r_combo[] = {KC_O, KC_O, COMBO_END};
+const uint16_t PROGMEM uarr_r_combo[] = {KC_O, KC_Y, COMBO_END};
 const uint16_t PROGMEM uarr_l_combo[] = {KC_K, KC_R, COMBO_END};
 
 // down arrow
