@@ -66,3 +66,6 @@ fabrication-toolkit-options.json
 
 # freecad
 *.FCBak
+
+# codex
+.codex
