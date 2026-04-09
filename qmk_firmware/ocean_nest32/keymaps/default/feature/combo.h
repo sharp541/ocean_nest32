@@ -85,7 +85,7 @@ const uint16_t PROGMEM cw_togg_combo[] = {KC_H, KC_W, COMBO_END};
 const uint16_t PROGMEM left_1_combo[] = {KC_S, KC_K, COMBO_END};
 
 // left_2
-const uint16_t PROGMEM left_2_combo[] = {KC_R, KC_N, COMBO_END};
+const uint16_t PROGMEM left_2_combo[] = {KC_U, KC_I, COMBO_END};
 
 // left_3
 const uint16_t PROGMEM left_3_combo[] = {KC_D, KC_T, COMBO_END};
@@ -94,16 +94,16 @@ const uint16_t PROGMEM left_3_combo[] = {KC_D, KC_T, COMBO_END};
 const uint16_t PROGMEM left_4_combo[] = {KC_T, KC_G, COMBO_END};
 
 // right_1
-const uint16_t PROGMEM right_1_combo[] = {KC_P, KC_A, COMBO_END};
+const uint16_t PROGMEM right_1_combo[] = {KC_Z, KC_N, COMBO_END};
 
 // right_2
-const uint16_t PROGMEM right_2_combo[] = {KC_DOT, KC_A, COMBO_END};
+const uint16_t PROGMEM right_2_combo[] = {KC_DOT, KC_N, COMBO_END};
 
 // right_3
-const uint16_t PROGMEM right_3_combo[] = {KC_E, KC_O, COMBO_END};
+const uint16_t PROGMEM right_3_combo[] = {KC_A, KC_O, COMBO_END};
 
 // right_4
-const uint16_t PROGMEM right_4_combo[] = {KC_Y, KC_I, COMBO_END};
+const uint16_t PROGMEM right_4_combo[] = {KC_M, KC_E, COMBO_END};
 
 // parentheses
 const uint16_t PROGMEM lprn_combo[] = {KC_PLUS, KC_AMPR, COMBO_END};
