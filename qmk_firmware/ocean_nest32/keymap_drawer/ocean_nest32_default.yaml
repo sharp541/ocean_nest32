@@ -1,0 +1,170 @@
+layout: {qmk_keyboard: ocean_nest32, layout_name: LAYOUT}
+layers:
+  ALPHA1:
+  - R
+  - K
+  - U
+  - Y
+  - P
+  - A
+  - M
+  - W
+  - H
+  - S
+  - I
+  - T
+  - G
+  - Z
+  - N
+  - O
+  - E
+  - B
+  - D
+  - .
+  - MS BTN1
+  - LB MO
+  - SPC NUM
+  - {t: TAB, h: CTL}
+  - DEL FUN
+  - BSP SYM
+  MOUSE:
+  - Ctl+A
+  - Ctl+S
+  - Ctl+Y
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Ctl+Z
+  - Ctl+X
+  - Ctl+C
+  - Ctl+V
+  - Ctl+/
+  - {t: ▽, type: trans}
+  - Ctl+Sft+T
+  - MS BTN3
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Sft+Gui+S
+  - Ctl+T
+  - Ctl+W
+  - {t: ▽, type: trans}
+  - Ctl+[
+  - Ctl+]
+  - WFWD
+  - WBAK
+  SYMBOL:
+  - ^
+  - $
+  - '*'
+  - +
+  - ''''
+  - '"'
+  - '`'
+  - '~'
+  - '@'
+  - '#'
+  - '%'
+  - '&'
+  - '|'
+  - _
+  - '-'
+  - \
+  - ':'
+  - ;
+  - '='
+  - /
+  - '?'
+  - '!'
+  - LNG2
+  - LNG1
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  NUMPAD:
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '0'
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - {t: ▽, type: trans}
+  - '-'
+  - {t: ▽, type: trans}
+  - ':'
+  - {t: ▽, type: trans}
+  - '9'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - MS BTN2
+  - {t: ▽, type: trans}
+  - .
+  FUNCTION:
+  - F5
+  - F6
+  - F7
+  - F8
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - F10
+  - F1
+  - F2
+  - F3
+  - F4
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - F9
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+combos:
+- p: [9, 1]
+  k: J
+  l: [ALPHA1]
+  a: mid
+- p: [2, 10]
+  k: L
+  l: [ALPHA1]
+  a: mid
+- p: [18, 11]
+  k: F
+  l: [ALPHA1]
+  a: mid
+- p: [11, 12]
+  k: V
+  l: [ALPHA1]
+  a: mid
+- p: [13, 14]
+  k: C
+  l: [ALPHA1]
+  a: mid
+- p: [19, 14]
+  k: ','
+  l: [ALPHA1]
+  a: mid
+- p: [5, 15]
+  k: Q
+  l: [ALPHA1]
+  a: mid
+- p: [6, 16]
+  k: X
+  l: [ALPHA1]
+  a: mid

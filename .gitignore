@@ -69,3 +69,6 @@ fabrication-toolkit-options.json
 
 # codex
 .codex
+
+# keymap drawer
+qmk_firmware/ocean_nest32/keymap_drawer/*.svg

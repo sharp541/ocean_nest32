@@ -1,0 +1,12 @@
+{
+    "keyboard": "ocean_nest32",
+    "keymap": "default",
+    "layers": [
+        ["KC_R", "KC_K", "KC_U", "KC_Y", "KC_P", "KC_A", "KC_M", "KC_W", "KC_H", "KC_S", "KC_I", "KC_T", "KC_G", "KC_Z", "KC_N", "KC_O", "KC_E", "KC_B", "KC_D", "KC_DOT", "MS_BTN1", "LB_MO", "SPC_NUM", "CTL_T(KC_TAB)", "DEL_FUN", "BSP_SYM"],
+        ["C(KC_A)", "C(KC_S)", "C(KC_Y)", "KC_TRNS", "KC_TRNS", "KC_TRNS", "KC_TRNS", "KC_TRNS", "C(KC_Z)", "C(KC_X)", "C(KC_C)", "C(KC_V)", "C(KC_SLSH)", "KC_TRNS", "RCS(KC_T)", "MS_BTN3", "KC_TRNS", "KC_TRNS", "SGUI(KC_S)", "C(KC_T)", "C(KC_W)", "KC_TRNS", "C(KC_LBRC)", "C(KC_RBRC)", "KC_WFWD", "KC_WBAK"],
+        ["KC_CIRC", "KC_DLR", "KC_ASTR", "KC_PLUS", "KC_QUOT", "KC_DQT", "KC_GRV", "KC_TILD", "KC_AT", "KC_HASH", "KC_PERC", "KC_AMPR", "KC_PIPE", "KC_UNDS", "KC_MINS", "KC_BSLS", "KC_COLN", "KC_SCLN", "KC_EQL", "KC_SLSH", "KC_QUES", "KC_EXLM", "KC_LNG2", "KC_LNG1", "KC_TRNS", "KC_TRNS"],
+        ["KC_5", "KC_6", "KC_7", "KC_8", "KC_TRNS", "KC_TRNS", "KC_TRNS", "KC_TRNS", "KC_0", "KC_1", "KC_2", "KC_3", "KC_4", "KC_TRNS", "KC_MINS", "KC_TRNS", "KC_COLN", "KC_TRNS", "KC_9", "KC_TRNS", "KC_TRNS", "KC_TRNS", "KC_TRNS", "MS_BTN2", "KC_TRNS", "KC_DOT"],
+        ["KC_F5", "KC_F6", "KC_F7", "KC_F8", "KC_TRNS", "KC_TRNS", "KC_TRNS", "KC_TRNS", "KC_F10", "KC_F1", "KC_F2", "KC_F3", "KC_F4", "KC_TRNS", "KC_TRNS", "KC_TRNS", "KC_TRNS", "KC_TRNS", "KC_F9", "KC_TRNS", "KC_TRNS", "KC_TRNS", "KC_TRNS", "KC_TRNS", "KC_TRNS", "KC_TRNS"]
+    ],
+    "layout": "LAYOUT"
+}
