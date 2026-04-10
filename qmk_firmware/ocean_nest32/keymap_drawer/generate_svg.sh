@@ -19,7 +19,7 @@ keymap parse \
   -o "$SCRIPT_DIR/ocean_nest32_default.auto.yaml"
 
 keymap draw \
-  -j "$KEYBOARD_DIR/keyboard.json" \
+  -j "$SCRIPT_DIR/ocean_nest32_drawer_layout.json" \
   -l LAYOUT \
   "$SCRIPT_DIR/ocean_nest32_default.yaml" \
   -o "$SCRIPT_DIR/ocean_nest32_default.svg"

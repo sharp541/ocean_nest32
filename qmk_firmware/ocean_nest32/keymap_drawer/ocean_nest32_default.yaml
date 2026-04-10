@@ -1,25 +1,25 @@
 layout: {qmk_keyboard: ocean_nest32, layout_name: LAYOUT}
 layers:
   ALPHA1:
-  - R
-  - K
+  - {t: R (oo)}
+  - {t: K (unn)}
   - U
   - Y
   - P
   - A
-  - M
-  - W
+  - {t: M (ei)}
+  - {t: W (ou)}
   - H
-  - S
+  - {t: S (enn)}
   - I
-  - T
-  - G
-  - Z
-  - N
+  - {t: T (inn)}
+  - {t: G (onn)}
+  - {t: Z (uu)}
+  - {t: N (ai)}
   - O
   - E
-  - B
-  - D
+  - {t: B (aa)}
+  - {t: D (ann)}
   - .
   - MS BTN1
   - LB MO
