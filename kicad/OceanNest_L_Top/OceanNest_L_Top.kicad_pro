@@ -51,13 +51,7 @@
           "min_clearance": 0.5
         }
       },
-      "diff_pair_dimensions": [
-        {
-          "gap": 0.0,
-          "via_gap": 0.0,
-          "width": 0.0
-        }
-      ],
+      "diff_pair_dimensions": [],
       "drc_exclusions": [],
       "meta": {
         "version": 2
@@ -101,7 +95,7 @@
         "pth_inside_courtyard": "ignore",
         "shorting_items": "error",
         "silk_edge_clearance": "warning",
-        "silk_over_copper": "ignore",
+        "silk_over_copper": "warning",
         "silk_overlap": "warning",
         "skew_out_of_range": "error",
         "solder_mask_bridge": "error",
@@ -186,11 +180,7 @@
           "td_width_to_size_filter_ratio": 0.9
         }
       ],
-      "track_widths": [
-        0.0,
-        0.25,
-        0.5
-      ],
+      "track_widths": [],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
           "corner_radius_percentage": 80,
@@ -217,12 +207,7 @@
           "spacing": 0.6
         }
       },
-      "via_dimensions": [
-        {
-          "diameter": 0.0,
-          "drill": 0.0
-        }
-      ],
+      "via_dimensions": [],
       "zones_allow_external_fillets": false
     },
     "ipc2581": {
@@ -466,7 +451,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "OceanNest_R.kicad_pro",
+    "filename": "OceanNest_L_Top.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -501,18 +486,18 @@
     "last_paths": {
       "gencad": "",
       "idf": "",
-      "netlist": "",
+      "netlist": "./",
       "plot": "",
       "pos_files": "",
-      "specctra_dsn": "ErgoNest_R.dsn",
-      "step": "OceanNest_R.step",
+      "specctra_dsn": "",
+      "step": "OceanNest_L_Top.stl",
       "svg": "",
       "vrml": ""
     },
     "page_layout_descr_file": ""
   },
   "schematic": {
-    "annotate_start_num": 20,
+    "annotate_start_num": 0,
     "bom_export_filename": "${PROJECTNAME}.csv",
     "bom_fmt_presets": [],
     "bom_fmt_settings": {
@@ -722,7 +707,7 @@
   },
   "sheets": [
     [
-      "e2986c27-9cb7-47ba-9b56-70bbea74a24c",
+      "12bd0f12-2db2-4038-af71-4085986ec508",
       "Root"
     ]
   ],

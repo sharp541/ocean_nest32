@@ -9,50 +9,58 @@
 #include "feature/custom_key.h"
 
 #define LB_MO LT(_MOUSE_LAYER, MS_BTN2) // Hold for mouse layer, tap for right click
-#define SPC_FUN LT(_FUNCTION_LAYER, KC_SPC) // Hold for function layer, tap for space
-#define TAB_NUM LT(_NUMPAD_LAYER, KC_TAB) // Hold for numpad layer, tap for tab
-#define BSPC_SYM LT(_SYMBOL_LAYER, KC_BSPC) // Hold for symbol layer, tap for backspace
+#define SPC_NUM LT(_NUMPAD_LAYER, KC_SPC) // Hold for function layer, tap for space
+#define BSP_SYM LT(_SYMBOL_LAYER, KC_BSPC) // Hold for symbol layer, tap for backspace
+#define DEL_FUN LT(_FUNCTION_LAYER, KC_DEL) // Hold for function layer, tap for delete
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
-    [_BASE_LAYER] = LAYOUT(
-                    KC_H,       KC_K,       KC_R,       KC_Z,                                           KC_Q,       KC_E,       KC_P,       KC_W,
-        KC_B,       KC_M,       KC_S,       KC_N,       KC_T,       KC_G,                   KC_C,       KC_A,       KC_O,       KC_I,       KC_U,       KC_V,
-                                KC_J,       KC_F,       KC_D,       KC_L,                   KC_X,       KC_Y,       MS_BTN1,       LB_MO ,
-                                                        SPC_FUN ,   TAB_NUM ,               BSPC_SYM,   RCTL_T(KC_DEL)
+    [_ALPHA1_LAYER] = LAYOUT(
+        KC_H,       KC_K,       KC_R,       KC_Z,                                                       KC_COMM,    KC_O,       KC_Y,       KC_W,
+        KC_M,       KC_S,       KC_N,       KC_T,       KC_G,                               KC_P,       KC_A,       KC_E,       KC_I,       KC_U,
+                                            KC_D,                                                       KC_DOT,     MS_BTN1,    LB_MO ,
+                                                        SPC_NUM,  CTL_T(KC_TAB),DEL_FUN,    BSP_SYM
     ),
 
     [_MOUSE_LAYER] = LAYOUT(
-                    _______,    KC_FIND,    _______,    _______,                                        _______,    _______,    _______,    _______,
-        C(KC_SLSH), C(KC_A),    C(KC_S),    C(KC_Z),    C(KC_Y),    KC_WREF,                SGUI(KC_S), C(KC_PGUP), C(KC_PGDN), _______ ,   _______  ,    KC_BTN3,
-                                C(KC_X) ,   C(KC_C),    C(KC_V),    KC_WSTP,                RCS(KC_T),  C(KC_T),    C(KC_W),    _______,
-                                                        C(KC_LBRC), C(KC_RBRC),             KC_WFWD,    KC_WBAK
+        C(KC_A),    C(KC_S),    C(KC_Y),    _______,                                                    _______,    _______,    _______,    _______,
+        C(KC_Z),    C(KC_X),    C(KC_C),    C(KC_V),    C(KC_SLSH),                         _______,    RCS(KC_T),  MS_BTN3,    _______,    _______,
+                                            SGUI(KC_S),                                                 C(KC_T),    C(KC_W),    _______,
+                                                        C(KC_LBRC), C(KC_RBRC), KC_WFWD,    KC_WBAK
     ),
 
     [_SYMBOL_LAYER] = LAYOUT(
-                    KC_CIRC,    KC_PERC,    KC_ASTR,    KC_PLUS,                                        CKC_BRC,    KC_DQT ,    KC_QUOT,    KC_GRV,
-        KC_EQL ,    KC_AT  ,    KC_HASH,    KC_DLR ,    KC_AMPR,    KC_PIPE,                KC_UNDS,    CKC_PRN,    CKC_BRCT,   KC_COLN,    KC_SCLN,    CKC_MNS,
-                                KC_LT  ,    KC_GT  ,    KC_EXLM,    KC_QUES,                CKC_SL ,    KC_DOT ,    KC_COMM ,   KC_TILD,
-                                                        KC_LNG2,    KC_LNG1,                _______,    _______
+        KC_CIRC,    KC_DLR,     KC_ASTR,    KC_PLUS,                                                    KC_QUOT,    KC_DQT,     KC_GRV,     KC_TILD,
+        KC_AT,      KC_HASH,    KC_PERC,    KC_AMPR ,   KC_PIPE,                            KC_UNDS,    KC_MINS,    KC_BSLS,    KC_COLN,    KC_SCLN,
+                                            KC_EQL,                                                     KC_SLSH ,   KC_QUES,    KC_EXLM,
+                                                        KC_LNG2,    KC_LNG1,    _______,    _______
     ),
 
     [_NUMPAD_LAYER] = LAYOUT(
-                    KC_6   ,    KC_7   ,    KC_8   ,    KC_9   ,                                        _______,    _______,    _______,    _______,
-        KC_0   ,    KC_1   ,    KC_2   ,    KC_3   ,    KC_4   ,    KC_5   ,                _______,    _______,    _______,    _______,    _______,    _______,
-                                _______,    KC_COLN,    KC_MINUS,   KC_DOT ,                _______,    _______,    _______,    _______,
-                                                        _______,    _______,                _______,    _______
+        KC_5   ,    KC_6   ,    KC_7   ,    KC_8   ,                                                    _______,    _______,    _______,    _______,
+        KC_0   ,    KC_1   ,    KC_2   ,    KC_3   ,    KC_4   ,                            _______,    KC_MINS,    _______,    KC_COLN,    _______,
+                                            KC_9,                                                       _______,    _______,    _______,
+                                                        _______,    MS_BTN2,    _______,    KC_DOT
     ),
 
     [_FUNCTION_LAYER] = LAYOUT(
-                    KC_F6  ,    KC_F7  ,    KC_F8  ,    KC_F9  ,                                        QK_BOOT,    _______,    _______,    _______,
-        KC_F10 ,    KC_F1  ,    KC_F2  ,    KC_F3  ,    KC_F4  ,    KC_F5  ,                _______,    _______,    _______,    _______,    _______,    _______,
-                                _______,    _______,    KC_F12 ,    KC_F11 ,                _______,    _______,    _______,    _______,
-                                                        _______,    MS_BTN2,                _______,    _______
+        KC_F5  ,    KC_F6  ,    KC_F7  ,    KC_F8  ,                                                    _______,    _______,    _______,    _______,
+        KC_F10 ,    KC_F1  ,    KC_F2  ,    KC_F3  ,    KC_F4  ,                            _______,    _______,    _______,    _______,    _______,
+                                            KC_F9 ,                                                    _______,    _______,    _______,
+                                                        _______,    _______,    _______,    _______
     )
+};
+
+const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][NUM_DIRECTIONS] = {
+    [_ALPHA1_LAYER] =   { ENCODER_CCW_CW(MS_WHLU, MS_WHLD) },
+    [_MOUSE_LAYER]  =   { ENCODER_CCW_CW(MS_WHLR, MS_WHLL) },
+    [_SYMBOL_LAYER] =   { ENCODER_CCW_CW(KC_RIGHT, KC_LEFT) },
+    [_NUMPAD_LAYER] =   { ENCODER_CCW_CW(C(KC_PGUP), C(KC_PGDN)) },
+    [_FUNCTION_LAYER]=  { ENCODER_CCW_CW(KC_UP, KC_DOWN) }
 };
 
 
 combo_t key_combos[] = {
-    [ENT_R_COMBO] = COMBO(ent_r_combo, SFT_T(KC_ENT)),
+    [ENT_R_COMBO] = COMBO(ent_r_combo, CTL_T(KC_ENT)),
     [ENT_L_COMBO] = COMBO(ent_l_combo, SFT_T(KC_ENT)),
     [BSPC_R_COMBO] = COMBO(bspc_r_combo, C(KC_BSPC)),
     [BSPC_L_COMBO] = COMBO(bspc_l_combo, KC_BSPC),
@@ -69,5 +77,21 @@ combo_t key_combos[] = {
     [ESC_R_COMBO] = COMBO(esc_r_combo, KC_ESC),
     [ALT_L_COMBO] = COMBO(alt_l_combo, KC_LALT),
     [GUI_L_COMBO] = COMBO(gui_l_combo, KC_LGUI),
-    [CW_COMBO] = COMBO(cw_combo, CW_TOGG),
+    [CW_TOGG_COMBO] = COMBO(cw_togg_combo, CW_TOGG),
+    [LEFT_1_COMBO] = COMBO(left_1_combo, KC_J),
+    [LEFT_2_COMBO] = COMBO(left_2_combo, KC_B),
+    [LEFT_3_COMBO] = COMBO(left_3_combo, KC_F),
+    [LEFT_4_COMBO] = COMBO(left_4_combo, KC_V),
+    [RIGHT_1_COMBO] = COMBO(right_1_combo, KC_C),
+    [RIGHT_2_COMBO] = COMBO(right_2_combo, KC_L),
+    [RIGHT_3_COMBO] = COMBO(right_3_combo, KC_X),
+    [RIGHT_4_COMBO] = COMBO(right_4_combo, KC_Q),
+    [LPRN_COMBO] = COMBO(lprn_combo, KC_LPRN),
+    [RPRN_COMBO] = COMBO(rprn_combo, KC_RPRN),
+    [LBRK_COMBO] = COMBO(lbrk_combo, KC_LBRC),
+    [RBRK_COMBO] = COMBO(rbrk_combo, KC_RBRC),
+    [LBRC_COMBO] = COMBO(lbrc_combo, KC_LCBR),
+    [RBRC_COMBO] = COMBO(rbrc_combo, KC_RCBR),
+    [LLT_COMBO] = COMBO(llt_combo, KC_LT),
+    [RGT_COMBO] = COMBO(rgt_combo, KC_GT)
 };

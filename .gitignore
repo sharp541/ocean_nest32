@@ -62,6 +62,10 @@ fabrication-toolkit-options.json
 *.step
 *.stl
 *.dxf
+**/production/*
 
 # freecad
 *.FCBak
+
+# codex
+.codex
