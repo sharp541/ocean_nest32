@@ -12,9 +12,8 @@
 PCB変更は `kicad/`、筐体変更は `freecad/` を読む。
 
 ## Minimum Commands
-`make ocean_nest32:default` : デフォルトファームウェアをビルドする。
-`make ocean_nest32:default:flash` : ビルドして書き込む。
-`qmk compile -kb ocean_nest32 -km default` : QMK CLI を使う場合の等価コマンド。
+`make build` : デフォルトファームウェアをビルドする。
+`make flash` : ビルドして書き込む。
 
 ## Guardrails
 存在しない ADR・lint・CI を前提にしない。参照先がなければ新設提案に留める。
@@ -23,5 +22,5 @@ PCB変更は `kicad/`、筐体変更は `freecad/` を読む。
 このファイルに詳細なコーディング規約を書き足さない。必要なら対象ディレクトリに近い補助ファイルへ分割する。
 
 ## Validation
-最低限、変更後に `make ocean_nest32:default` を通す。
+最低限、変更後に `make build` を通す。
 キー配列・コンボ・エンコーダ・ポインティング変更は実機確認を前提にする。
