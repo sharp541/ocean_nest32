@@ -29,5 +29,5 @@ Notes:
 - `ocean_nest32_default.auto.yaml` is the raw parser output from `keymap.json`.
 - `ocean_nest32_default.yaml` is the hand-adjusted version used for the final SVG.
 - `ocean_nest32_drawer_layout.json` is used only for SVG generation so key spacing can differ slightly from the firmware layout definition.
-- The ALPHA1 layer legends include AZIK expansion hints derived from `feature/process_record.c`, shown as `R` + `(oo)` on two lines.
+- The ALPHA1 layer legends include AZIK expansion hints derived from `feature/process_record.c`, shown as `R` + `(ui)` on two lines.
 - The current final SVG intentionally shows only selected ALPHA1 combos: `J`, `L`, `F`, `V`, `C`, `,`, `Q`, `X`.

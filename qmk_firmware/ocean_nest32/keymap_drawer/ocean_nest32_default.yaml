@@ -1,7 +1,7 @@
 layout: {qmk_keyboard: ocean_nest32, layout_name: LAYOUT}
 layers:
   ALPHA1:
-  - {t: R (oo)}
+  - {t: R (ui)}
   - {t: K (unn)}
   - U
   - Y
@@ -18,7 +18,7 @@ layers:
   - {t: N (ai)}
   - O
   - E
-  - {t: B (aa)}
+  - {t: B (ao)}
   - {t: D (ann)}
   - .
   - MS BTN1
