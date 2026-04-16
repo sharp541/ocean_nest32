@@ -15,8 +15,8 @@
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_ALPHA1_LAYER] = LAYOUT(
-        KC_R,       KC_K,       KC_U,       KC_Y,                                                       KC_P,       KC_A,       KC_M,       KC_W,
-        KC_H,       KC_S,       KC_I,       KC_T,       KC_G,                               KC_Z,       KC_N,       KC_O,       KC_E,       KC_B,
+        KC_R,       KC_K,       KC_I,       KC_Y,                                                       KC_P,       KC_N,       KC_A,       KC_W,
+        KC_H,       KC_S,       KC_U,       KC_T,       KC_G,                               KC_Z,       KC_O,       KC_M,       KC_E,       KC_B,
                                             KC_D,                                                       KC_DOT,     MS_BTN1,    LB_MO ,
                                                         SPC_NUM,  CTL_T(KC_TAB),DEL_FUN,    BSP_SYM
     ),

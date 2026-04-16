@@ -49,29 +49,29 @@ static bool is_azik_consonant_key(uint16_t keycode) {
 static const char *get_azik_combo_output(uint16_t keycode) {
     switch (keycode) {
         case KC_R:
-            return "ui";
+            return "ann";
         case KC_S:
-            return "enn";
+            return "uu";
         case KC_P:
-            return "oi";
+            return "ao";
         case KC_M:
-            return "ei";
+            return "ai";
         case KC_W:
-            return "ou";
+            return "ei";
         case KC_K:
-            return "unn";
+            return "onn";
         case KC_T:
             return "inn";
         case KC_G:
-            return "onn";
+            return "enn";
         case KC_Z:
-            return "uu";
+            return "oi";
         case KC_N:
-            return "ai";
+            return "ui";
         case KC_B:
-            return "ao";
+            return "ou";
         case KC_D:
-            return "ann";
+            return "unn";
         default:
             return NULL;
     }
