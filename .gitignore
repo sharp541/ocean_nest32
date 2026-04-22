@@ -72,3 +72,6 @@ fabrication-toolkit-options.json
 
 # keymap drawer
 qmk_firmware/ocean_nest32/keymap_drawer/*.svg
+
+# local qmk build link
+.build
