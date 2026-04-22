@@ -1,25 +1,25 @@
 layout: {qmk_keyboard: ocean_nest32, layout_name: LAYOUT}
 layers:
   ALPHA1:
-  - {t: R (ann)}
-  - {t: K (onn)}
+  - {t: R (enn)}
+  - {t: K (unn)}
   - I
   - Y
   - {t: P (ao)}
-  - {t: N (ui)}
+  - {t: N (ai)}
   - A
   - {t: W (ei)}
   - H
-  - {t: S (uu)}
-  - U
-  - {t: T (inn)}
-  - {t: G (enn)}
-  - {t: Z (oi)}
+  - {t: S (inn)}
+  - {t: D (oi)}
+  - {t: T (ann)}
+  - {t: G (onn)}
+  - {t: Z (uu)}
   - O
-  - {t: M (ai)}
+  - U
   - E
   - {t: B (ou)}
-  - {t: D (unn)}
+  - {t: M (ui)}
   - .
   - MS BTN1
   - LB MO
@@ -140,7 +140,7 @@ combos:
   k: J
   l: [ALPHA1]
   a: mid
-- p: [2, 10]
+- p: [10, 2]
   k: L
   l: [ALPHA1]
   a: mid

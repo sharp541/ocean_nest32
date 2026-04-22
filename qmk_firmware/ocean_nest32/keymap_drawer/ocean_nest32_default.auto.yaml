@@ -11,15 +11,15 @@ layers:
   - W
   - H
   - S
-  - U
+  - D
   - T
   - G
   - Z
   - O
-  - M
+  - U
   - E
   - B
-  - D
+  - M
   - .
   - MS BTN1
   - LB MO
