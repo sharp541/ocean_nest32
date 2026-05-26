@@ -6,8 +6,8 @@ layers:
   - I
   - Y
   - {t: P (ao)}
-  - {t: N (ai)}
-  - A
+  - O
+  - U
   - {t: W (ei)}
   - H
   - {t: S (inn)}
@@ -15,9 +15,9 @@ layers:
   - {t: T (ann)}
   - {t: G (onn)}
   - {t: Z (uu)}
-  - O
-  - U
+  - {t: N (ai)}
   - E
+  - A
   - {t: B (ou)}
   - {t: M (ui)}
   - .
