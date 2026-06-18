@@ -19,7 +19,7 @@ static bool is_azik_vowel_key(uint16_t keycode) {
 
 static bool is_azik_consonant_key(uint16_t keycode) {
     switch (keycode) {
-        case KC_B:
+        case KC_M:
         case KC_C:
         case KC_D:
         case KC_F:
@@ -28,7 +28,7 @@ static bool is_azik_consonant_key(uint16_t keycode) {
         case KC_J:
         case KC_K:
         case KC_L:
-        case KC_M:
+        case KC_B:
         case KC_N:
         case KC_P:
         case KC_Q:
@@ -62,11 +62,11 @@ static const char *get_azik_combo_output(uint16_t keycode) {
             return "ei";
         case KC_N:
             return "ai";
-        case KC_B:
+        case KC_M:
             return "ou";
         case KC_Z:
             return "uu";
-        case KC_M:
+        case KC_B:
             return "ui";
         default:
             return NULL;
