@@ -14,7 +14,6 @@ PCB変更は `kicad/`、筐体変更は `freecad/` を読む。
 ## Minimum Commands
 `make build` : デフォルトファームウェアをビルドする。
 `make flash` : ビルドして書き込む。
-`qmk compile -kb ocean_nest32 -km default` : QMK CLI を使う場合の等価コマンド。
 
 ## Guardrails
 存在しない ADR・lint・CI を前提にしない。参照先がなければ新設提案に留める。
