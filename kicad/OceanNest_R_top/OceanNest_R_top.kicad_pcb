@@ -1,7 +1,7 @@
 (kicad_pcb
-	(version 20241229)
+	(version 20260206)
 	(generator "pcbnew")
-	(generator_version "9.0")
+	(generator_version "10.0")
 	(general
 		(thickness 1.6)
 		(legacy_teardrops no)
@@ -36,7 +36,20 @@
 	(setup
 		(pad_to_mask_clearance 0)
 		(allow_soldermask_bridges_in_footprints no)
-		(tenting front back)
+		(tenting
+			(front yes)
+			(back yes)
+		)
+		(covering
+			(front no)
+			(back no)
+		)
+		(plugging
+			(front no)
+			(back no)
+		)
+		(capping no)
+		(filling no)
 		(pcbplotparams
 			(layerselection 0x00000000_00000000_55555555_57555550)
 			(plot_on_all_layers_selection 0x00000000_00000000_00000000_00000000)
@@ -45,15 +58,12 @@
 			(usegerberattributes yes)
 			(usegerberadvancedattributes yes)
 			(creategerberjobfile yes)
-			(dashed_line_dash_ratio 12.000000)
-			(dashed_line_gap_ratio 3.000000)
+			(dashed_line_dash_ratio 12)
+			(dashed_line_gap_ratio 3)
 			(svgprecision 4)
 			(plotframeref no)
 			(mode 1)
 			(useauxorigin no)
-			(hpglpennumber 1)
-			(hpglpenspeed 20)
-			(hpglpendiameter 15.000000)
 			(pdf_front_fp_property_popups yes)
 			(pdf_back_fp_property_popups yes)
 			(pdf_metadata yes)
@@ -77,17 +87,16 @@
 			(outputdirectory "")
 		)
 	)
-	(net 0 "")
 	(footprint "isw-kbd:SW_Hole_CherryMX_16mm"
 		(layer "F.Cu")
 		(uuid "05a4c466-ca5d-404e-82e7-8b5c3433a14d")
-		(at 153.18 106.2315)
+		(at 170.1503 87.2991)
 		(property "Reference" "SW32"
 			(at 4.4 2.5 0)
 			(unlocked yes)
 			(layer "B.SilkS")
 			(hide yes)
-			(uuid "ab12aa74-6df4-44f3-9d94-7b1179e5b775")
+			(uuid "bd75084c-eb2a-4098-8cf6-c8f11b2bcffa")
 			(effects
 				(font
 					(size 1 1)
@@ -101,7 +110,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "0a10a060-8a3c-4f2e-822c-625d79b08cb2")
+			(uuid "efe4e0ea-dceb-466e-9e3c-d3033b62ac39")
 			(effects
 				(font
 					(size 1 1)
@@ -113,7 +122,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "58ce6fbd-3d6a-4af2-a254-437705a6a6ee")
+			(uuid "6256b453-60cf-4929-b66d-b9d1e83e21df")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -125,7 +134,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "ab85a5e2-897a-49dd-93dc-f91785fa4d06")
+			(uuid "3abd8107-7863-424c-81de-ffc5e6c097ee")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -293,6 +302,7 @@
 		(sheetname "/")
 		(sheetfile "OceanNest_R.kicad_sch")
 		(attr through_hole)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -7.05 -7.05)
 			(end 7.05 -7.05)
@@ -378,13 +388,13 @@
 	(footprint "kbd_Hole:m2_Screw_Hole"
 		(layer "F.Cu")
 		(uuid "0eba60ad-c8ad-4f94-bc4f-a080aa819b86")
-		(at 164.5 110.5)
+		(at 185.4703 90.0676)
 		(descr "Mounting Hole 2.2mm, no annular, M2")
 		(tags "mounting hole 2.2mm no annular m2")
 		(property "Reference" "hole2"
 			(at 0 -3.2 0)
 			(layer "F.Fab")
-			(uuid "584fd3f7-55b6-4cae-900b-cfeed95960a0")
+			(uuid "708cddc9-fd59-41ed-94f2-7fb33f0f3d92")
 			(effects
 				(font
 					(size 1 1)
@@ -395,7 +405,7 @@
 		(property "Value" "Val**"
 			(at 0 3.2 0)
 			(layer "F.Fab")
-			(uuid "77f4d061-4517-49ca-adf6-e8bc2f51bcdc")
+			(uuid "090a07a4-889d-4883-b0d4-0b449c93e3e1")
 			(effects
 				(font
 					(size 1 1)
@@ -407,7 +417,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "fb34b31d-3aa9-478d-8648-9ae12a7f3175")
+			(uuid "68242423-990c-4ab5-bc8d-bb220383e22f")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -419,7 +429,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "2b4c1e69-b3e9-428c-a87a-790fac811fe4")
+			(uuid "e21e3d62-b5b6-45cf-8ab4-21b72d32f58b")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -428,6 +438,7 @@
 			)
 		)
 		(attr exclude_from_pos_files exclude_from_bom)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
 			(center 0 0)
 			(end 2.2 0)
@@ -473,13 +484,13 @@
 	(footprint "isw-kbd:SW_Hole_CherryMX_16mm"
 		(layer "F.Cu")
 		(uuid "25b35602-96c6-46a3-9068-2b1bd06d0174")
-		(at 86.0297 138.9324 30)
+		(at 100 120 30)
 		(property "Reference" "SW33"
 			(at 4.4 2.500001 30)
 			(unlocked yes)
 			(layer "B.SilkS")
 			(hide yes)
-			(uuid "5753dbb6-01bd-4e66-9136-c742c8434b62")
+			(uuid "a95b512f-172d-4299-951b-b67ef93779e6")
 			(effects
 				(font
 					(size 1 1)
@@ -493,7 +504,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "ddca4f7e-7fb4-42d0-bc1a-a0f4347368a1")
+			(uuid "3a657624-77c4-41c6-8666-b2a84f9de5f6")
 			(effects
 				(font
 					(size 1 1)
@@ -505,7 +516,7 @@
 			(at 0 0 30)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "ad53d1cf-1868-4e68-a361-cce045535b65")
+			(uuid "55d1e39e-4f9d-4cf0-ad48-1bd79d4b358a")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -517,7 +528,7 @@
 			(at 0 0 30)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "5dba80a7-22af-4783-9650-47b25da8f823")
+			(uuid "81c32de2-3438-4cbe-8d07-1ee53de61547")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -685,6 +696,7 @@
 		(sheetname "/")
 		(sheetfile "OceanNest_R.kicad_sch")
 		(attr through_hole)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -7.05 -7.05)
 			(end 7.05 -7.05)
@@ -770,13 +782,13 @@
 	(footprint "isw-kbd:SW_Hole_CherryMX_16mm"
 		(layer "F.Cu")
 		(uuid "2761add7-3c4c-48b5-baa5-717a0009f12d")
-		(at 137.18 88.2315)
+		(at 154.1503 69.2991)
 		(property "Reference" "SW27"
 			(at 4.4 2.5 0)
 			(unlocked yes)
 			(layer "B.SilkS")
 			(hide yes)
-			(uuid "8c7588c1-4bb1-463f-bf63-f172545dccc1")
+			(uuid "1426eab5-f585-4f19-9646-eac432709c83")
 			(effects
 				(font
 					(size 1 1)
@@ -790,7 +802,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "d795a150-2236-4f4b-a8ed-4b445d85f522")
+			(uuid "4b32360c-ee9c-4296-be2f-74e8794ce82e")
 			(effects
 				(font
 					(size 1 1)
@@ -802,7 +814,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "ef6bb0ea-6ea8-4083-a76d-39ac8089512f")
+			(uuid "4a400b62-8798-43c3-b0a1-70616c9ec53b")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -814,7 +826,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "ea2e9c38-9935-42f4-b55c-7eea0fe012ef")
+			(uuid "67b62d1b-83a5-47d5-b9ef-b2c337b8c7fc")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -982,6 +994,7 @@
 		(sheetname "/")
 		(sheetfile "OceanNest_R.kicad_sch")
 		(attr through_hole)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -7.05 -7.05)
 			(end 7.05 -7.05)
@@ -1067,13 +1080,13 @@
 	(footprint "isw-kbd:SW_Hole_CherryMX_16mm"
 		(layer "F.Cu")
 		(uuid "3edfb362-46f5-4fdd-93f9-dcc7f35f5e1c")
-		(at 169.18 74.2315)
+		(at 186.1503 55.2991)
 		(property "Reference" "SW24"
 			(at 4.4 2.5 0)
 			(unlocked yes)
 			(layer "B.SilkS")
 			(hide yes)
-			(uuid "c6e408e5-4db0-4d7f-b437-f59062314fca")
+			(uuid "39fd171e-d041-4233-b087-3f009cb25d7c")
 			(effects
 				(font
 					(size 1 1)
@@ -1087,7 +1100,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "86f12d14-9ae1-44bf-bd62-7b71de812bfa")
+			(uuid "05673123-beea-4728-966a-c660680ecf5a")
 			(effects
 				(font
 					(size 1 1)
@@ -1099,7 +1112,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "4414e58d-fec6-41ba-b8f6-d548a20d87ec")
+			(uuid "e1b78273-732f-4669-b76b-29419477a0da")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1111,7 +1124,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "2cc53115-90b3-444a-b81a-7a21a7486a4e")
+			(uuid "ce3d7759-20b0-43c2-b293-d7a11e914c2c")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1279,6 +1292,7 @@
 		(sheetname "/")
 		(sheetfile "OceanNest_R.kicad_sch")
 		(attr through_hole)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -7.05 -7.05)
 			(end 7.05 -7.05)
@@ -1364,13 +1378,13 @@
 	(footprint "isw-kbd:SW_Hole_CherryMX_16mm"
 		(layer "F.Cu")
 		(uuid "52156274-1a8e-47b6-ac10-8f4722936dd4")
-		(at 102.9146 131.8449 15)
+		(at 116.8849 112.9125 15)
 		(property "Reference" "SW34"
 			(at 4.4 2.5 15)
 			(unlocked yes)
 			(layer "B.SilkS")
 			(hide yes)
-			(uuid "efa5fb73-ecb6-46f5-b86d-ad6e14cd829a")
+			(uuid "443467d0-af03-4a1c-bb1d-7fa2f8805d5f")
 			(effects
 				(font
 					(size 1 1)
@@ -1384,7 +1398,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "64d1ed76-bec2-485d-9e02-a8f479003c1f")
+			(uuid "57e511f2-2f7a-4af3-9ebd-61ec025ea55b")
 			(effects
 				(font
 					(size 1 1)
@@ -1396,7 +1410,7 @@
 			(at 0 0 15)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "2561cd5a-055e-4c08-8775-8aae90cacc14")
+			(uuid "8aeca9aa-c065-4c1e-9187-c606f48f42f8")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1408,7 +1422,7 @@
 			(at 0 0 15)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "90a16ca0-723f-4c25-becb-3f3f535a44b4")
+			(uuid "0d810ed6-1997-4f66-91af-da168ba40f6c")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1576,6 +1590,7 @@
 		(sheetname "/")
 		(sheetfile "OceanNest_R.kicad_sch")
 		(attr through_hole)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -7.05 -7.05)
 			(end 7.05 -7.05)
@@ -1661,13 +1676,13 @@
 	(footprint "isw-kbd:SW_Hole_CherryMX_16mm"
 		(layer "F.Cu")
 		(uuid "5caa8288-46b3-4bd0-809e-f9db22ca51f2")
-		(at 177.18 95.2315)
+		(at 188.1503 74.2991)
 		(property "Reference" "SW29"
 			(at 4.4 2.5 0)
 			(unlocked yes)
 			(layer "B.SilkS")
 			(hide yes)
-			(uuid "9dbd1604-91b0-4ad0-aae1-ffbfad0ac563")
+			(uuid "feaf0bad-88e3-49f4-9b1e-acf764865f94")
 			(effects
 				(font
 					(size 1 1)
@@ -1681,7 +1696,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "7a7779a3-04a2-4ca8-8925-434ed468576c")
+			(uuid "b85d1f5a-7a62-456d-be2c-99906bb525e7")
 			(effects
 				(font
 					(size 1 1)
@@ -1693,7 +1708,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "ab769094-a4e7-40c9-abb3-6404c4f1d473")
+			(uuid "fee2ac56-b1db-4155-b889-055f83b181f4")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1705,7 +1720,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "9db1276b-e4da-43cd-ac77-ffa8ef383bf2")
+			(uuid "7e5d2ba4-763c-4291-8c86-7afa394844ad")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1873,6 +1888,7 @@
 		(sheetname "/")
 		(sheetfile "OceanNest_R.kicad_sch")
 		(attr through_hole)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -7.05 -7.05)
 			(end 7.05 -7.05)
@@ -1958,13 +1974,13 @@
 	(footprint "isw-kbd:SW_Hole_CherryMX_16mm"
 		(layer "F.Cu")
 		(uuid "615cf730-3bea-41da-a070-85156c22ae6d")
-		(at 121.18 72.2315)
+		(at 138.1503 59.2991)
 		(property "Reference" "SW21"
 			(at 4.4 2.5 0)
 			(unlocked yes)
 			(layer "B.SilkS")
 			(hide yes)
-			(uuid "d4623c1b-95c3-4280-9c69-d832b5cb0734")
+			(uuid "67c9e92a-4093-4fca-ad4a-4353f4a17c6b")
 			(effects
 				(font
 					(size 1 1)
@@ -1978,7 +1994,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "c5026c25-80ce-43d9-a6ca-9c8363563594")
+			(uuid "cc5ecb75-fbe0-4eec-9e74-03145dcdf6e7")
 			(effects
 				(font
 					(size 1 1)
@@ -1990,7 +2006,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "88caa0da-b7f2-43b8-b952-58e97a91f9d4")
+			(uuid "0cd3329e-0665-428a-9482-aa0458fe50b1")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2002,7 +2018,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "d15e5485-250c-49fb-924a-aafbfa9c5a32")
+			(uuid "7b971b61-f00c-4350-a358-d83a66aac78f")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2170,6 +2186,7 @@
 		(sheetname "/")
 		(sheetfile "OceanNest_R.kicad_sch")
 		(attr through_hole)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -7.05 -7.05)
 			(end 7.05 -7.05)
@@ -2255,13 +2272,13 @@
 	(footprint "isw-kbd:SW_Hole_CherryMX_16mm"
 		(layer "F.Cu")
 		(uuid "6a68ab9f-e157-4650-a6e4-197e694f9df9")
-		(at 153.18 90.2315)
+		(at 170.1503 71.2991)
 		(property "Reference" "SW28"
 			(at 4.4 2.5 0)
 			(unlocked yes)
 			(layer "B.SilkS")
 			(hide yes)
-			(uuid "ff63c451-7bba-4fa4-bfa3-ef316c33392d")
+			(uuid "32a8934f-c5a7-46ba-829f-09a171c660c9")
 			(effects
 				(font
 					(size 1 1)
@@ -2275,7 +2292,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "4d4e5e7c-5d17-4c36-8fa0-ae7c1970191a")
+			(uuid "31075e64-25d5-46b0-8984-af84a052de34")
 			(effects
 				(font
 					(size 1 1)
@@ -2287,7 +2304,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "6cd343c5-8044-44e4-9b11-136a414e3110")
+			(uuid "428829b0-3bff-4461-8a09-200b8050eaae")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2299,7 +2316,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "9f281df8-408c-44b3-a4f2-1f7cd8e3b044")
+			(uuid "b317a42e-ff13-4e94-8d6c-fc75e000642c")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2467,6 +2484,7 @@
 		(sheetname "/")
 		(sheetfile "OceanNest_R.kicad_sch")
 		(attr through_hole)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -7.05 -7.05)
 			(end 7.05 -7.05)
@@ -2552,13 +2570,13 @@
 	(footprint "isw-kbd:SW_Hole_CherryMX_16mm"
 		(layer "F.Cu")
 		(uuid "7076cd6a-14fe-462a-a755-5c713306476c")
-		(at 153.18 74.2315)
+		(at 170.1503 55.2991)
 		(property "Reference" "SW23"
 			(at 4.4 2.5 0)
 			(unlocked yes)
 			(layer "B.SilkS")
 			(hide yes)
-			(uuid "c304f150-0540-472d-9200-86cd13444c33")
+			(uuid "00fb554c-07a9-407a-a597-ccc684e5501a")
 			(effects
 				(font
 					(size 1 1)
@@ -2572,7 +2590,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "d1da3286-38b5-42df-bf55-69b901545671")
+			(uuid "4f3e1201-da96-42fb-b6c3-d6a3701a9ea1")
 			(effects
 				(font
 					(size 1 1)
@@ -2584,7 +2602,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "df41f8aa-908d-427c-a5c9-b593d8a9c456")
+			(uuid "d44eb0c7-e57b-4cf4-8ff0-350308060202")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2596,7 +2614,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "f0d42716-76e0-4585-b6c2-77acb3e30da6")
+			(uuid "fa42f867-6e70-4e18-855c-5c06260faab3")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2764,6 +2782,7 @@
 		(sheetname "/")
 		(sheetfile "OceanNest_R.kicad_sch")
 		(attr through_hole)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -7.05 -7.05)
 			(end 7.05 -7.05)
@@ -2849,13 +2868,13 @@
 	(footprint "kbd_Hole:m2_Screw_Hole"
 		(layer "F.Cu")
 		(uuid "a7bab770-d733-4daa-947e-721ad227612a")
-		(at 181.6 64)
+		(at 195.9703 46.0676)
 		(descr "Mounting Hole 2.2mm, no annular, M2")
 		(tags "mounting hole 2.2mm no annular m2")
 		(property "Reference" "hole2"
 			(at 0 -3.2 0)
 			(layer "F.Fab")
-			(uuid "8e3e3b72-1603-40ee-8dce-acd304c0dc50")
+			(uuid "18c11495-1927-4ab4-9486-bdd6c8afad1d")
 			(effects
 				(font
 					(size 1 1)
@@ -2866,7 +2885,7 @@
 		(property "Value" "Val**"
 			(at 0 3.2 0)
 			(layer "F.Fab")
-			(uuid "fcb55a04-8a50-4e79-acc0-4a03fd2cb27b")
+			(uuid "b2e585db-72cb-4237-8dc6-595f1820f23b")
 			(effects
 				(font
 					(size 1 1)
@@ -2878,7 +2897,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "cc15acf2-acde-4e44-b889-dbe739065563")
+			(uuid "14c20c4b-802b-4d9c-9b81-64e324661687")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2890,7 +2909,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "464d1678-dd67-49c4-b425-b4384d1908ce")
+			(uuid "368c1dd0-f571-43a2-85b1-b75f0660e93d")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2899,6 +2918,7 @@
 			)
 		)
 		(attr exclude_from_pos_files exclude_from_bom)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
 			(center 0 0)
 			(end 2.2 0)
@@ -2944,13 +2964,13 @@
 	(footprint "isw-kbd:SW_Hole_CherryMX_16mm"
 		(layer "F.Cu")
 		(uuid "ae11030a-b3b2-4e0a-b5b0-8e64c6739f05")
-		(at 121.18 106.2315)
+		(at 200.1503 90.2991)
 		(property "Reference" "SW30"
 			(at 4.4 2.5 0)
 			(unlocked yes)
 			(layer "B.SilkS")
 			(hide yes)
-			(uuid "2278333c-6aa5-40cd-ab4a-8e7b8267aed0")
+			(uuid "0c3d1157-cbbf-4d0a-a759-a4e3c97defe5")
 			(effects
 				(font
 					(size 1 1)
@@ -2964,7 +2984,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "0dc3e259-2e64-4949-872e-52dbb61fc213")
+			(uuid "77ed6245-653c-4b78-8d35-a26c9772a984")
 			(effects
 				(font
 					(size 1 1)
@@ -2976,7 +2996,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "f27f3a76-1971-4183-ad3c-8dd2a2e3e9be")
+			(uuid "1202993d-2eec-448d-aac5-b9d385849f09")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2988,7 +3008,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "895a88e6-6732-4ac4-a4cd-5caaa21b20c7")
+			(uuid "3252098c-03bb-4fc0-b3a4-59e90cf27d47")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3156,6 +3176,7 @@
 		(sheetname "/")
 		(sheetfile "OceanNest_R.kicad_sch")
 		(attr through_hole)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -7.05 -7.05)
 			(end 7.05 -7.05)
@@ -3241,13 +3262,13 @@
 	(footprint "isw-kbd:SW_Hole_CherryMX_16mm"
 		(layer "F.Cu")
 		(uuid "b02435ab-a5ac-4a6f-8f20-c4ad72fbf544")
-		(at 137.18 104.2315)
+		(at 154.1503 85.2991)
 		(property "Reference" "SW31"
 			(at 4.4 2.5 0)
 			(unlocked yes)
 			(layer "B.SilkS")
 			(hide yes)
-			(uuid "77811b0c-7913-47d2-8560-3e81c633916e")
+			(uuid "6a6b17de-f830-4505-be5c-5c331bc413fa")
 			(effects
 				(font
 					(size 1 1)
@@ -3261,7 +3282,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "fadae1cc-d403-45db-bafa-cfa79e95ee1b")
+			(uuid "13b73032-f6b6-46d8-963c-09275ee85657")
 			(effects
 				(font
 					(size 1 1)
@@ -3273,7 +3294,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "e968006c-193d-4d5f-9652-2f0dcabbe60d")
+			(uuid "f0cc44d1-12e5-4610-9028-860f39fc9dd8")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3285,7 +3306,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "bba905e3-64e6-4ae8-857e-564072c32824")
+			(uuid "1ded8874-accf-4f42-9d49-d8107383e4f0")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3453,6 +3474,7 @@
 		(sheetname "/")
 		(sheetfile "OceanNest_R.kicad_sch")
 		(attr through_hole)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -7.05 -7.05)
 			(end 7.05 -7.05)
@@ -3538,13 +3560,13 @@
 	(footprint "isw-kbd:SW_Hole_CherryMX_16mm"
 		(layer "F.Cu")
 		(uuid "b0c14883-3c11-4582-bf16-2608764ba106")
-		(at 121.18 90.2315)
+		(at 138.1503 75.2991)
 		(property "Reference" "SW26"
 			(at 4.4 2.5 0)
 			(unlocked yes)
 			(layer "B.SilkS")
 			(hide yes)
-			(uuid "35c69116-0c7a-4dd1-8769-4e2223272072")
+			(uuid "6fbc063a-f410-4580-bd26-e78503d4b5fe")
 			(effects
 				(font
 					(size 1 1)
@@ -3558,7 +3580,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "f1c91bc7-7916-41ab-a832-26cec1f82c6c")
+			(uuid "4b29b597-d488-4470-adf1-86afdbf58b4d")
 			(effects
 				(font
 					(size 1 1)
@@ -3570,7 +3592,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "d8f41749-a8ef-4f84-a443-eaeebe1eb10e")
+			(uuid "1879acec-b98b-4ca6-9cc1-36ee0a305756")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3582,7 +3604,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "cfb02a55-8af2-43ee-8223-16f12c7122c0")
+			(uuid "91bbbe8f-3751-414b-aa8c-5babe65e0774")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3750,6 +3772,7 @@
 		(sheetname "/")
 		(sheetfile "OceanNest_R.kicad_sch")
 		(attr through_hole)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -7.05 -7.05)
 			(end 7.05 -7.05)
@@ -3835,13 +3858,13 @@
 	(footprint "kbd_Hole:m2_Screw_Hole"
 		(layer "F.Cu")
 		(uuid "c6fcc2b2-1b9f-4f40-8f3a-b13eafe0f9e9")
-		(at 111 74.6)
+		(at 127.4703 48.0676)
 		(descr "Mounting Hole 2.2mm, no annular, M2")
 		(tags "mounting hole 2.2mm no annular m2")
 		(property "Reference" "hole2"
 			(at 0 -3.2 0)
 			(layer "F.Fab")
-			(uuid "38c6c8d5-6e1f-4b87-8ec4-d408c8d9e16a")
+			(uuid "023b7c1a-17a5-4cbe-94a4-7ca86cbc715c")
 			(effects
 				(font
 					(size 1 1)
@@ -3852,7 +3875,7 @@
 		(property "Value" "Val**"
 			(at 1.1 3.3 0)
 			(layer "F.Fab")
-			(uuid "68591f5f-396e-4384-9eb4-04d57c9a765f")
+			(uuid "e7e43b64-cc65-4f38-af1a-df500eff4761")
 			(effects
 				(font
 					(size 1 1)
@@ -3864,7 +3887,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "855b37e8-00b6-47c3-a410-c6828860078a")
+			(uuid "70d165c5-cb25-4f8a-9f48-5613aff5120a")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3876,7 +3899,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "4f4275aa-3e31-4731-95a0-9774213e9c17")
+			(uuid "9ce962b4-557e-47f9-8b79-a3eea0e2c90c")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3885,6 +3908,7 @@
 			)
 		)
 		(attr exclude_from_pos_files exclude_from_bom)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
 			(center 0 0)
 			(end 2.2 0)
@@ -3930,13 +3954,13 @@
 	(footprint "isw-kbd:SW_Hole_CherryMX_16mm"
 		(layer "F.Cu")
 		(uuid "d221ecd2-96ee-431b-938c-d739be2b3d3f")
-		(at 105.18 90.2315)
+		(at 122.1503 71.2991)
 		(property "Reference" "SW25"
 			(at 4.4 2.5 0)
 			(unlocked yes)
 			(layer "B.SilkS")
 			(hide yes)
-			(uuid "63caf629-7066-4736-b520-c4d45924a7f8")
+			(uuid "94e8f251-e8df-459e-a66f-63b3f39bcfc1")
 			(effects
 				(font
 					(size 1 1)
@@ -3950,7 +3974,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "470373df-ac5e-4167-b0fa-4adf39fbc040")
+			(uuid "b13b10f2-ccb3-413f-bf14-a51c3cebf819")
 			(effects
 				(font
 					(size 1 1)
@@ -3962,7 +3986,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "21351257-f226-4bb0-b7a9-e85fbab4bde7")
+			(uuid "1d107fb2-1e8e-46df-b19f-3a0fe2b99fab")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3974,7 +3998,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "0345e84a-30fd-4521-9b44-fa747a01e4e9")
+			(uuid "d3df3051-d771-4026-b8d3-6430e87c190f")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4142,6 +4166,7 @@
 		(sheetname "/")
 		(sheetfile "OceanNest_R.kicad_sch")
 		(attr through_hole)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -7.05 -7.05)
 			(end 7.05 -7.05)
@@ -4227,13 +4252,13 @@
 	(footprint "kbd_Hole:m2_Screw_Hole"
 		(layer "F.Cu")
 		(uuid "daaf26e0-a6f2-46a4-af9b-7d0bdc161e2e")
-		(at 99.8 117.4)
+		(at 113.7703 98.4676)
 		(descr "Mounting Hole 2.2mm, no annular, M2")
 		(tags "mounting hole 2.2mm no annular m2")
 		(property "Reference" "hole1"
 			(at 0 -3.2 0)
 			(layer "F.Fab")
-			(uuid "d5e09f35-50e9-498f-8d5d-0e3bc1bce74a")
+			(uuid "fdda6539-6429-41ed-96f3-55621ff0ece5")
 			(effects
 				(font
 					(size 1 1)
@@ -4244,7 +4269,7 @@
 		(property "Value" "Val**"
 			(at 0 3.2 0)
 			(layer "F.Fab")
-			(uuid "451eae7f-4bf0-44de-a4ad-d5dbd432a78f")
+			(uuid "e3727458-c56c-4307-8622-e9210de62c01")
 			(effects
 				(font
 					(size 1 1)
@@ -4256,7 +4281,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "5c2e7c11-b88c-45dd-8fd1-531640e16407")
+			(uuid "e08bedf3-b0c7-458c-8cf5-83075e72fcec")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4268,7 +4293,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "ef556c10-8a2f-4ec3-ba97-b852f32c74ae")
+			(uuid "58e6376b-5ee1-419e-a4d7-244b555cc29f")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4277,6 +4302,7 @@
 			)
 		)
 		(attr exclude_from_pos_files exclude_from_bom)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
 			(center 0 0)
 			(end 2.2 0)
@@ -4322,13 +4348,13 @@
 	(footprint "isw-kbd:SW_Hole_CherryMX_16mm"
 		(layer "F.Cu")
 		(uuid "ed2d0dbc-97b8-403a-83ed-445eb8a1dc91")
-		(at 137.18 72.2315)
+		(at 154.1503 53.2991)
 		(property "Reference" "SW22"
 			(at 4.4 2.5 0)
 			(unlocked yes)
 			(layer "B.SilkS")
 			(hide yes)
-			(uuid "7a1029ae-bb09-49ef-923a-55eb46b914ef")
+			(uuid "b2c56289-d524-4bdc-b30c-12116f2d8e7e")
 			(effects
 				(font
 					(size 1 1)
@@ -4342,7 +4368,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "7b62d77f-e60f-4877-85ec-ce603df9f01d")
+			(uuid "07220715-921a-4851-b4e2-2e250847eb1a")
 			(effects
 				(font
 					(size 1 1)
@@ -4354,7 +4380,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "21b303d8-4b9b-472f-b451-37ff328f329e")
+			(uuid "04667e0d-334d-421f-9281-f1b8b898acb2")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4366,7 +4392,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "51611610-e04e-4dd3-943f-7bede55468fb")
+			(uuid "02c374a0-a62e-4505-b5c7-e253f961254a")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4534,6 +4560,7 @@
 		(sheetname "/")
 		(sheetfile "OceanNest_R.kicad_sch")
 		(attr through_hole)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -7.05 -7.05)
 			(end 7.05 -7.05)
@@ -4617,247 +4644,9 @@
 		(embedded_fonts no)
 	)
 	(gr_arc
-		(start 188.4 103.335786)
-		(mid 187.814214 104.75)
-		(end 186.4 105.335786)
-		(stroke
-			(width 0.05)
-			(type default)
-		)
-		(layer "Edge.Cuts")
-		(uuid "12e5fb68-61bf-4f16-8fce-f102191c5af4")
-	)
-	(gr_line
-		(start 94 104.5)
-		(end 106 104.5)
-		(stroke
-			(width 0.05)
-			(type default)
-		)
-		(layer "Edge.Cuts")
-		(uuid "133ad624-b527-4ca1-8d7d-03d889be92b9")
-	)
-	(gr_line
-		(start 110.75 61.8)
-		(end 166.2 61.8)
-		(stroke
-			(width 0.05)
-			(type default)
-		)
-		(layer "Edge.Cuts")
-		(uuid "145e586d-d0fd-4b71-8239-a32e12165470")
-	)
-	(gr_line
-		(start 106 104.5)
-		(end 106 110.75)
-		(stroke
-			(width 0.05)
-			(type default)
-		)
-		(layer "Edge.Cuts")
-		(uuid "309e3ab1-a335-4e39-af13-4c0dc7851e2f")
-	)
-	(gr_line
-		(start 106 110.75)
-		(end 94 110.75)
-		(stroke
-			(width 0.05)
-			(type default)
-		)
-		(layer "Edge.Cuts")
-		(uuid "39990165-f8c9-45ee-8d0f-79f4fb1f245d")
-	)
-	(gr_line
-		(start 185 61.8)
-		(end 186.385786 61.8)
-		(stroke
-			(width 0.05)
-			(type default)
-		)
-		(layer "Edge.Cuts")
-		(uuid "3a094444-85bc-42e5-a693-316328e325c8")
-	)
-	(gr_line
-		(start 94.000002 124.000001)
-		(end 75.600002 134.600001)
-		(stroke
-			(width 0.05)
-			(type solid)
-		)
-		(layer "Edge.Cuts")
-		(uuid "45270bfb-1c33-4668-af8f-3eee458d699b")
-	)
-	(gr_line
-		(start 97.400002 142.800002)
-		(end 112 138.800002)
-		(stroke
-			(width 0.05)
-			(type default)
-		)
-		(layer "Edge.Cuts")
-		(uuid "5518b492-bb26-4f98-914f-a774a56c3f8e")
-	)
-	(gr_line
-		(start 109.8 121.6)
-		(end 112.6 116)
-		(stroke
-			(width 0.05)
-			(type default)
-		)
-		(layer "Edge.Cuts")
-		(uuid "5a6c26dd-70bd-40fb-9257-465f5448c733")
-	)
-	(gr_line
-		(start 84.600002 150.200001)
-		(end 97.400002 142.800002)
-		(stroke
-			(width 0.05)
-			(type default)
-		)
-		(layer "Edge.Cuts")
-		(uuid "5ea8f09e-2d65-48aa-9dda-434b5f261ee2")
-	)
-	(gr_line
-		(start 113.4 136.200002)
-		(end 109.8 121.6)
-		(stroke
-			(width 0.05)
-			(type default)
-		)
-		(layer "Edge.Cuts")
-		(uuid "624bb9a9-3d4a-4c9a-8ce5-a8c615340791")
-	)
-	(gr_arc
-		(start 186.385786 61.8)
-		(mid 187.8 62.385786)
-		(end 188.385786 63.8)
-		(stroke
-			(width 0.05)
-			(type default)
-		)
-		(layer "Edge.Cuts")
-		(uuid "65ae524d-fc17-4251-a032-ff6b99fef5d3")
-	)
-	(gr_line
-		(start 74.800002 137.400001)
-		(end 81.800002 149.400001)
-		(stroke
-			(width 0.05)
-			(type default)
-		)
-		(layer "Edge.Cuts")
-		(uuid "6cb7a377-87b3-4bf5-b29b-3f696522002c")
-	)
-	(gr_arc
-		(start 94 82)
-		(mid 94.585786 80.585786)
-		(end 96 80)
-		(stroke
-			(width 0.05)
-			(type default)
-		)
-		(layer "Edge.Cuts")
-		(uuid "6e355277-14f1-410b-8027-2cfe5a21245b")
-	)
-	(gr_arc
-		(start 108.8 63.75)
-		(mid 109.371142 62.371142)
-		(end 110.75 61.8)
-		(stroke
-			(width 0.05)
-			(type default)
-		)
-		(layer "Edge.Cuts")
-		(uuid "835a9dda-387e-429b-bbdb-aaa676c42f12")
-	)
-	(gr_arc
-		(start 168.5 107.335786)
-		(mid 169.085786 105.921572)
-		(end 170.5 105.335786)
-		(stroke
-			(width 0.05)
-			(type default)
-		)
-		(layer "Edge.Cuts")
-		(uuid "8e04c126-9918-4898-aaa1-0f563233f2a6")
-	)
-	(gr_arc
-		(start 84.600002 150.200001)
-		(mid 83.034317 150.3799)
-		(end 81.800002 149.400001)
-		(stroke
-			(width 0.05)
-			(type default)
-		)
-		(layer "Edge.Cuts")
-		(uuid "94f00ee3-3ac0-474a-9675-fbd5232ffbdf")
-	)
-	(gr_line
-		(start 94 110.75)
-		(end 94 124)
-		(stroke
-			(width 0.05)
-			(type default)
-		)
-		(layer "Edge.Cuts")
-		(uuid "a4472be8-1764-4ada-88e3-071463836a56")
-	)
-	(gr_line
-		(start 106.8 80)
-		(end 96 80)
-		(stroke
-			(width 0.05)
-			(type default)
-		)
-		(layer "Edge.Cuts")
-		(uuid "ac188ccc-128f-401d-b486-12a38327a6df")
-	)
-	(gr_line
-		(start 166.2 61.8)
-		(end 185 61.8)
-		(stroke
-			(width 0.05)
-			(type default)
-		)
-		(layer "Edge.Cuts")
-		(uuid "ac816f38-a336-4dbd-9f1e-872d1a5a89df")
-	)
-	(gr_arc
-		(start 113.4 136.200002)
-		(mid 113.238478 137.789951)
-		(end 112 138.800002)
-		(stroke
-			(width 0.05)
-			(type default)
-		)
-		(layer "Edge.Cuts")
-		(uuid "af8d1960-99e2-4a58-a226-8bc2ce302c47")
-	)
-	(gr_arc
-		(start 168.5 114)
-		(mid 167.914214 115.414214)
-		(end 166.5 116)
-		(stroke
-			(width 0.05)
-			(type default)
-		)
-		(layer "Edge.Cuts")
-		(uuid "c533c38c-17cb-49a3-9943-d3357beaa3ea")
-	)
-	(gr_line
-		(start 112.6 116)
-		(end 166.5 116)
-		(stroke
-			(width 0.05)
-			(type default)
-		)
-		(layer "Edge.Cuts")
-		(uuid "cbc6a880-22db-40ca-87ef-3a53a9635a40")
-	)
-	(gr_arc
-		(start 74.800002 137.400001)
-		(mid 74.620103 135.834316)
-		(end 75.600002 134.600001)
+		(start 88.770302 118.467601)
+		(mid 88.590402 116.901915)
+		(end 89.570302 115.667601)
 		(stroke
 			(width 0.05)
 			(type default)
@@ -4866,65 +4655,146 @@
 		(uuid "d5af6e30-b7c9-446a-a054-30af79ac2ad6")
 	)
 	(gr_line
-		(start 188.4 103.335786)
-		(end 188.385786 63.807483)
+		(start 88.770302 118.467601)
+		(end 95.770302 130.467601)
 		(stroke
 			(width 0.05)
 			(type default)
 		)
 		(layer "Edge.Cuts")
-		(uuid "d78ac970-689a-4484-8a98-a0c604f56b1e")
-	)
-	(gr_line
-		(start 94 104.5)
-		(end 94 82)
-		(stroke
-			(width 0.05)
-			(type default)
-		)
-		(layer "Edge.Cuts")
-		(uuid "d7e613c3-dc95-4427-81c8-feb9e9d2714c")
-	)
-	(gr_line
-		(start 168.5 114)
-		(end 168.5 107.335786)
-		(stroke
-			(width 0.05)
-			(type default)
-		)
-		(layer "Edge.Cuts")
-		(uuid "ed68b203-102e-4897-87a4-cb8bfefa92c1")
+		(uuid "6cb7a377-87b3-4bf5-b29b-3f696522002c")
 	)
 	(gr_arc
-		(start 108.8 78)
-		(mid 108.214214 79.414214)
-		(end 106.8 80)
+		(start 98.570302 131.267601)
+		(mid 97.004616 131.447501)
+		(end 95.770302 130.467601)
 		(stroke
 			(width 0.05)
 			(type default)
 		)
 		(layer "Edge.Cuts")
-		(uuid "f0e33898-84e3-4fc1-898c-292d2d84630f")
+		(uuid "94f00ee3-3ac0-474a-9675-fbd5232ffbdf")
 	)
 	(gr_line
-		(start 170.5 105.335786)
-		(end 186.4 105.335786)
+		(start 98.570302 131.267601)
+		(end 111.370302 123.867602)
 		(stroke
 			(width 0.05)
 			(type default)
 		)
 		(layer "Edge.Cuts")
-		(uuid "f2d2e908-baf1-4e72-b20f-eb7e4fd8cb88")
+		(uuid "5ea8f09e-2d65-48aa-9dda-434b5f261ee2")
 	)
 	(gr_line
-		(start 108.8 78)
-		(end 108.8 63.75)
+		(start 107.9703 85.5676)
+		(end 119.9703 85.5676)
 		(stroke
 			(width 0.05)
 			(type default)
 		)
 		(layer "Edge.Cuts")
-		(uuid "fa7f3709-266b-4603-95de-9d1e29bf3b70")
+		(uuid "133ad624-b527-4ca1-8d7d-03d889be92b9")
+	)
+	(gr_line
+		(start 107.9703 91.8176)
+		(end 107.9703 105.0676)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "Edge.Cuts")
+		(uuid "a4472be8-1764-4ada-88e3-071463836a56")
+	)
+	(gr_line
+		(start 107.970302 105.067601)
+		(end 89.570302 115.667601)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "45270bfb-1c33-4668-af8f-3eee458d699b")
+	)
+	(gr_line
+		(start 111.370302 123.867602)
+		(end 125.9703 119.867602)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "Edge.Cuts")
+		(uuid "5518b492-bb26-4f98-914f-a774a56c3f8e")
+	)
+	(gr_line
+		(start 119.9703 85.5676)
+		(end 119.9703 91.8176)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "Edge.Cuts")
+		(uuid "309e3ab1-a335-4e39-af13-4c0dc7851e2f")
+	)
+	(gr_line
+		(start 119.9703 91.8176)
+		(end 107.9703 91.8176)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "Edge.Cuts")
+		(uuid "39990165-f8c9-45ee-8d0f-79f4fb1f245d")
+	)
+	(gr_line
+		(start 123.7703 102.6676)
+		(end 126.5703 97.0676)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "Edge.Cuts")
+		(uuid "5a6c26dd-70bd-40fb-9257-465f5448c733")
+	)
+	(gr_line
+		(start 126.5703 97.0676)
+		(end 177.4703 97.0676)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "Edge.Cuts")
+		(uuid "cbc6a880-22db-40ca-87ef-3a53a9635a40")
+	)
+	(gr_line
+		(start 127.3703 117.267602)
+		(end 123.7703 102.6676)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "Edge.Cuts")
+		(uuid "624bb9a9-3d4a-4c9a-8ce5-a8c615340791")
+	)
+	(gr_arc
+		(start 127.3703 117.267602)
+		(mid 127.208777 118.85755)
+		(end 125.9703 119.867602)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "Edge.Cuts")
+		(uuid "af8d1960-99e2-4a58-a226-8bc2ce302c47")
+	)
+	(gr_line
+		(start 195.9703 42.8676)
+		(end 197.356086 42.8676)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "Edge.Cuts")
+		(uuid "3a094444-85bc-42e5-a693-316328e325c8")
 	)
 	(embedded_fonts no)
 )
