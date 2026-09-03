@@ -484,7 +484,7 @@
 	(footprint "isw-kbd:SW_Hole_CherryMX_16mm"
 		(layer "F.Cu")
 		(uuid "25b35602-96c6-46a3-9068-2b1bd06d0174")
-		(at 100 120 30)
+		(at 97 120 30)
 		(property "Reference" "SW33"
 			(at 4.4 2.500001 30)
 			(unlocked yes)
@@ -1378,7 +1378,7 @@
 	(footprint "isw-kbd:SW_Hole_CherryMX_16mm"
 		(layer "F.Cu")
 		(uuid "52156274-1a8e-47b6-ac10-8f4722936dd4")
-		(at 116.8849 112.9125 15)
+		(at 113.8849 112.9125 15)
 		(property "Reference" "SW34"
 			(at 4.4 2.5 15)
 			(unlocked yes)
@@ -3858,7 +3858,7 @@
 	(footprint "kbd_Hole:m2_Screw_Hole"
 		(layer "F.Cu")
 		(uuid "c6fcc2b2-1b9f-4f40-8f3a-b13eafe0f9e9")
-		(at 121.5 56)
+		(at 123.5 47.5)
 		(descr "Mounting Hole 2.2mm, no annular, M2")
 		(tags "mounting hole 2.2mm no annular m2")
 		(property "Reference" "hole2"
@@ -4252,7 +4252,7 @@
 	(footprint "kbd_Hole:m2_Screw_Hole"
 		(layer "F.Cu")
 		(uuid "daaf26e0-a6f2-46a4-af9b-7d0bdc161e2e")
-		(at 113.7703 98.4676)
+		(at 115 91)
 		(descr "Mounting Hole 2.2mm, no annular, M2")
 		(tags "mounting hole 2.2mm no annular m2")
 		(property "Reference" "hole1"
@@ -4644,9 +4644,9 @@
 		(embedded_fonts no)
 	)
 	(gr_arc
-		(start 83 118.880711)
-		(mid 82.700294 116.604248)
-		(end 84.098076 114.782635)
+		(start 80 118.880711)
+		(mid 79.700294 116.604248)
+		(end 81.098076 114.782635)
 		(stroke
 			(width 0.05)
 			(type default)
@@ -4655,8 +4655,8 @@
 		(uuid "40000000-0000-4000-8000-000000000004")
 	)
 	(gr_line
-		(start 83 118.880711)
-		(end 92.434387 135.221548)
+		(start 80 118.880711)
+		(end 89.434387 135.221548)
 		(stroke
 			(width 0.05)
 			(type default)
@@ -4665,9 +4665,9 @@
 		(uuid "40000000-0000-4000-8000-000000000005")
 	)
 	(gr_arc
-		(start 96.180513 136.493187)
-		(mid 94.068158 136.562314)
-		(end 92.434387 135.221548)
+		(start 93.180513 136.493187)
+		(mid 91.068158 136.562314)
+		(end 89.434387 135.221548)
 		(stroke
 			(width 0.05)
 			(type default)
@@ -4676,8 +4676,8 @@
 		(uuid "40000000-0000-4000-8000-000000000006")
 	)
 	(gr_line
-		(start 96.180513 136.493187)
-		(end 131.382683 121.911971)
+		(start 93.180513 136.493187)
+		(end 128.382683 121.911971)
 		(stroke
 			(width 0.05)
 			(type default)
@@ -4686,8 +4686,8 @@
 		(uuid "40000000-0000-4000-8000-000000000007")
 	)
 	(gr_line
-		(start 106.9703 101.57735)
-		(end 84.098076 114.782635)
+		(start 103.9703 101.57735)
+		(end 81.098076 114.782635)
 		(stroke
 			(width 0.05)
 			(type default)
@@ -4695,10 +4695,20 @@
 		(layer "Edge.Cuts")
 		(uuid "40000000-0000-4000-8000-000000000003")
 	)
+	(gr_line
+		(start 104.9703 45)
+		(end 104.9703 50.5676)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "Edge.Cuts")
+		(uuid "713fcd94-194e-4ce6-88f8-9f1b8f780d5d")
+	)
 	(gr_arc
-		(start 107.9703 45)
-		(mid 108.84898 42.87868)
-		(end 110.9703 42)
+		(start 104.9703 45)
+		(mid 105.84898 42.87868)
+		(end 107.9703 42)
 		(stroke
 			(width 0.05)
 			(type default)
@@ -4707,18 +4717,8 @@
 		(uuid "50000000-0000-4000-8000-000000000005")
 	)
 	(gr_line
-		(start 107.9703 85.5676)
-		(end 107.9703 45)
-		(stroke
-			(width 0.05)
-			(type default)
-		)
-		(layer "Edge.Cuts")
-		(uuid "50000000-0000-4000-8000-000000000004")
-	)
-	(gr_line
-		(start 107.9703 85.5676)
-		(end 119.9703 85.5676)
+		(start 104.9703 50.5676)
+		(end 116.9703 50.5676)
 		(stroke
 			(width 0.05)
 			(type default)
@@ -4727,8 +4727,8 @@
 		(uuid "50000000-0000-4000-8000-000000000001")
 	)
 	(gr_line
-		(start 107.9703 91.8176)
-		(end 107.9703 99.845299)
+		(start 104.9703 56.8176)
+		(end 104.9703 99.845299)
 		(stroke
 			(width 0.05)
 			(type default)
@@ -4737,9 +4737,9 @@
 		(uuid "40000000-0000-4000-8000-000000000001")
 	)
 	(gr_arc
-		(start 107.9703 99.845299)
-		(mid 107.702351 100.845299)
-		(end 106.9703 101.57735)
+		(start 104.9703 99.845299)
+		(mid 104.702351 100.845299)
+		(end 103.9703 101.57735)
 		(stroke
 			(width 0.05)
 			(type default)
@@ -4748,7 +4748,7 @@
 		(uuid "40000000-0000-4000-8000-000000000002")
 	)
 	(gr_line
-		(start 110.9703 42)
+		(start 107.9703 42)
 		(end 203 42)
 		(stroke
 			(width 0.05)
@@ -4758,8 +4758,8 @@
 		(uuid "50000000-0000-4000-8000-000000000006")
 	)
 	(gr_line
-		(start 119.9703 85.5676)
-		(end 119.9703 91.8176)
+		(start 116.9703 50.5676)
+		(end 116.9703 56.8176)
 		(stroke
 			(width 0.05)
 			(type default)
@@ -4768,8 +4768,8 @@
 		(uuid "50000000-0000-4000-8000-000000000002")
 	)
 	(gr_line
-		(start 119.9703 91.8176)
-		(end 107.9703 91.8176)
+		(start 116.9703 56.8176)
+		(end 104.9703 56.8176)
 		(stroke
 			(width 0.05)
 			(type default)
@@ -4778,8 +4778,8 @@
 		(uuid "50000000-0000-4000-8000-000000000003")
 	)
 	(gr_line
-		(start 132 99.5)
-		(end 132 120.239601)
+		(start 129 99.5)
+		(end 129 120.239601)
 		(stroke
 			(width 0.05)
 			(type default)
@@ -4788,9 +4788,9 @@
 		(uuid "50000000-0000-4000-8000-000000000008")
 	)
 	(gr_arc
-		(start 132 99.5)
-		(mid 132.585786 98.085786)
-		(end 134 97.5)
+		(start 129 99.5)
+		(mid 129.585786 98.085786)
+		(end 131 97.5)
 		(stroke
 			(width 0.05)
 			(type default)
@@ -4799,9 +4799,9 @@
 		(uuid "50000000-0000-4000-8000-000000000007")
 	)
 	(gr_arc
-		(start 132 120.988091)
-		(mid 131.831473 121.543665)
-		(end 131.382683 121.911971)
+		(start 129 120.988091)
+		(mid 128.831473 121.543665)
+		(end 128.382683 121.911971)
 		(stroke
 			(width 0.05)
 			(type default)
@@ -4810,8 +4810,8 @@
 		(uuid "40000000-0000-4000-8000-000000000008")
 	)
 	(gr_line
-		(start 132 120.988091)
-		(end 132 120.239601)
+		(start 129 120.988091)
+		(end 129 120.239601)
 		(stroke
 			(width 0.05)
 			(type default)
@@ -4820,8 +4820,8 @@
 		(uuid "40000000-0000-4000-8000-000000000009")
 	)
 	(gr_line
-		(start 179.5 97.5)
-		(end 134 97.5)
+		(start 176.5 97.5)
+		(end 131 97.5)
 		(stroke
 			(width 0.05)
 			(type default)
@@ -4830,9 +4830,9 @@
 		(uuid "30000000-0000-4000-8000-000000000011")
 	)
 	(gr_arc
-		(start 179.5 97.5)
-		(mid 180.207107 97.792893)
-		(end 180.5 98.5)
+		(start 176.5 97.5)
+		(mid 177.207107 97.792893)
+		(end 177.5 98.5)
 		(stroke
 			(width 0.05)
 			(type default)
@@ -4841,8 +4841,8 @@
 		(uuid "30000000-0000-4000-8000-000000000010")
 	)
 	(gr_line
-		(start 180.5 99.5)
-		(end 180.5 98.5)
+		(start 177.5 99.5)
+		(end 177.5 98.5)
 		(stroke
 			(width 0.05)
 			(type default)
@@ -4851,9 +4851,9 @@
 		(uuid "30000000-0000-4000-8000-000000000009")
 	)
 	(gr_arc
-		(start 181.5 100.5)
-		(mid 180.792893 100.207107)
-		(end 180.5 99.5)
+		(start 178.5 100.5)
+		(mid 177.792893 100.207107)
+		(end 177.5 99.5)
 		(stroke
 			(width 0.05)
 			(type default)
@@ -4874,7 +4874,7 @@
 	)
 	(gr_line
 		(start 203 100.5)
-		(end 181.5 100.5)
+		(end 178.5 100.5)
 		(stroke
 			(width 0.05)
 			(type default)
