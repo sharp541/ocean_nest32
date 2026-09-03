@@ -388,7 +388,7 @@
 	(footprint "kbd_Hole:m2_Screw_Hole"
 		(layer "F.Cu")
 		(uuid "0eba60ad-c8ad-4f94-bc4f-a080aa819b86")
-		(at 201.5 95.5)
+		(at 200 95)
 		(descr "Mounting Hole 2.2mm, no annular, M2")
 		(tags "mounting hole 2.2mm no annular m2")
 		(property "Reference" "hole2"
@@ -3858,7 +3858,7 @@
 	(footprint "kbd_Hole:m2_Screw_Hole"
 		(layer "F.Cu")
 		(uuid "c6fcc2b2-1b9f-4f40-8f3a-b13eafe0f9e9")
-		(at 123.5 47.5)
+		(at 123 48)
 		(descr "Mounting Hole 2.2mm, no annular, M2")
 		(tags "mounting hole 2.2mm no annular m2")
 		(property "Reference" "hole2"
@@ -4252,7 +4252,7 @@
 	(footprint "kbd_Hole:m2_Screw_Hole"
 		(layer "F.Cu")
 		(uuid "daaf26e0-a6f2-46a4-af9b-7d0bdc161e2e")
-		(at 115 91)
+		(at 115 95)
 		(descr "Mounting Hole 2.2mm, no annular, M2")
 		(tags "mounting hole 2.2mm no annular m2")
 		(property "Reference" "hole1"
