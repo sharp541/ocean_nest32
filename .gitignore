@@ -56,6 +56,7 @@ dkms.conf
 
 # kicad
 fp-info-cache
+.history/
 *.kicad_prl
 fabrication-toolkit-options.json
 *-backups
