@@ -1,5 +1,5 @@
 // hardware configuration
-#define SERIAL_USART_TX_PIN GP7
+#define SERIAL_USART_TX_PIN GP0
 
 #define SPLIT_POINTING_ENABLE
 #define POINTING_DEVICE_RIGHT

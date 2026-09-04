@@ -769,7 +769,7 @@
       {
         "filename": "OceanNest_R.kicad_sch",
         "name": "OceanNest_R",
-        "uuid": "00000000-0000-0000-0000-000000000000"
+        "uuid": "e2986c27-9cb7-47ba-9b56-70bbea74a24c"
       }
     ],
     "used_designators": "",
@@ -778,7 +778,7 @@
   "sheets": [
     [
       "e2986c27-9cb7-47ba-9b56-70bbea74a24c",
-      "Root"
+      "OceanNest_R"
     ]
   ],
   "text_variables": {},

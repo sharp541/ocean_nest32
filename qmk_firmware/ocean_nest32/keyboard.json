@@ -12,18 +12,18 @@
     },
     "matrix_pins": {
         "cols": [
-            "GP26",
             "GP27",
             "GP28",
             "GP29",
-            "GP6"
+            "GP6",
+            "GP7"
         ],
         "rows": [
-            "GP26",
             "GP27",
             "GP28",
             "GP29",
-            "GP6"
+            "GP6",
+            "GP7"
         ]
     },
     "url": "",
@@ -35,7 +35,7 @@
     "split": {
         "enabled": true,
         "handedness": {
-            "pin": "GP0"
+            "pin": "GP26"
         }
     },
     "encoder": {
