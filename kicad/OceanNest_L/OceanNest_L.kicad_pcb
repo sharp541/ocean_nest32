@@ -1319,6 +1319,19 @@
 				)
 			)
 		)
+		(property "optimizer_finger" "pinky"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "cbc05053-713e-4f9e-9e9b-8a5653146d73")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(path "/0f0b7c3f-6682-42fc-aa72-abac4c9f6efe")
 		(sheetname "/")
 		(sheetfile "OceanNest_L.kicad_sch")
@@ -2882,6 +2895,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "07b82835-55e0-4f5e-a1aa-2797c8b33ae2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "optimizer_finger" "ring"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4c6874b0-f260-4205-971f-f75e064f118d")
 			(effects
 				(font
 					(size 1 1)
@@ -6282,6 +6308,19 @@
 				)
 			)
 		)
+		(property "optimizer_finger" "index"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e1aaec67-0c5a-459f-9c00-084b6f2ff230")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(path "/90c7970a-ab86-4c59-8442-05637fe4469e")
 		(sheetname "/")
 		(sheetfile "OceanNest_L.kicad_sch")
@@ -6873,6 +6912,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "5b001dec-cfc0-4327-9fb9-40aa079c67c8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "optimizer_finger" "middle"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e9efdd83-d089-4bf3-9a8b-c4cb486d0d73")
 			(effects
 				(font
 					(size 1 1)
@@ -8542,6 +8594,19 @@
 				)
 			)
 		)
+		(property "optimizer_finger" "middle"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "cb997cb5-7d57-4448-ad72-3f7e2a448023")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(path "/3903462d-4c54-4d68-baa0-695d86204f5f")
 		(sheetname "/")
 		(sheetfile "OceanNest_L.kicad_sch")
@@ -9140,6 +9205,19 @@
 				)
 			)
 		)
+		(property "optimizer_finger" "pinky"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5692597c-00bc-4c94-8df1-01c6c568da29")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(path "/2aa5f090-f25e-498d-aecb-04a4eb84e080")
 		(sheetname "/")
 		(sheetfile "OceanNest_L.kicad_sch")
@@ -9731,6 +9809,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "158c81c3-257e-496e-8de1-ff84509b987b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "optimizer_finger" "ring"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a9bd78fe-bde2-438d-ab34-5f0b05320bd2")
 			(effects
 				(font
 					(size 1 1)
@@ -10967,6 +11058,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "316fa668-2f44-4822-a7bc-7a5f3a48a9b1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "optimizer_finger" "index"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "93c3e67a-9213-4678-9586-8cb5cc172d3b")
 			(effects
 				(font
 					(size 1 1)
@@ -12540,6 +12644,19 @@
 				)
 			)
 		)
+		(property "optimizer_finger" "ring"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "bb71da19-a5d7-4ae8-bcab-95cd34bdc85b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(path "/79a8080e-f197-429f-9639-25996e2eaab8")
 		(sheetname "/")
 		(sheetfile "OceanNest_L.kicad_sch")
@@ -13871,6 +13988,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "2a8661ae-1ad7-4a26-b656-3ed70c402c7d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "optimizer_finger" "index"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "318e5628-a237-4396-ac02-a19873cc97ed")
 			(effects
 				(font
 					(size 1 1)
